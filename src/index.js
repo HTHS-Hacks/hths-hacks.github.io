@@ -6,42 +6,51 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import $ from "jquery";
 import Home from "./home";
+import About from "./about";
+import FAQ from "./faq";
+import Schedule from "./schedule";
+import Sponsors from "./sponsors";
+import Footer from "./footer";
 
 class App extends Component {
-  componentDidMount() {
-    $(window).scroll(function() {
-      // Change int to configure how many pixels must be scrolled before navbar
-      // appears
-      if ($(this).scrollTop() > 100) {
-        $(".navbar").fadeIn();
-      } else {
-        $(".navbar").fadeOut();
-      }
-    });
-  }
   render() {
     return (
       <div>
-        <Navbar bg="light" expand="lg" fixed="top" style={{ display: "none" }}>
+        {/* <Navbar collapseOnSelect bg="dark" expand="lg" fixed="top" style={{}}>
           <Navbar.Brand href="#home">hths.hacks()</Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar" />
-          <Navbar.Collapse id="main-navbar">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav>
               <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#details">Details</Nav.Link>
               <Nav.Link href="#schedule">Schedule</Nav.Link>
+
               <Nav.Link href="#faq">FAQ</Nav.Link>
               <Nav.Link href="#sponsors">Sponsors</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Navbar>
+        </Navbar> */}
         <Home />
-        <Home />
+        <About />
+        <FAQ />
+        <Schedule />
+        <Sponsors />
+        <Footer />
       </div>
     );
   }
 }
+
+const styles = {
+  navbarWrapper: {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "33.33%",
+    marginLeft: "auto",
+    marginRight: "auto",
+    maxWidth: "960px"
+  }
+};
 
 const mountApp = document.getElementById("app");
 ReactDOM.render(<App />, mountApp);

@@ -1,7 +1,13 @@
 body {
   font-family: "Raleway", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar {
   background: rgba(255, 255, 255, 0.7) !important;
+}
+
+#apply-button {
+  border-color: #4a86e8 !important;
 }

@@ -2,16 +2,30 @@ import React, { Component } from "react";
 // Add the following two lines
 import { Navbar, Nav, Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
+import "./background.css";
+import "./home.css";
 
 export default class Home extends Component {
   render() {
     return (
-      <div style={styles.container}>
+      <div style={styles.container} id="home-background">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <div style={styles.centerContent}>
           <Container>
             <Row>
               <Col>
-                <h1 style={styles.title}>hths.hacks()</h1>
+                <img
+                  src={require("./img/Asset 1.png")}
+                  style={styles.iconImage}
+                  id="home-image"
+                />
+                <img
+                  src={require("./img/Asset 2.png")}
+                  style={styles.mainImg}
+                  id="home-image"
+                />
               </Col>
             </Row>
             <Row>
@@ -21,7 +35,11 @@ export default class Home extends Component {
             </Row>
             <Row>
               <Col style={styles.buttonStyle}>
-                <Button style={styles.buttonStyle} variant="outline-light">
+                <Button
+                  style={styles.buttonStyle}
+                  id="apply-button"
+                  variant="outline-light"
+                >
                   Apply
                 </Button>
               </Col>
@@ -37,17 +55,15 @@ const styles = {
   container: {
     paddingTop: 56,
     height: "100vh",
-    width: "100%",
-    background: "rgb(40,66,78)",
-    background:
-      "linear-gradient(45deg, rgba(40,66,78,1) 0%, rgba(0,212,255,1) 100%)"
+    width: "100%"
   },
   centerContent: {
     position: "absolute",
     top: "50%",
     left: "50%",
     transform: "translateX(-50%) translateY(-50%)",
-    color: "white"
+    color: "#4a86e8",
+    width: "75%"
   },
   title: {
     fontSize: 60,
@@ -56,11 +72,22 @@ const styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "white",
+    color: "#4a86e8",
     textAlign: "center"
   },
   buttonStyle: {
+    marginTop: 10,
     display: "flex",
-    justifyContent: "center"
+    justifyContent: "center",
+    color: "#4a86e8",
+    outlineColor: "#4a86e8"
+  },
+  mainImg: {
+    width: "100%"
+  },
+  iconImage: {
+    maxHeight: "200px",
+    margin: "auto",
+    display: "block"
   }
 };
