@@ -58362,11 +58362,11 @@ function (_Component) {
       }), _react.default.createElement("div", {
         style: styles.centerContent
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("img", {
-        src: require("./img/Asset 1.png"),
+        src: require('./img/Asset 1.png'),
         style: styles.iconImage,
         id: "home-image"
       }), _react.default.createElement("img", {
-        src: require("./img/Asset 2.png"),
+        src: require('./img/Asset 2.png'),
         style: styles.mainImg,
         id: "home-image"
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
@@ -58376,8 +58376,11 @@ function (_Component) {
       }, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
-        variant: "outline-light"
-      }, "Apply"))))));
+        variant: "outline-light",
+        onClick: function onClick() {
+          return window.location.href = 'https://forms.gle/UQ2HH8RtdAoyZ9dW7';
+        }
+      }, "Get Notified"))))));
     }
   }]);
 
@@ -58388,41 +58391,41 @@ exports.default = Home;
 var styles = {
   container: {
     paddingTop: 56,
-    height: "100vh",
-    width: "100%"
+    height: '100vh',
+    width: '100%'
   },
   centerContent: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translateX(-50%) translateY(-50%)",
-    color: "#4a86e8",
-    width: "75%"
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translateX(-50%) translateY(-50%)',
+    color: '#4a86e8',
+    width: '75%'
   },
   title: {
     fontSize: 60,
     fontWeight: 1000,
     letterSpacing: 8,
-    textAlign: "center"
+    textAlign: 'center'
   },
   subtext: {
-    color: "#4a86e8",
-    textAlign: "center"
+    color: '#4a86e8',
+    textAlign: 'center'
   },
   buttonStyle: {
     marginTop: 10,
-    display: "flex",
-    justifyContent: "center",
-    color: "#4a86e8",
-    outlineColor: "#4a86e8"
+    display: 'flex',
+    justifyContent: 'center',
+    color: '#4a86e8',
+    outlineColor: '#4a86e8'
   },
   mainImg: {
-    width: "100%"
+    width: '100%'
   },
   iconImage: {
-    maxHeight: "200px",
-    margin: "auto",
-    display: "block"
+    maxHeight: '200px',
+    margin: 'auto',
+    display: 'block'
   }
 };
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./home.css":"home.css","./img/Asset 1.png":"img/Asset 1.png","./img/Asset 2.png":"img/Asset 2.png"}],"page.js":[function(require,module,exports) {
@@ -58828,20 +58831,44 @@ var styles = {
   }
 };
 var schedule = [{
-  n: 'Event 1',
-  t: '7:45 AM',
+  n: 'Arrival and Check-in',
+  t: '9:00 AM',
+  l: 'Lobby'
+}, {
+  n: 'Opening remarks',
+  t: '9:30 AM',
   l: 'MPR'
 }, {
-  n: 'Event 1',
-  t: '7:45 AM',
+  n: 'Hacking begins',
+  t: '9:45 AM',
   l: 'MPR'
 }, {
-  n: 'Event 1',
-  t: '7:45 AM',
+  n: 'Team formation/brainstorming',
+  t: '9:45 AM',
+  l: 'Research Lobby'
+}, {
+  n: 'Workshop (TBD)',
+  t: '11:00 AM',
+  l: 'Research Lobby'
+}, {
+  n: 'Lunch',
+  t: '12:00 PM',
   l: 'MPR'
 }, {
-  n: 'Event 1',
-  t: '7:45 AM',
+  n: 'Workshop (TBD)',
+  t: '3:00 PM',
+  l: 'Research Lobby'
+}, {
+  n: 'Dinner',
+  t: '6:30 PM',
+  l: 'MPR'
+}, {
+  n: 'Judging',
+  t: '7:00 PM',
+  l: 'MPR'
+}, {
+  n: 'Closing remarks',
+  t: '8:00 PM',
   l: 'MPR'
 }];
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js":[function(require,module,exports) {
@@ -65026,30 +65053,29 @@ function (_Component) {
         style: styles.container
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
-          display: "flex",
-          justifyContent: "center"
+          display: 'flex',
+          justifyContent: 'center'
         }
       }, _react.default.createElement("img", {
-        src: require("./img/Asset 1.png"),
+        src: require('./img/Asset 1.png'),
         style: styles.iconImage
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
         style: {
-          textAlign: "center"
+          textAlign: 'center'
         }
       }, "May 16, 2020"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
-          display: "flex",
-          justifyContent: "center",
+          display: 'flex',
+          justifyContent: 'center',
           marginBottom: 30
         }
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         style: styles.socialIcons,
         icon: _freeBrandsSvgIcons.faTwitter,
-        size: "2x"
-      }), _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-        style: styles.socialIcons,
-        icon: _freeBrandsSvgIcons.faFacebook,
-        size: "2x"
+        size: "2x",
+        onClick: function onClick() {
+          return window.location.href = 'https://twitter.com/hths_hacks';
+        }
       })))));
     }
   }]);
@@ -65061,13 +65087,13 @@ exports.default = Home;
 var styles = {
   container: {
     paddingTop: 20,
-    width: "100%",
-    backgroundColor: "#090a0f",
-    color: "white",
+    width: '100%',
+    backgroundColor: '#090a0f',
+    color: 'white',
     fontSize: 20
   },
   iconImage: {
-    maxHeight: "150px"
+    maxHeight: '150px'
   },
   socialIcons: {
     marginLeft: 8,
@@ -72037,7 +72063,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35709" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39715" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
