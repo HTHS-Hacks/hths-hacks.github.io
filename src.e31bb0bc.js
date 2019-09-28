@@ -58693,6 +58693,7 @@ var styles = {
     padding: '15px',
     backgroundColor: '#f7f7f5',
     boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+    height: 'calc(100% - 15px)',
     marginBottom: '15px'
   },
   title: {
@@ -58740,7 +58741,9 @@ var faq = [{
   a: 'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.'
 }, {
   q: 'Any other questions?',
-  a: 'Email us at contact@hthshacks.com'
+  a: _react.default.createElement("p", null, "Email us at", ' ', _react.default.createElement("a", {
+    href: "mailto:contact@hthshacks.com"
+  }, "contact@hthshacks.com"))
 }].chunk_inefficient(2);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"schedule.js":[function(require,module,exports) {
 "use strict";
@@ -65063,7 +65066,13 @@ function (_Component) {
         style: {
           textAlign: 'center'
         }
-      }, "May 16, 2020"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, "May 16, 2020"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
+        style: {
+          textAlign: 'center'
+        }
+      }, _react.default.createElement("a", {
+        href: "mailto:contact@hthshacks.com"
+      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: 'flex',
           justifyContent: 'center',
@@ -72063,7 +72072,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39715" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33301" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -10068,6 +10068,15 @@ html {
     background-color: white !important;
 } */
 
+.row {
+    overflow: hidden;
+}
+
+[class*='col-'] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
 .nav-parent {
     top: 15px;
     left: 15px;
