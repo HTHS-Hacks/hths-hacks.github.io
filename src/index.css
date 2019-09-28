@@ -15,3 +15,17 @@ html {
 #apply-button {
     border-color: #4a86e8 !important;
 }
+
+.hamburger {
+    line-height: 1 !important;
+}
+
+.hamburger-box {
+    display: block !important;
+}
+
+/* .hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    background-color: white !important;
+} */

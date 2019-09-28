@@ -5,6 +5,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import './nav.css';
+import './hamburgers.css';
 import $ from 'jquery';
 import Home from './home';
 import About from './about';
@@ -22,65 +23,71 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
+    constructor() {
+        super();
+        this.state = {
+            active: false,
+        };
+    }
     componentDidMount() {
-        $(document).ready(function() {
+        $(document).ready(() => {
             var active1 = false;
             var active2 = false;
             var active3 = false;
             var active4 = false;
 
-            $('.nav-parent').on('mousedown touchstart', function() {
+            $('.nav-parent').on('mousedown touchstart', () => {
                 if (!active1)
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item1')
                         .css({
                             'background-color': 'gray',
                             transform: 'translate(0px,125px)',
                         });
                 else
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item1')
                         .css({
                             'background-color': 'dimGray',
                             transform: 'none',
                         });
                 if (!active2)
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item2')
                         .css({
                             'background-color': 'gray',
                             transform: 'translate(60px,105px)',
                         });
                 else
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item2')
                         .css({
                             'background-color': 'darkGray',
                             transform: 'none',
                         });
                 if (!active3)
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item3')
                         .css({
                             'background-color': 'gray',
                             transform: 'translate(105px,60px)',
                         });
                 else
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item3')
                         .css({
                             'background-color': 'silver',
                             transform: 'none',
                         });
                 if (!active4)
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item4')
                         .css({
                             'background-color': 'gray',
                             transform: 'translate(125px,0px)',
                         });
                 else
-                    $(this)
+                    $('.nav-parent')
                         .find('.nav-item4')
                         .css({
                             'background-color': 'silver',
@@ -90,35 +97,45 @@ class App extends Component {
                 active2 = !active2;
                 active3 = !active3;
                 active4 = !active4;
+                this.setState({ active: active1 });
             });
         });
     }
     render() {
         return (
             <div>
-                <div class="nav-parent">
+                <div className="nav-parent">
                     <a href="#about">
-                        <div class="nav-item1">
+                        <div className="nav-item1">
                             <FontAwesomeIcon icon={faInfoCircle} size="2x" />
                         </div>
                     </a>
                     <a href="#faq">
-                        <div class="nav-item2">
+                        <div className="nav-item2">
                             <FontAwesomeIcon icon={faQuestion} size="2x" />
                         </div>
                     </a>
                     <a href="#schedule">
-                        <div class="nav-item3">
+                        <div className="nav-item3">
                             <FontAwesomeIcon icon={faClock} size="2x" />
                         </div>
                     </a>
                     <a href="#sponsors">
-                        <div class="nav-item4">
+                        <div className="nav-item4">
                             <FontAwesomeIcon icon={faGift} size="2x" />
                         </div>
                     </a>
-                    <div class="nav-main-item">
-                        <FontAwesomeIcon icon={faBars} size="3x" />
+                    <div className="nav-main-item">
+                        <button
+                            className={`hamburger hamburger--elastic ${
+                                this.state.active ? 'is-active' : ''
+                            }`}
+                            type="button"
+                        >
+                            <span className="hamburger-box">
+                                <span className="hamburger-inner"></span>
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <Home />
