@@ -44,8 +44,14 @@ const styles = {
 };
 
 const schedule = [
-    { n: 'Event 1', t: '7:45 AM', l: 'MPR' },
-    { n: 'Event 1', t: '7:45 AM', l: 'MPR' },
-    { n: 'Event 1', t: '7:45 AM', l: 'MPR' },
-    { n: 'Event 1', t: '7:45 AM', l: 'MPR' },
+    { n: 'Arrival and Check-in', t: '9:00 AM', l: 'Lobby' },
+    { n: 'Opening remarks', t: '9:30 AM', l: 'MPR' },
+    { n: 'Hacking begins', t: '9:45 AM', l: 'MPR' },
+    { n: 'Team formation/brainstorming', t: '9:45 AM', l: 'Research Lobby' },
+    { n: 'Workshop (TBD)', t: '11:00 AM', l: 'Research Lobby' },
+    { n: 'Lunch', t: '12:00 PM', l: 'MPR' },
+    { n: 'Workshop (TBD)', t: '3:00 PM', l: 'Research Lobby' },
+    { n: 'Dinner', t: '6:30 PM', l: 'MPR' },
+    { n: 'Judging', t: '7:00 PM', l: 'MPR' },
+    { n: 'Closing remarks', t: '8:00 PM', l: 'MPR' },
 ];
