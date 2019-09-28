@@ -36,7 +36,7 @@ class App extends Component {
             var active3 = false;
             var active4 = false;
 
-            $('.nav-parent').on('mousedown touchstart', () => {
+            $('.nav-parent').on('mousedown', () => {
                 if (!active1)
                     $('.nav-parent')
                         .find('.nav-item1')
@@ -126,16 +126,15 @@ class App extends Component {
                         </div>
                     </a>
                     <div className="nav-main-item">
-                        <button
+                        <div
                             className={`hamburger hamburger--elastic ${
                                 this.state.active ? 'is-active' : ''
                             }`}
-                            type="button"
                         >
                             <span className="hamburger-box">
                                 <span className="hamburger-inner"></span>
                             </span>
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <Home />
