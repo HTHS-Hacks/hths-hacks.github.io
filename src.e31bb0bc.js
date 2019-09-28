@@ -58583,7 +58583,7 @@ function (_Component) {
         backgroundColor: "#3c78d8"
       }, _react.default.createElement("p", {
         style: styles.contents
-      }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit. Rhoncus mattis rhoncus urna neque. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus. Amet commodo nulla facilisi nullam vehicula ipsum a arcu. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Tempor nec feugiat nisl pretium. Aliquet bibendum enim facilisis gravida neque convallis a cras. Nibh cras pulvinar mattis nunc. Eget dolor morbi non arcu risus quis. Luctus venenatis lectus magna fringilla urna. A iaculis at erat pellentesque adipiscing commodo elit at. Varius sit amet mattis vulputate enim nulla aliquet porttitor. Vel pharetra vel turpis nunc eget lorem. Habitant morbi tristique senectus et netus et malesuada fames. Dictumst quisque sagittis purus sit. Nunc lobortis mattis aliquam faucibus. Pellentesque habitant morbi tristique senectus et. Velit sed ullamcorper morbi tincidunt ornare massa eget egestas.")));
+      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 12 hours. Along the way, you\u2019ll get free food and swag, the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
     }
   }]);
 
@@ -58709,17 +58709,35 @@ Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   }
 });
 var faq = [{
-  q: 'This is a question?',
-  a: 'This is the answer'
+  q: 'What is a hackathon?',
+  a: 'A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!'
 }, {
-  q: 'This is a question?',
-  a: 'This is the answer'
+  q: 'How much will it cost me?',
+  a: 'Absolutely nothing! We just want you to show up and have fun.'
 }, {
-  q: 'This is a question?',
-  a: 'This is the answer'
+  q: 'Will there be travel reimbursements?',
+  a: 'Unfortunately, we will not be offering travel reimbursements'
 }, {
-  q: 'This is a question?',
-  a: 'This is the answer'
+  q: 'Who can attend?',
+  a: 'Any currently enrolled high school student is welcome to attend.'
+}, {
+  q: 'What should I bring?',
+  a: 'You should bring your laptop, phone, charger, and a student ID.'
+}, {
+  q: 'Do I need an idea or a team?',
+  a: 'No! We will be running a team building event and there will be time for you to brainstorm an idea.'
+}, {
+  q: 'How do I apply?',
+  a: 'Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority.'
+}, {
+  q: 'Will food be provided?',
+  a: 'Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day.'
+}, {
+  q: 'Who runs hths.hacks()?',
+  a: 'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.'
+}, {
+  q: 'Any other questions?',
+  a: 'Email us at contact@hthshacks.com'
 }].chunk_inefficient(2);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"schedule.js":[function(require,module,exports) {
 "use strict";
@@ -61949,7 +61967,7 @@ function (_Component) {
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
         style: styles.sponsorInterest
       }, "Interested in sponsoring? See our", ' ', _react.default.createElement("a", {
-        href: "/sponsor_packet.pdf"
+        href: "sponsor_packet.pdf"
       }, "sponsor packet"), ' ', "and reach out to us at", ' ', _react.default.createElement("a", {
         href: "mailto:sponsor@hthshacks.com"
       }, "sponsor@hthshacks.com"), "."))), sponsors1.map(function (s) {
@@ -72019,7 +72037,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41909" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
