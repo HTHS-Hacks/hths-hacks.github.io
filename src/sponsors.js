@@ -26,9 +26,13 @@ export default class Sponsors extends Component {
                         <Row>
                             <Col>
                                 <p style={styles.sponsorInterest}>
-                                    Interested in sponsoring? Reach out to us at{' '}
-                                    <a href="mailto:hello@hthshacks.com">
-                                        hello@hthshacks.com
+                                    Interested in sponsoring? See our{' '}
+                                    <a href="/sponsor_packet.pdf">
+                                        sponsor packet
+                                    </a>{' '}
+                                    and reach out to us at{' '}
+                                    <a href="mailto:sponsor@hthshacks.com">
+                                        sponsor@hthshacks.com
                                     </a>
                                     .
                                 </p>
