@@ -71888,7 +71888,7 @@ function (_Component) {
         var active2 = false;
         var active3 = false;
         var active4 = false;
-        (0, _jquery.default)('.nav-parent').on('mousedown touchstart', function () {
+        (0, _jquery.default)('.nav-parent').on('mousedown', function () {
           if (!active1) (0, _jquery.default)('.nav-parent').find('.nav-item1').css({
             'background-color': 'gray',
             transform: 'translate(0px,125px)'
@@ -71963,9 +71963,8 @@ function (_Component) {
         size: "2x"
       }))), _react.default.createElement("div", {
         className: "nav-main-item"
-      }, _react.default.createElement("button", {
-        className: "hamburger hamburger--elastic ".concat(this.state.active ? 'is-active' : ''),
-        type: "button"
+      }, _react.default.createElement("div", {
+        className: "hamburger hamburger--elastic ".concat(this.state.active ? 'is-active' : '')
       }, _react.default.createElement("span", {
         className: "hamburger-box"
       }, _react.default.createElement("span", {
@@ -72018,7 +72017,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38925" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46169" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
