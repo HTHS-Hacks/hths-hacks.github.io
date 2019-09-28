@@ -61948,9 +61948,11 @@ function (_Component) {
         }
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
         style: styles.sponsorInterest
-      }, "Interested in sponsoring? Reach out to us at", ' ', _react.default.createElement("a", {
-        href: "mailto:hello@hthshacks.com"
-      }, "hello@hthshacks.com"), "."))), sponsors1.map(function (s) {
+      }, "Interested in sponsoring? See our", ' ', _react.default.createElement("a", {
+        href: "/sponsor_packet.pdf"
+      }, "sponsor packet"), ' ', "and reach out to us at", ' ', _react.default.createElement("a", {
+        href: "mailto:sponsor@hthshacks.com"
+      }, "sponsor@hthshacks.com"), "."))), sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
           style: {
@@ -72017,7 +72019,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46169" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45639" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
