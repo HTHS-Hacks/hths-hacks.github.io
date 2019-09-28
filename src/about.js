@@ -4,13 +4,14 @@ import { Navbar, Nav, Container, Row, Col, Button } from 'react-bootstrap';
 import Page from './page';
 import 'bootstrap/dist/css/bootstrap.css';
 import './background.css';
+import './about.css';
 
 export default class About extends Component {
     render() {
         return (
             <section id="about">
                 <Page title="ABOUT" backgroundColor="#3c78d8">
-                    <p style={styles.contents}>
+                    <p className="about-p">
                         There’s something about being under a deadline that
                         generates the best ideas. That’s why high school
                         students strategically plan to do assignments right at
@@ -27,9 +28,3 @@ export default class About extends Component {
         );
     }
 }
-
-const styles = {
-    contents: {
-        fontSize: '25px',
-    },
-};

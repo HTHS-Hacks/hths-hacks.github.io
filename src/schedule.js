@@ -18,7 +18,14 @@ export default class Schedule extends Component {
         return (
             <section id="schedule">
                 <Page title="SCHEDULE" style={{ backgroundColor: '#595959' }}>
-                    <Table style={{ marginTop: '25px' }}>
+                    <Table
+                        responsive
+                        style={{
+                            marginTop: '25px',
+                            width: '100%',
+                            tableLayout: 'fixed',
+                        }}
+                    >
                         <tbody style={styles.tableStyle}>
                             {schedule.map(event => (
                                 <tr>
@@ -39,7 +46,7 @@ const styles = {
     time: {},
     tableStyle: {
         color: 'white',
-        fontSize: '25px',
+        fontSize: '20px',
     },
 };
 
@@ -47,7 +54,11 @@ const schedule = [
     { n: 'Arrival and Check-in', t: '9:00 AM', l: 'Lobby' },
     { n: 'Opening remarks', t: '9:30 AM', l: 'MPR' },
     { n: 'Hacking begins', t: '9:45 AM', l: 'MPR' },
-    { n: 'Team formation/brainstorming', t: '9:45 AM', l: 'Research Lobby' },
+    {
+        n: 'Team formation and brainstorming',
+        t: '9:45 AM',
+        l: 'Research Lobby',
+    },
     { n: 'Workshop (TBD)', t: '11:00 AM', l: 'Research Lobby' },
     { n: 'Lunch', t: '12:00 PM', l: 'MPR' },
     { n: 'Workshop (TBD)', t: '3:00 PM', l: 'Research Lobby' },
