@@ -58523,7 +58523,12 @@ var styles = {
     marginBottom: "30px"
   }
 };
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"about.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"about.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"about.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -58540,6 +58545,8 @@ var _page = _interopRequireDefault(require("./page"));
 require("bootstrap/dist/css/bootstrap.css");
 
 require("./background.css");
+
+require("./about.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58585,7 +58592,7 @@ function (_Component) {
         title: "ABOUT",
         backgroundColor: "#3c78d8"
       }, _react.default.createElement("p", {
-        style: styles.contents
+        className: "about-p"
       }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 12 hours. Along the way, you\u2019ll get free food and swag, the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
     }
   }]);
@@ -58594,12 +58601,7 @@ function (_Component) {
 }(_react.Component);
 
 exports.default = About;
-var styles = {
-  contents: {
-    fontSize: '25px'
-  }
-};
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"faq.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./about.css":"about.css"}],"faq.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -58809,8 +58811,11 @@ function (_Component) {
           backgroundColor: '#595959'
         }
       }, _react.default.createElement(_reactBootstrap.Table, {
+        responsive: true,
         style: {
-          marginTop: '25px'
+          marginTop: '25px',
+          width: '100%',
+          tableLayout: 'fixed'
         }
       }, _react.default.createElement("tbody", {
         style: styles.tableStyle
@@ -58830,7 +58835,7 @@ var styles = {
   time: {},
   tableStyle: {
     color: 'white',
-    fontSize: '25px'
+    fontSize: '20px'
   }
 };
 var schedule = [{
@@ -58846,7 +58851,7 @@ var schedule = [{
   t: '9:45 AM',
   l: 'MPR'
 }, {
-  n: 'Team formation/brainstorming',
+  n: 'Team formation and brainstorming',
   t: '9:45 AM',
   l: 'Research Lobby'
 }, {
@@ -72072,7 +72077,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33301" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "46733" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -10974,5 +10974,15 @@ html {
     }
   }
   
+.about-p {
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .about-p {
+        font-size: 20px;
+    }
+}
+
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
