@@ -52,6 +52,7 @@ const styles = {
         padding: '15px',
         backgroundColor: '#f7f7f5',
         boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+        height: 'calc(100% - 15px)',
         marginBottom: '15px',
     },
     title: {
@@ -117,5 +118,13 @@ const faq = [
         a:
             'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.',
     },
-    { q: 'Any other questions?', a: 'Email us at contact@hthshacks.com' },
+    {
+        q: 'Any other questions?',
+        a: (
+            <p>
+                Email us at{' '}
+                <a href="mailto:contact@hthshacks.com">contact@hthshacks.com</a>
+            </p>
+        ),
+    },
 ].chunk_inefficient(2);

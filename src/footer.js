@@ -30,6 +30,15 @@ export default class Home extends Component {
                         </Col>
                     </Row>
                     <Row>
+                        <Col>
+                            <p style={{ textAlign: 'center' }}>
+                                <a href="mailto:contact@hthshacks.com">
+                                    contact@hthshacks.com
+                                </a>
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
                         <Col
                             style={{
                                 display: 'flex',
