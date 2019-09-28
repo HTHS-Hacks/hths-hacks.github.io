@@ -76,8 +76,46 @@ Object.defineProperty(Array.prototype, 'chunk_inefficient', {
 });
 
 const faq = [
-    { q: 'This is a question?', a: 'This is the answer' },
-    { q: 'This is a question?', a: 'This is the answer' },
-    { q: 'This is a question?', a: 'This is the answer' },
-    { q: 'This is a question?', a: 'This is the answer' },
+    {
+        q: 'What is a hackathon?',
+        a:
+            'A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!',
+    },
+    {
+        q: 'How much will it cost me?',
+        a: 'Absolutely nothing! We just want you to show up and have fun.',
+    },
+    {
+        q: 'Will there be travel reimbursements?',
+        a: 'Unfortunately, we will not be offering travel reimbursements',
+    },
+    {
+        q: 'Who can attend?',
+        a: 'Any currently enrolled high school student is welcome to attend.',
+    },
+    {
+        q: 'What should I bring?',
+        a: 'You should bring your laptop, phone, charger, and a student ID.',
+    },
+    {
+        q: 'Do I need an idea or a team?',
+        a:
+            'No! We will be running a team building event and there will be time for you to brainstorm an idea.',
+    },
+    {
+        q: 'How do I apply?',
+        a:
+            'Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority.',
+    },
+    {
+        q: 'Will food be provided?',
+        a:
+            'Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day.',
+    },
+    {
+        q: 'Who runs hths.hacks()?',
+        a:
+            'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.',
+    },
+    { q: 'Any other questions?', a: 'Email us at contact@hthshacks.com' },
 ].chunk_inefficient(2);

@@ -27,7 +27,7 @@ export default class Sponsors extends Component {
                             <Col>
                                 <p style={styles.sponsorInterest}>
                                     Interested in sponsoring? See our{' '}
-                                    <a href="/sponsor_packet.pdf">
+                                    <a href="sponsor_packet.pdf">
                                         sponsor packet
                                     </a>{' '}
                                     and reach out to us at{' '}
