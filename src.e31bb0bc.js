@@ -62081,7 +62081,7 @@ var padArray = function padArray(val, arr, len) {
 
 var sponsors1 = [];
 var sponsors2 = [].chunk_inefficient(2);
-var sponsors3 = [].chunk_inefficient(3);
+var sponsors3 = ['/bugsee.png'].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -72084,7 +72084,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2348" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
