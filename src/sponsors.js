@@ -131,4 +131,4 @@ const padArray = (val, arr, len) => {
 
 const sponsors1 = [];
 const sponsors2 = [].chunk_inefficient(2);
-const sponsors3 = [].chunk_inefficient(3);
+const sponsors3 = ['/bugsee.png'].chunk_inefficient(3);
