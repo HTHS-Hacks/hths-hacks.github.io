@@ -58210,12 +58210,79 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{"process":"../../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"background.css":[function(require,module,exports) {
+},{"process":"../../../../../../usr/lib/node_modules/parcel-bundler/node_modules/process/browser.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"background.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"home.css":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"home.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -58541,7 +58608,9 @@ require("./background.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -58580,20 +58649,23 @@ function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "FAQ",
         style: {
-          backgroundColor: '#ffd966',
-          color: 'black'
+          backgroundColor: "#ffd966",
+          color: "black"
         }
       }, _react.default.createElement(_reactBootstrap.Container, {
         style: styles.container
       }, faq.map(function (chunk) {
-        return _react.default.createElement(_reactBootstrap.Row, null, chunk.map(function (f) {
+        return _react.default.createElement(_reactBootstrap.Row, {
+          key: chunk[0].q
+        }, chunk.map(function (f) {
           return _react.default.createElement(_reactBootstrap.Col, {
-            md: "6"
+            md: "6",
+            key: f.q
           }, _react.default.createElement(_reactBootstrap.Card, {
             style: styles.cardStyle
           }, _react.default.createElement("h2", {
             style: styles.title
-          }, f.q), _react.default.createElement("p", {
+          }, f.q), _react.default.createElement("div", {
             style: styles.faqContents
           }, f.a)));
         }));
@@ -58607,24 +58679,24 @@ function (_Component) {
 exports.default = FAQ;
 var styles = {
   container: {
-    marginTop: '30px'
+    marginTop: "30px"
   },
   cardStyle: {
-    padding: '15px',
-    backgroundColor: '#f7f7f5',
-    boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
-    height: 'calc(100% - 15px)',
-    marginBottom: '15px'
+    padding: "15px",
+    backgroundColor: "#f7f7f5",
+    boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
+    height: "calc(100% - 15px)",
+    marginBottom: "15px"
   },
   title: {
-    fontSize: '25px',
+    fontSize: "25px",
     fontWeight: 800
   },
   faqContents: {
-    fontSize: '18px'
+    fontSize: "18px"
   }
 };
-Object.defineProperty(Array.prototype, 'chunk_inefficient', {
+Object.defineProperty(Array.prototype, "chunk_inefficient", {
   value: function value(chunkSize) {
     var array = this;
     return [].concat.apply([], array.map(function (elem, i) {
@@ -58633,35 +58705,35 @@ Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   }
 });
 var faq = [{
-  q: 'What is a hackathon?',
-  a: 'A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!'
+  q: "What is a hackathon?",
+  a: "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
 }, {
-  q: 'How much will it cost me?',
-  a: 'Absolutely nothing! We just want you to show up and have fun.'
+  q: "How much will it cost me?",
+  a: "Absolutely nothing! We just want you to show up and have fun."
 }, {
-  q: 'Will there be travel reimbursements?',
-  a: 'Unfortunately, we will not be offering travel reimbursements'
+  q: "Will there be travel reimbursements?",
+  a: "Unfortunately, we will not be offering travel reimbursements"
 }, {
-  q: 'Who can attend?',
-  a: 'Any currently enrolled high school student is welcome to attend.'
+  q: "Who can attend?",
+  a: "Any currently enrolled high school student is welcome to attend."
 }, {
-  q: 'What should I bring?',
-  a: 'You should bring your laptop, phone, charger, and a student ID.'
+  q: "What should I bring?",
+  a: "You should bring your laptop, phone, charger, and a student ID."
 }, {
-  q: 'Do I need an idea or a team?',
-  a: 'No! We will be running a team building event and there will be time for you to brainstorm an idea.'
+  q: "Do I need an idea or a team?",
+  a: "No! We will be running a team building event and there will be time for you to brainstorm an idea."
 }, {
-  q: 'How do I apply?',
-  a: 'Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority.'
+  q: "How do I apply?",
+  a: "Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority."
 }, {
-  q: 'Will food be provided?',
-  a: 'Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day.'
+  q: "Will food be provided?",
+  a: "Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day."
 }, {
-  q: 'Who runs hths.hacks()?',
-  a: 'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.'
+  q: "Who runs hths.hacks()?",
+  a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
 }, {
-  q: 'Any other questions?',
-  a: _react.default.createElement("p", null, "Email us at", ' ', _react.default.createElement("a", {
+  q: "Any other questions?",
+  a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
     href: "mailto:contact@hthshacks.com"
   }, "contact@hthshacks.com"))
 }].chunk_inefficient(2);
@@ -58685,7 +58757,9 @@ require("./background.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -58724,19 +58798,21 @@ function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "SCHEDULE",
         style: {
-          backgroundColor: '#595959'
+          backgroundColor: "#595959"
         }
       }, _react.default.createElement(_reactBootstrap.Table, {
         responsive: true,
         style: {
-          marginTop: '25px',
-          width: '100%',
-          tableLayout: 'fixed'
+          marginTop: "25px",
+          width: "100%",
+          tableLayout: "fixed"
         }
       }, _react.default.createElement("tbody", {
         style: styles.tableStyle
       }, schedule.map(function (event) {
-        return _react.default.createElement("tr", null, _react.default.createElement("td", {
+        return _react.default.createElement("tr", {
+          key: event.n + event.t
+        }, _react.default.createElement("td", {
           style: styles.time
         }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.l));
       })))));
@@ -58750,50 +58826,50 @@ exports.default = Schedule;
 var styles = {
   time: {},
   tableStyle: {
-    color: 'white',
-    fontSize: '20px'
+    color: "white",
+    fontSize: "20px"
   }
 };
 var schedule = [{
-  n: 'Arrival and Check-in',
-  t: '9:00 AM',
-  l: 'Lobby'
+  n: "Arrival and Check-in",
+  t: "9:00 AM",
+  l: "Lobby"
 }, {
-  n: 'Opening remarks',
-  t: '9:30 AM',
-  l: 'MPR'
+  n: "Opening remarks",
+  t: "9:30 AM",
+  l: "MPR"
 }, {
-  n: 'Hacking begins',
-  t: '9:45 AM',
-  l: 'MPR'
+  n: "Hacking begins",
+  t: "9:45 AM",
+  l: "MPR"
 }, {
-  n: 'Team formation and brainstorming',
-  t: '9:45 AM',
-  l: 'Research Lobby'
+  n: "Team formation and brainstorming",
+  t: "9:45 AM",
+  l: "Research Lobby"
 }, {
-  n: 'Workshop (TBD)',
-  t: '11:00 AM',
-  l: 'Research Lobby'
+  n: "Workshop (TBD)",
+  t: "11:00 AM",
+  l: "Research Lobby"
 }, {
-  n: 'Lunch',
-  t: '12:00 PM',
-  l: 'MPR'
+  n: "Lunch",
+  t: "12:00 PM",
+  l: "MPR"
 }, {
-  n: 'Workshop (TBD)',
-  t: '3:00 PM',
-  l: 'Research Lobby'
+  n: "Workshop (TBD)",
+  t: "3:00 PM",
+  l: "Research Lobby"
 }, {
-  n: 'Dinner',
-  t: '6:30 PM',
-  l: 'MPR'
+  n: "Dinner",
+  t: "6:30 PM",
+  l: "MPR"
 }, {
-  n: 'Judging',
-  t: '7:00 PM',
-  l: 'MPR'
+  n: "Judging",
+  t: "7:00 PM",
+  l: "MPR"
 }, {
-  n: 'Closing remarks',
-  t: '8:00 PM',
-  l: 'MPR'
+  n: "Closing remarks",
+  t: "8:00 PM",
+  l: "MPR"
 }];
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js":[function(require,module,exports) {
 "use strict";
@@ -61871,7 +61947,9 @@ var _freeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; if (obj != null) { var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -61922,6 +62000,7 @@ function (_Component) {
       }, "sponsor@hthshacks.com"), "."))), sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
+          key: s.i,
           style: {
             display: "flex",
             justifyContent: "center",
@@ -61940,6 +62019,7 @@ function (_Component) {
         return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 2).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
+            key: a.i,
             style: {
               display: "flex",
               justifyContent: "center",
@@ -61959,6 +62039,7 @@ function (_Component) {
         return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 3).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
+            key: a.i,
             style: {
               display: "flex",
               justifyContent: "center",
@@ -71981,7 +72062,7 @@ var styles = {
 var mountApp = document.getElementById('app');
 
 _reactDom.default.render(_react.default.createElement(App, null), mountApp);
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./index.css":"index.css","./nav.css":"nav.css","./hamburgers.css":"hamburgers.css","jquery":"../node_modules/jquery/dist/jquery.js","./home":"home.js","./about":"about.js","./faq":"faq.js","./schedule":"schedule.js","./sponsors":"sponsors.js","./footer":"footer.js","@fortawesome/react-fontawesome":"../node_modules/@fortawesome/react-fontawesome/index.es.js","@fortawesome/free-solid-svg-icons":"../node_modules/@fortawesome/free-solid-svg-icons/index.es.js"}],"../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./index.css":"index.css","./nav.css":"nav.css","./hamburgers.css":"hamburgers.css","jquery":"../node_modules/jquery/dist/jquery.js","./home":"home.js","./about":"about.js","./faq":"faq.js","./schedule":"schedule.js","./sponsors":"sponsors.js","./footer":"footer.js","@fortawesome/react-fontawesome":"../node_modules/@fortawesome/react-fontawesome/index.es.js","@fortawesome/free-solid-svg-icons":"../node_modules/@fortawesome/free-solid-svg-icons/index.es.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -72009,7 +72090,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41905" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39423" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -72184,5 +72265,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../usr/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
 //# sourceMappingURL=/src.e31bb0bc.js.map
