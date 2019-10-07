@@ -40,6 +40,7 @@ export default class Sponsors extends Component {
               <Row>
                 <Col
                   xs
+                  key={s.i}
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -63,6 +64,7 @@ export default class Sponsors extends Component {
                 {padArray("", s, 2).map(a => (
                   <Col
                     xs
+                    key={a.i}
                     style={{
                       display: "flex",
                       justifyContent: "center",
@@ -89,6 +91,7 @@ export default class Sponsors extends Component {
                 {padArray("", s, 3).map(a => (
                   <Col
                     xs
+                    key={a.i}
                     style={{
                       display: "flex",
                       justifyContent: "center",
