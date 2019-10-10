@@ -62091,6 +62091,9 @@ var sponsors3 = [{
 }, {
   i: "/wolfram.png",
   l: "https://www.wolfram.com/"
+}, {
+  i: "/aops.png",
+  l: "https://artofproblemsolving.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -72090,7 +72093,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39423" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
