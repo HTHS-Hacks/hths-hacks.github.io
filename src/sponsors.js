@@ -143,7 +143,7 @@ const padArray = (val, arr, len) => {
 
 const sponsors1 = [];
 const sponsors2 = [
-    { i: '/sashido.svg.png', l: 'https://sashido.io/' },
+    //{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
 ].chunk_inefficient(2);
 const sponsors3 = [
     { i: '/bugsee.png', l: 'https://www.bugsee.com/' },
