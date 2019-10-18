@@ -62097,7 +62097,10 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [].chunk_inefficient(2);
+var sponsors2 = [{
+  i: '/sashido.svg.png',
+  l: 'https://sashido.io/'
+}].chunk_inefficient(2);
 var sponsors3 = [{
   i: '/bugsee.png',
   l: 'https://www.bugsee.com/'
@@ -72110,7 +72113,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44167" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42399" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
