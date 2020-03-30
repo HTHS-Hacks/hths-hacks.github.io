@@ -58362,23 +58362,25 @@ function (_Component) {
       }), _react.default.createElement("div", {
         style: styles.centerContent
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("img", {
-        src: require('./img/Asset 1.png'),
+        src: require("./img/Asset 1.png"),
         style: styles.iconImage,
         id: "home-image"
       }), _react.default.createElement("img", {
-        src: require('./img/Asset 2.png'),
+        src: require("./img/Asset 2.png"),
         style: styles.mainImg,
         id: "home-image"
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
-      }, "May 16"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, "May 16"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
+        style: styles.subtext
+      }, "We're still on! hths.hacks() is now online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: styles.buttonStyle
       }, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
         variant: "outline-light",
         onClick: function onClick() {
-          return window.location.href = 'https://forms.gle/UQ2HH8RtdAoyZ9dW7';
+          return window.location.href = "https://forms.gle/UQ2HH8RtdAoyZ9dW7";
         }
       }, "Get Notified"))))));
     }
@@ -58391,41 +58393,41 @@ exports.default = Home;
 var styles = {
   container: {
     paddingTop: 56,
-    height: '100vh',
-    width: '100%'
+    height: "100vh",
+    width: "100%"
   },
   centerContent: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translateX(-50%) translateY(-50%)',
-    color: '#4a86e8',
-    width: '75%'
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translateX(-50%) translateY(-50%)",
+    color: "#4a86e8",
+    width: "75%"
   },
   title: {
     fontSize: 60,
     fontWeight: 1000,
     letterSpacing: 8,
-    textAlign: 'center'
+    textAlign: "center"
   },
   subtext: {
-    color: '#4a86e8',
-    textAlign: 'center'
+    color: "#4a86e8",
+    textAlign: "center"
   },
   buttonStyle: {
     marginTop: 10,
-    display: 'flex',
-    justifyContent: 'center',
-    color: '#4a86e8',
-    outlineColor: '#4a86e8'
+    display: "flex",
+    justifyContent: "center",
+    color: "#4a86e8",
+    outlineColor: "#4a86e8"
   },
   mainImg: {
-    width: '100%'
+    width: "100%"
   },
   iconImage: {
-    maxHeight: '200px',
-    margin: 'auto',
-    display: 'block'
+    maxHeight: "200px",
+    margin: "auto",
+    display: "block"
   }
 };
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./home.css":"home.css","./img/Asset 1.png":"img/Asset 1.png","./img/Asset 2.png":"img/Asset 2.png"}],"page.js":[function(require,module,exports) {
@@ -58593,7 +58595,7 @@ function (_Component) {
         backgroundColor: "#3c78d8"
       }, _react.default.createElement("p", {
         className: "about-p"
-      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 12 hours. Along the way, you\u2019ll get free food and swag, the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
+      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 12 hours. Due to the recent crisis, hths.hacks() will be taking place entirely online, but don't worry, we didn't forget about the prizes. You'll still get the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
     }
   }]);
 
@@ -58721,29 +58723,29 @@ var faq = [{
   q: "What is a hackathon?",
   a: "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
 }, {
-  q: "How much will it cost me?",
-  a: "Absolutely nothing! We just want you to show up and have fun."
+  q: "How has the recent crisis affected hths.hacks()?",
+  a: "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out."
 }, {
-  q: "Will there be travel reimbursements?",
-  a: "Unfortunately, we will not be offering travel reimbursements"
+  q: "How will it work?",
+  a: "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home."
+}, {
+  q: "How much will it cost me?",
+  a: "Absolutely nothing!Just participate and have fun."
 }, {
   q: "Who can attend?",
   a: "Any currently enrolled high school student is welcome to attend."
-}, {
-  q: "What should I bring?",
-  a: "You should bring your laptop, phone, charger, and a student ID."
 }, {
   q: "Do I need an idea or a team?",
   a: "No! We will be running a team building event and there will be time for you to brainstorm an idea."
 }, {
   q: "How do I apply?",
-  a: "Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority."
-}, {
-  q: "Will food be provided?",
-  a: "Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day."
+  a: "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority."
 }, {
   q: "Who runs hths.hacks()?",
   a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+}, {
+  q: "How big is hths.hacks()?",
+  a: "We're hoping to invite around 300-400 high school students."
 }, {
   q: "Any other questions?",
   a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
@@ -58827,7 +58829,9 @@ function (_Component) {
           key: event.n + event.t
         }, _react.default.createElement("td", {
           style: styles.time
-        }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.l));
+        }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.la ? _react.default.createElement("a", {
+          href: event.la
+        }, event.l) : event.l));
       })))));
     }
   }]);
@@ -58844,45 +58848,35 @@ var styles = {
   }
 };
 var schedule = [{
-  n: "Arrival and Check-in",
-  t: "9:00 AM",
-  l: "Lobby"
-}, {
-  n: "Opening remarks",
-  t: "9:30 AM",
-  l: "MPR"
+  n: "Opening ceremony",
+  t: "Sat 11:30 AM",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Hacking begins",
-  t: "9:45 AM",
-  l: "MPR"
+  t: "Sat 12:00 PM",
+  l: "Online"
 }, {
   n: "Team formation and brainstorming",
-  t: "9:45 AM",
-  l: "Research Lobby"
+  t: "Sat 12:00 PM",
+  l: "Slack #team-formation-brainstorming"
 }, {
-  n: "Workshop (TBD)",
-  t: "11:00 AM",
-  l: "Research Lobby"
+  n: "Workshops (TBD)",
+  t: "Sat 2:00 PM - 8:00 PM",
+  l: "Slack #announcements"
 }, {
-  n: "Lunch",
-  t: "12:00 PM",
-  l: "MPR"
-}, {
-  n: "Workshop (TBD)",
-  t: "3:00 PM",
-  l: "Research Lobby"
-}, {
-  n: "Dinner",
-  t: "6:30 PM",
-  l: "MPR"
+  n: "Project Deadline",
+  t: "Sun 12:00 PM",
+  l: "Devpost"
 }, {
   n: "Judging",
-  t: "7:00 PM",
-  l: "MPR"
+  t: "12:00 PM - 4:00 PM",
+  l: "Online"
 }, {
-  n: "Closing remarks",
-  t: "8:00 PM",
-  l: "MPR"
+  n: "Closing ceremony + winners",
+  t: "4:00 PM",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
 }];
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js":[function(require,module,exports) {
 "use strict";
@@ -62097,10 +62091,8 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [{
-  i: '/sashido.svg.png',
-  l: 'https://sashido.io/'
-}].chunk_inefficient(2);
+var sponsors2 = [//{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
+].chunk_inefficient(2);
 var sponsors3 = [{
   i: '/bugsee.png',
   l: 'https://www.bugsee.com/'
@@ -72113,7 +72105,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42399" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39945" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
