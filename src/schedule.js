@@ -31,7 +31,9 @@ export default class Schedule extends Component {
                 <tr key={event.n + event.t}>
                   <td style={styles.time}>{event.t}</td>
                   <td>{event.n}</td>
-                  <td>{event.l}</td>
+                  <td>
+                    {event.la ? <a href={event.la}>{event.l}</a> : event.l}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -51,18 +53,29 @@ const styles = {
 };
 
 const schedule = [
-  { n: "Arrival and Check-in", t: "9:00 AM", l: "Lobby" },
-  { n: "Opening remarks", t: "9:30 AM", l: "MPR" },
-  { n: "Hacking begins", t: "9:45 AM", l: "MPR" },
+  {
+    n: "Opening ceremony",
+    t: "Sat 11:30 AM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  { n: "Hacking begins", t: "Sat 12:00 PM", l: "Online" },
   {
     n: "Team formation and brainstorming",
-    t: "9:45 AM",
-    l: "Research Lobby"
+    t: "Sat 12:00 PM",
+    l: "Slack #team-formation-brainstorming"
   },
-  { n: "Workshop (TBD)", t: "11:00 AM", l: "Research Lobby" },
-  { n: "Lunch", t: "12:00 PM", l: "MPR" },
-  { n: "Workshop (TBD)", t: "3:00 PM", l: "Research Lobby" },
-  { n: "Dinner", t: "6:30 PM", l: "MPR" },
-  { n: "Judging", t: "7:00 PM", l: "MPR" },
-  { n: "Closing remarks", t: "8:00 PM", l: "MPR" }
+  {
+    n: "Workshops (TBD)",
+    t: "Sat 2:00 PM - 8:00 PM",
+    l: "Slack #announcements"
+  },
+  { n: "Project Deadline", t: "Sun 12:00 PM", l: "Devpost" },
+  { n: "Judging", t: "12:00 PM - 4:00 PM", l: "Online" },
+  {
+    n: "Closing ceremony + winners",
+    t: "4:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }
 ];

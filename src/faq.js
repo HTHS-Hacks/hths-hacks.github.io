@@ -81,20 +81,22 @@ const faq = [
       "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
   },
   {
-    q: "How much will it cost me?",
-    a: "Absolutely nothing! We just want you to show up and have fun."
+    q: "How has the recent crisis affected hths.hacks()?",
+    a:
+      "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out."
   },
   {
-    q: "Will there be travel reimbursements?",
-    a: "Unfortunately, we will not be offering travel reimbursements"
+    q: "How will it work?",
+    a:
+      "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home."
+  },
+  {
+    q: "How much will it cost me?",
+    a: "Absolutely nothing!Just participate and have fun."
   },
   {
     q: "Who can attend?",
     a: "Any currently enrolled high school student is welcome to attend."
-  },
-  {
-    q: "What should I bring?",
-    a: "You should bring your laptop, phone, charger, and a student ID."
   },
   {
     q: "Do I need an idea or a team?",
@@ -104,17 +106,16 @@ const faq = [
   {
     q: "How do I apply?",
     a:
-      "Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority."
-  },
-  {
-    q: "Will food be provided?",
-    a:
-      "Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day."
+      "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority."
   },
   {
     q: "Who runs hths.hacks()?",
     a:
       "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+  },
+  {
+    q: "How big is hths.hacks()?",
+    a: "We're hoping to invite around 300-400 high school students."
   },
   {
     q: "Any other questions?",
