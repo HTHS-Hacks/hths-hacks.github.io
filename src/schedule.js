@@ -63,14 +63,50 @@ const schedule = [
   {
     n: "Team formation and brainstorming",
     t: "Sat 12:00 PM",
-    l: "Slack #team-formation-brainstorming"
+    l: "#team-formation-brainstorming"
   },
   {
-    n: "Workshops (TBD)",
-    t: "Sat 2:00 PM - 8:00 PM",
-    l: "Slack #announcements"
+    n: "Intro to Web Development",
+    t: "Sat 2:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Chess Tournament",
+    t: "Sat 3:00 PM",
+    l: "#announcements"
+  },
+  {
+    n: "Intro to Machine Learning",
+    t: "Sat 4:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Intro to Github",
+    t: "Sat 5:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Intro to Unity",
+    t: "Sat 6:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Intro to Python",
+    t: "Sat 8:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Late night movie",
+    t: "Sat 11:00 PM",
+    l: "#movies"
   },
   { n: "Project Deadline", t: "Sun 12:00 PM", l: "Devpost" },
+  { n: "Public voting closes", t: "Sun 3:30 PM", l: "Devpost" },
   { n: "Judging", t: "12:00 PM - 4:00 PM", l: "Online" },
   {
     n: "Closing ceremony + winners",
