@@ -107,10 +107,10 @@ const schedule = [
   },
   { n: "Project Deadline", t: "Sun 12:00 PM", l: "Devpost" },
   { n: "Public voting closes", t: "Sun 3:30 PM", l: "Devpost" },
-  { n: "Judging", t: "12:00 PM - 4:00 PM", l: "Online" },
+  { n: "Judging", t: "Sun 12:00 PM - 4:00 PM", l: "Online" },
   {
     n: "Closing ceremony + winners",
-    t: "4:00 PM",
+    t: "Sun 4:00 PM",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   }
