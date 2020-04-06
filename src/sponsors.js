@@ -1,29 +1,29 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // Add the following two lines
 import {
-    Navbar,
-    Nav,
-    Container,
-    Row,
-    Col,
-    Button,
-    Table,
-} from 'react-bootstrap';
-import Page from './page';
-import 'bootstrap/dist/css/bootstrap.css';
-import './background.css';
-import { faCentercode } from '@fortawesome/free-brands-svg-icons';
+  Navbar,
+  Nav,
+  Container,
+  Row,
+  Col,
+  Button,
+  Table,
+} from "react-bootstrap";
+import Page from "./page";
+import "bootstrap/dist/css/bootstrap.css";
+import "./background.css";
+import { faCentercode } from "@fortawesome/free-brands-svg-icons";
 
 export default class Sponsors extends Component {
-    render() {
-        return (
-            <section id="sponsors">
-                <Page
-                    title="SPONSORS"
-                    style={{ backgroundColor: 'white', color: 'black' }}
-                >
-                    <Container>
-                        <Row>
+  render() {
+    return (
+      <section id="sponsors">
+        <Page
+          title="SPONSORS"
+          style={{ backgroundColor: "white", color: "black" }}
+        >
+          <Container>
+            {/* <Row>
                             <Col>
                                 <p style={styles.sponsorInterest}>
                                     Interested in sponsoring? See our{' '}
@@ -37,116 +37,116 @@ export default class Sponsors extends Component {
                                     .
                                 </p>
                             </Col>
-                        </Row>
-                        {sponsors1.map(s => (
-                            <Row>
-                                <Col
-                                    xs
-                                    key={s.i}
-                                    style={{
-                                        display: 'flex',
-                                        justifyContent: 'center',
-                                        alignItems: 'center',
-                                    }}
-                                >
-                                    <a href={s.l}>
-                                        <img
-                                            src={s.i}
-                                            style={{
-                                                objectFit: 'cover',
-                                                width: '100%',
-                                            }}
-                                        />
-                                    </a>
-                                </Col>
-                            </Row>
-                        ))}
-                        {sponsors2.map(s => (
-                            <Row>
-                                {padArray('', s, 2).map(a => (
-                                    <Col
-                                        xs
-                                        key={a.i}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItems: 'center',
-                                        }}
-                                    >
-                                        {a && (
-                                            <a href={a.l}>
-                                                <img
-                                                    src={a.i}
-                                                    style={{
-                                                        objectFit: 'cover',
-                                                        width: '100%',
-                                                    }}
-                                                />
-                                            </a>
-                                        )}
-                                    </Col>
-                                ))}
-                            </Row>
-                        ))}
-                        {sponsors3.map(s => (
-                            <Row>
-                                {padArray('', s, 3).map(a => (
-                                    <Col
-                                        xs
-                                        key={a.i}
-                                        style={{
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            alignItems: 'center',
-                                        }}
-                                    >
-                                        {a && (
-                                            <a href={a.l}>
-                                                <img
-                                                    src={a.i}
-                                                    style={{
-                                                        objectFit: 'cover',
-                                                        width: '100%',
-                                                    }}
-                                                />
-                                            </a>
-                                        )}
-                                    </Col>
-                                ))}
-                            </Row>
-                        ))}
-                    </Container>
-                </Page>
-            </section>
-        );
-    }
+                        </Row> */}
+            {sponsors1.map((s) => (
+              <Row>
+                <Col
+                  xs
+                  key={s.i}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a href={s.l}>
+                    <img
+                      src={s.i}
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                      }}
+                    />
+                  </a>
+                </Col>
+              </Row>
+            ))}
+            {sponsors2.map((s) => (
+              <Row>
+                {padArray("", s, 2).map((a) => (
+                  <Col
+                    xs
+                    key={a.i}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    {a && (
+                      <a href={a.l}>
+                        <img
+                          src={a.i}
+                          style={{
+                            objectFit: "cover",
+                            width: "100%",
+                          }}
+                        />
+                      </a>
+                    )}
+                  </Col>
+                ))}
+              </Row>
+            ))}
+            {sponsors3.map((s) => (
+              <Row>
+                {padArray("", s, 3).map((a) => (
+                  <Col
+                    xs
+                    key={a.i}
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    {a && (
+                      <a href={a.l}>
+                        <img
+                          src={a.i}
+                          style={{
+                            objectFit: "cover",
+                            width: "100%",
+                          }}
+                        />
+                      </a>
+                    )}
+                  </Col>
+                ))}
+              </Row>
+            ))}
+          </Container>
+        </Page>
+      </section>
+    );
+  }
 }
 
 const styles = {
-    time: {},
-    tableStyle: {
-        color: 'white',
-        fontSize: '25px',
-    },
-    sponsorInterest: {
-        textAlign: 'center',
-        fontSize: '20px',
-    },
+  time: {},
+  tableStyle: {
+    color: "white",
+    fontSize: "25px",
+  },
+  sponsorInterest: {
+    textAlign: "center",
+    fontSize: "20px",
+  },
 };
 
 const padArray = (val, arr, len) => {
-    while (arr.length < len) {
-        arr.push(val);
-    }
-    return arr;
+  while (arr.length < len) {
+    arr.push(val);
+  }
+  return arr;
 };
 
 const sponsors1 = [];
 const sponsors2 = [
-    //{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
+  //{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
 ].chunk_inefficient(2);
 const sponsors3 = [
-    { i: '/bugsee.png', l: 'https://www.bugsee.com/' },
-    { i: '/wolfram.png', l: 'https://www.wolfram.com/' },
-    { i: '/aops.jpg', l: 'https://artofproblemsolving.com/' },
+  { i: "/bugsee.png", l: "https://www.bugsee.com/" },
+  { i: "/wolfram.png", l: "https://www.wolfram.com/" },
+  { i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
 ].chunk_inefficient(3);
