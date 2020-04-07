@@ -7,7 +7,7 @@ import {
   Row,
   Col,
   Button,
-  Table
+  Table,
 } from "react-bootstrap";
 import Page from "./page";
 import "bootstrap/dist/css/bootstrap.css";
@@ -23,11 +23,11 @@ export default class Schedule extends Component {
             style={{
               marginTop: "25px",
               width: "100%",
-              tableLayout: "fixed"
+              tableLayout: "fixed",
             }}
           >
             <tbody style={styles.tableStyle}>
-              {schedule.map(event => (
+              {schedule.map((event) => (
                 <tr key={event.n + event.t}>
                   <td style={styles.time}>{event.t}</td>
                   <td>{event.n}</td>
@@ -48,8 +48,8 @@ const styles = {
   time: {},
   tableStyle: {
     color: "white",
-    fontSize: "20px"
-  }
+    fontSize: "20px",
+  },
 };
 
 const schedule = [
@@ -57,61 +57,63 @@ const schedule = [
     n: "Opening ceremony",
     t: "Sat 11:30 AM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   { n: "Hacking begins", t: "Sat 12:00 PM", l: "Online" },
   {
     n: "Team formation and brainstorming",
     t: "Sat 12:00 PM",
-    l: "#team-formation-brainstorming"
+    l: "#team-formation-brainstorming",
   },
+  { n: "CTF starts", t: "Sat 12:00 PM", l: "#announcements" },
   {
     n: "Intro to Web Development",
     t: "Sat 2:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   {
     n: "Chess Tournament",
     t: "Sat 3:00 PM",
-    l: "#announcements"
+    l: "#announcements",
   },
   {
     n: "Intro to Machine Learning",
     t: "Sat 4:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   {
     n: "Intro to Github",
     t: "Sat 5:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   {
     n: "Intro to Unity",
     t: "Sat 6:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   {
     n: "Intro to Python",
     t: "Sat 8:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
+    la: "https://www.twitch.tv/hthshacks",
   },
   {
     n: "Late night movie",
     t: "Sat 11:00 PM",
-    l: "#movies"
+    l: "#movies",
   },
   { n: "Project Deadline", t: "Sun 12:00 PM", l: "Devpost" },
   { n: "Public voting closes", t: "Sun 3:30 PM", l: "Devpost" },
   { n: "Judging", t: "Sun 12:00 PM - 4:00 PM", l: "Online" },
+  { n: "CTF ends", t: "Sat 4:00 PM", l: "#announcements" },
   {
     n: "Closing ceremony + winners",
     t: "Sun 4:00 PM",
     l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
-  }
+    la: "https://www.twitch.tv/hthshacks",
+  },
 ];
