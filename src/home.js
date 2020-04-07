@@ -36,7 +36,7 @@ export default class Home extends Component {
             <Row>
               <Col>
                 <h2 style={styles.subtext}>
-                  <b>Registration is open!</b>
+                  <b>Registration is open until May 2nd!</b>
                   <br />
                   hths.hacks() is online!
                 </h2>
@@ -53,7 +53,7 @@ export default class Home extends Component {
                       "https://forms.gle/KtQcCakjbTYejx6fA")
                   }
                 >
-                  Register
+                  Register by May 2nd
                 </Button>
               </Col>
             </Row>
