@@ -36,7 +36,9 @@ export default class Home extends Component {
             <Row>
               <Col>
                 <h2 style={styles.subtext}>
-                  We're still on! hths.hacks() is now online!
+                  <b>Registration is open!</b>
+                  <br />
+                  hths.hacks() is online!
                 </h2>
               </Col>
             </Row>
@@ -48,10 +50,10 @@ export default class Home extends Component {
                   variant="outline-light"
                   onClick={() =>
                     (window.location.href =
-                      "https://forms.gle/UQ2HH8RtdAoyZ9dW7")
+                      "https://forms.gle/KtQcCakjbTYejx6fA")
                   }
                 >
-                  Get Notified
+                  Register
                 </Button>
               </Col>
             </Row>
@@ -66,7 +68,7 @@ const styles = {
   container: {
     paddingTop: 56,
     height: "100vh",
-    width: "100%"
+    width: "100%",
   },
   centerContent: {
     position: "absolute",
@@ -74,31 +76,31 @@ const styles = {
     left: "50%",
     transform: "translateX(-50%) translateY(-50%)",
     color: "#4a86e8",
-    width: "75%"
+    width: "75%",
   },
   title: {
     fontSize: 60,
     fontWeight: 1000,
     letterSpacing: 8,
-    textAlign: "center"
+    textAlign: "center",
   },
   subtext: {
     color: "#4a86e8",
-    textAlign: "center"
+    textAlign: "center",
   },
   buttonStyle: {
     marginTop: 10,
     display: "flex",
     justifyContent: "center",
     color: "#4a86e8",
-    outlineColor: "#4a86e8"
+    outlineColor: "#4a86e8",
   },
   mainImg: {
-    width: "100%"
+    width: "100%",
   },
   iconImage: {
     maxHeight: "200px",
     margin: "auto",
-    display: "block"
-  }
+    display: "block",
+  },
 };
