@@ -58373,16 +58373,16 @@ function (_Component) {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
-      }, "We're still on! hths.hacks() is now online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration is open!"), _react.default.createElement("br", null), "hths.hacks() is online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: styles.buttonStyle
       }, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
         variant: "outline-light",
         onClick: function onClick() {
-          return window.location.href = "https://forms.gle/UQ2HH8RtdAoyZ9dW7";
+          return window.location.href = "https://forms.gle/KtQcCakjbTYejx6fA";
         }
-      }, "Get Notified"))))));
+      }, "Register"))))));
     }
   }]);
 
@@ -58861,6 +58861,10 @@ var schedule = [{
   t: "Sat 12:00 PM",
   l: "#team-formation-brainstorming"
 }, {
+  n: "CTF starts",
+  t: "Sat 12:00 PM",
+  l: "#announcements"
+}, {
   n: "Intro to Web Development",
   t: "Sat 2:00 PM",
   l: "Twitch",
@@ -58905,6 +58909,10 @@ var schedule = [{
   n: "Judging",
   t: "Sun 12:00 PM - 4:00 PM",
   l: "Online"
+}, {
+  n: "CTF ends",
+  t: "Sun 4:00 PM",
+  l: "#announcements"
 }, {
   n: "Closing ceremony + winners",
   t: "Sun 4:00 PM",
@@ -72132,7 +72140,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45525" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37307" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
