@@ -58662,23 +58662,20 @@ function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "FAQ",
         style: {
-          backgroundColor: "#ffd966",
-          color: "black"
+          backgroundColor: '#ffd966',
+          color: 'black'
         }
       }, _react.default.createElement(_reactBootstrap.Container, {
         style: styles.container
       }, faq.map(function (chunk) {
-        return _react.default.createElement(_reactBootstrap.Row, {
-          key: chunk[0].q
-        }, chunk.map(function (f) {
+        return _react.default.createElement(_reactBootstrap.Row, null, chunk.map(function (f) {
           return _react.default.createElement(_reactBootstrap.Col, {
-            md: "6",
-            key: f.q
+            md: "6"
           }, _react.default.createElement(_reactBootstrap.Card, {
             style: styles.cardStyle
           }, _react.default.createElement("h2", {
             style: styles.title
-          }, f.q), _react.default.createElement("div", {
+          }, f.q), _react.default.createElement("p", {
             style: styles.faqContents
           }, f.a)));
         }));
@@ -58692,24 +58689,24 @@ function (_Component) {
 exports.default = FAQ;
 var styles = {
   container: {
-    marginTop: "30px"
+    marginTop: '30px'
   },
   cardStyle: {
-    padding: "15px",
-    backgroundColor: "#f7f7f5",
-    boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-    height: "calc(100% - 15px)",
-    marginBottom: "15px"
+    padding: '15px',
+    backgroundColor: '#f7f7f5',
+    boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
+    height: 'calc(100% - 15px)',
+    marginBottom: '15px'
   },
   title: {
-    fontSize: "25px",
+    fontSize: '25px',
     fontWeight: 800
   },
   faqContents: {
-    fontSize: "18px"
+    fontSize: '18px'
   }
 };
-Object.defineProperty(Array.prototype, "chunk_inefficient", {
+Object.defineProperty(Array.prototype, 'chunk_inefficient', {
   value: function value(chunkSize) {
     var array = this;
     return [].concat.apply([], array.map(function (elem, i) {
@@ -58718,35 +58715,35 @@ Object.defineProperty(Array.prototype, "chunk_inefficient", {
   }
 });
 var faq = [{
-  q: "What is a hackathon?",
-  a: "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
+  q: 'What is a hackathon?',
+  a: 'A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!'
 }, {
-  q: "How much will it cost me?",
-  a: "Absolutely nothing! We just want you to show up and have fun."
+  q: 'How much will it cost me?',
+  a: 'Absolutely nothing! We just want you to show up and have fun.'
 }, {
-  q: "Will there be travel reimbursements?",
-  a: "Unfortunately, we will not be offering travel reimbursements"
+  q: 'Will there be travel reimbursements?',
+  a: 'Unfortunately, we will not be offering travel reimbursements'
 }, {
-  q: "Who can attend?",
-  a: "Any currently enrolled high school student is welcome to attend."
+  q: 'Who can attend?',
+  a: 'Any currently enrolled high school student is welcome to attend.'
 }, {
-  q: "What should I bring?",
-  a: "You should bring your laptop, phone, charger, and a student ID."
+  q: 'What should I bring?',
+  a: 'You should bring your laptop, phone, charger, and a student ID.'
 }, {
-  q: "Do I need an idea or a team?",
-  a: "No! We will be running a team building event and there will be time for you to brainstorm an idea."
+  q: 'Do I need an idea or a team?',
+  a: 'No! We will be running a team building event and there will be time for you to brainstorm an idea.'
 }, {
-  q: "How do I apply?",
-  a: "Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority."
+  q: 'How do I apply?',
+  a: 'Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority.'
 }, {
-  q: "Will food be provided?",
-  a: "Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day."
+  q: 'Will food be provided?',
+  a: 'Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day.'
 }, {
-  q: "Who runs hths.hacks()?",
-  a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+  q: 'Who runs hths.hacks()?',
+  a: 'hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.'
 }, {
-  q: "Any other questions?",
-  a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
+  q: 'Any other questions?',
+  a: _react.default.createElement("p", null, "Email us at", ' ', _react.default.createElement("a", {
     href: "mailto:contact@hthshacks.com"
   }, "contact@hthshacks.com"))
 }].chunk_inefficient(2);
@@ -58811,21 +58808,19 @@ function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "SCHEDULE",
         style: {
-          backgroundColor: "#595959"
+          backgroundColor: '#595959'
         }
       }, _react.default.createElement(_reactBootstrap.Table, {
         responsive: true,
         style: {
-          marginTop: "25px",
-          width: "100%",
-          tableLayout: "fixed"
+          marginTop: '25px',
+          width: '100%',
+          tableLayout: 'fixed'
         }
       }, _react.default.createElement("tbody", {
         style: styles.tableStyle
       }, schedule.map(function (event) {
-        return _react.default.createElement("tr", {
-          key: event.n + event.t
-        }, _react.default.createElement("td", {
+        return _react.default.createElement("tr", null, _react.default.createElement("td", {
           style: styles.time
         }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.l));
       })))));
@@ -58839,50 +58834,50 @@ exports.default = Schedule;
 var styles = {
   time: {},
   tableStyle: {
-    color: "white",
-    fontSize: "20px"
+    color: 'white',
+    fontSize: '20px'
   }
 };
 var schedule = [{
-  n: "Arrival and Check-in",
-  t: "9:00 AM",
-  l: "Lobby"
+  n: 'Arrival and Check-in',
+  t: '9:00 AM',
+  l: 'Lobby'
 }, {
-  n: "Opening remarks",
-  t: "9:30 AM",
-  l: "MPR"
+  n: 'Opening remarks',
+  t: '9:30 AM',
+  l: 'MPR'
 }, {
-  n: "Hacking begins",
-  t: "9:45 AM",
-  l: "MPR"
+  n: 'Hacking begins',
+  t: '9:45 AM',
+  l: 'MPR'
 }, {
-  n: "Team formation and brainstorming",
-  t: "9:45 AM",
-  l: "Research Lobby"
+  n: 'Team formation and brainstorming',
+  t: '9:45 AM',
+  l: 'Research Lobby'
 }, {
-  n: "Workshop (TBD)",
-  t: "11:00 AM",
-  l: "Research Lobby"
+  n: 'Workshop (TBD)',
+  t: '11:00 AM',
+  l: 'Research Lobby'
 }, {
-  n: "Lunch",
-  t: "12:00 PM",
-  l: "MPR"
+  n: 'Lunch',
+  t: '12:00 PM',
+  l: 'MPR'
 }, {
-  n: "Workshop (TBD)",
-  t: "3:00 PM",
-  l: "Research Lobby"
+  n: 'Workshop (TBD)',
+  t: '3:00 PM',
+  l: 'Research Lobby'
 }, {
-  n: "Dinner",
-  t: "6:30 PM",
-  l: "MPR"
+  n: 'Dinner',
+  t: '6:30 PM',
+  l: 'MPR'
 }, {
-  n: "Judging",
-  t: "7:00 PM",
-  l: "MPR"
+  n: 'Judging',
+  t: '7:00 PM',
+  l: 'MPR'
 }, {
-  n: "Closing remarks",
-  t: "8:00 PM",
-  l: "MPR"
+  n: 'Closing remarks',
+  t: '8:00 PM',
+  l: 'MPR'
 }];
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js":[function(require,module,exports) {
 "use strict";
@@ -62013,60 +62008,48 @@ function (_Component) {
       }, "sponsor@hthshacks.com"), "."))), sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
-          key: s.i,
           style: {
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            justifyContent: 'center'
           }
-        }, _react.default.createElement("a", {
-          href: s.l
         }, _react.default.createElement("img", {
-          src: s.i,
+          src: s,
           style: {
             objectFit: 'cover',
             width: '100%'
           }
-        }))));
+        })));
       }), sponsors2.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, padArray('', s, 2).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
-            key: a.i,
             style: {
               display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+              justifyContent: 'center'
             }
-          }, a && _react.default.createElement("a", {
-            href: a.l
-          }, _react.default.createElement("img", {
-            src: a.i,
+          }, a && _react.default.createElement("img", {
+            src: a,
             style: {
               objectFit: 'cover',
               width: '100%'
             }
-          })));
+          }));
         }));
       }), sponsors3.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, padArray('', s, 3).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
-            key: a.i,
             style: {
               display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+              justifyContent: 'center'
             }
-          }, a && _react.default.createElement("a", {
-            href: a.l
-          }, _react.default.createElement("img", {
-            src: a.i,
+          }, a && _react.default.createElement("img", {
+            src: a,
             style: {
               objectFit: 'cover',
               width: '100%'
             }
-          })));
+          }));
         }));
       }))));
     }
@@ -62097,20 +62080,8 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [{
-  i: '/sashido.svg.png',
-  l: 'https://sashido.io/'
-}].chunk_inefficient(2);
-var sponsors3 = [{
-  i: '/bugsee.png',
-  l: 'https://www.bugsee.com/'
-}, {
-  i: '/wolfram.png',
-  l: 'https://www.wolfram.com/'
-}, {
-  i: '/aops.jpg',
-  l: 'https://artofproblemsolving.com/'
-}].chunk_inefficient(3);
+var sponsors2 = [].chunk_inefficient(2);
+var sponsors3 = [].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -72113,7 +72084,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42399" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2348" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
