@@ -149,5 +149,6 @@ const sponsors3 = [
   { i: "/bugsee.png", l: "https://www.bugsee.com/" },
   { i: "/wolfram.png", l: "https://www.wolfram.com/" },
   { i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
-  { i: "/1password.png", l: "https://1password.com/" }
+  { i: "/1password.png", l: "https://1password.com/" },
+  { i: "/cloudsploit.png", l: "https://cloudsploit.com/" }
 ].chunk_inefficient(3);
