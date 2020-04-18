@@ -7,7 +7,7 @@ import {
   Row,
   Col,
   Button,
-  Table
+  Table,
 } from "react-bootstrap";
 import Page from "./page";
 import "bootstrap/dist/css/bootstrap.css";
@@ -38,7 +38,7 @@ export default class Sponsors extends Component {
                                 </p>
                             </Col>
                         </Row> */}
-            {sponsors1.map(s => (
+            {sponsors1.map((s) => (
               <Row>
                 <Col
                   xs
@@ -46,7 +46,7 @@ export default class Sponsors extends Component {
                   style={{
                     display: "flex",
                     justifyContent: "center",
-                    alignItems: "center"
+                    alignItems: "center",
                   }}
                 >
                   <a href={s.l}>
@@ -54,23 +54,23 @@ export default class Sponsors extends Component {
                       src={s.i}
                       style={{
                         objectFit: "cover",
-                        width: "100%"
+                        width: "100%",
                       }}
                     />
                   </a>
                 </Col>
               </Row>
             ))}
-            {sponsors2.map(s => (
+            {sponsors2.map((s) => (
               <Row>
-                {padArray("", s, 2).map(a => (
+                {padArray("", s, 2).map((a) => (
                   <Col
                     xs
                     key={a.i}
                     style={{
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "center"
+                      alignItems: "center",
                     }}
                   >
                     {a && (
@@ -79,7 +79,7 @@ export default class Sponsors extends Component {
                           src={a.i}
                           style={{
                             objectFit: "cover",
-                            width: "100%"
+                            width: "100%",
                           }}
                         />
                       </a>
@@ -88,16 +88,16 @@ export default class Sponsors extends Component {
                 ))}
               </Row>
             ))}
-            {sponsors3.map(s => (
+            {sponsors3.map((s) => (
               <Row>
-                {padArray("", s, 3).map(a => (
+                {padArray("", s, 3).map((a) => (
                   <Col
                     xs
                     key={a.i}
                     style={{
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "center"
+                      alignItems: "center",
                     }}
                   >
                     {a && (
@@ -106,7 +106,7 @@ export default class Sponsors extends Component {
                           src={a.i}
                           style={{
                             objectFit: "cover",
-                            width: "100%"
+                            width: "100%",
                           }}
                         />
                       </a>
@@ -126,12 +126,12 @@ const styles = {
   time: {},
   tableStyle: {
     color: "white",
-    fontSize: "25px"
+    fontSize: "25px",
   },
   sponsorInterest: {
     textAlign: "center",
-    fontSize: "20px"
-  }
+    fontSize: "20px",
+  },
 };
 
 const padArray = (val, arr, len) => {
@@ -150,5 +150,6 @@ const sponsors3 = [
   { i: "/wolfram.png", l: "https://www.wolfram.com/" },
   { i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
   { i: "/1password.png", l: "https://1password.com/" },
-  { i: "/cloudsploit.png", l: "https://cloudsploit.com/" }
+  { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
+  { i: "/balsamiq.png", l: "https://balsamiq.com/" },
 ].chunk_inefficient(3);
