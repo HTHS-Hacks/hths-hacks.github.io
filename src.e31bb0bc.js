@@ -62059,11 +62059,12 @@ function (_Component) {
           src: s.i,
           style: {
             objectFit: "cover",
-            width: "100%"
+            width: "100%",
+            margin: "10px"
           }
         }))));
       }), sponsors2.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 1).map(function (a) {
+        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 2).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
@@ -62071,7 +62072,8 @@ function (_Component) {
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62091,7 +62093,8 @@ function (_Component) {
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62135,6 +62138,9 @@ var sponsors1 = [];
 var sponsors2 = [{
   i: "/echoar.png",
   l: "https://www.echoar.xyz/"
+}, {
+  i: "/hths.png",
+  l: "http://www.hths.mcvsd.org/"
 }].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
@@ -72160,7 +72166,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43221" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42649" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
