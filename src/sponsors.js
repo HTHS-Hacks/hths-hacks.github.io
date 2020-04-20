@@ -63,7 +63,7 @@ export default class Sponsors extends Component {
             ))}
             {sponsors2.map((s) => (
               <Row>
-                {padArray("", s, 2).map((a) => (
+                {padArray("", s, 1).map((a) => (
                   <Col
                     xs
                     key={a.i}
@@ -144,7 +144,7 @@ const padArray = (val, arr, len) => {
 
 const sponsors1 = [];
 const sponsors2 = [
-  { i: "/echoar.png", l: "https://www.echoar.xyz/" },
+  { i: "/echoar.png", l: "https://www.echoar.xyz/" }, // FIX PADDING WHEN ADDING NEW ONE HERE
 ].chunk_inefficient(2);
 const sponsors3 = [
   { i: "/bugsee.png", l: "https://www.bugsee.com/" },
@@ -153,4 +153,5 @@ const sponsors3 = [
   { i: "/1password.png", l: "https://1password.com/" },
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
   { i: "/balsamiq.png", l: "https://balsamiq.com/" },
+  { i: "/imgix.png", l: "https://www.imgix.com/" },
 ].chunk_inefficient(3);
