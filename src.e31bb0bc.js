@@ -62063,7 +62063,7 @@ function (_Component) {
           }
         }))));
       }), sponsors2.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 2).map(function (a) {
+        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 1).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
@@ -62154,6 +62154,9 @@ var sponsors3 = [{
 }, {
   i: "/balsamiq.png",
   l: "https://balsamiq.com/"
+}, {
+  i: "/imgix.png",
+  l: "https://www.imgix.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -72157,7 +72160,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37217" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43221" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
