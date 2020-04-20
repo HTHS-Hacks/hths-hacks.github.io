@@ -55,6 +55,7 @@ export default class Sponsors extends Component {
                       style={{
                         objectFit: "cover",
                         width: "100%",
+                        margin: "10px",
                       }}
                     />
                   </a>
@@ -63,7 +64,7 @@ export default class Sponsors extends Component {
             ))}
             {sponsors2.map((s) => (
               <Row>
-                {padArray("", s, 1).map((a) => (
+                {padArray("", s, 2).map((a) => (
                   <Col
                     xs
                     key={a.i}
@@ -72,6 +73,7 @@ export default class Sponsors extends Component {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      margin: "10px",
                     }}
                   >
                     {a && (
@@ -99,6 +101,7 @@ export default class Sponsors extends Component {
                       display: "flex",
                       justifyContent: "center",
                       alignItems: "center",
+                      margin: "10px",
                     }}
                   >
                     {a && (
@@ -144,7 +147,8 @@ const padArray = (val, arr, len) => {
 
 const sponsors1 = [];
 const sponsors2 = [
-  { i: "/echoar.png", l: "https://www.echoar.xyz/" }, // FIX PADDING WHEN ADDING NEW ONE HERE
+  { i: "/echoar.png", l: "https://www.echoar.xyz/" },
+  { i: "/hths.png", l: "http://www.hths.mcvsd.org/" },
 ].chunk_inefficient(2);
 const sponsors3 = [
   { i: "/bugsee.png", l: "https://www.bugsee.com/" },
