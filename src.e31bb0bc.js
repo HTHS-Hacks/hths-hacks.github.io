@@ -58889,6 +58889,11 @@ var schedule = [{
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
+  n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
+  t: "Sat 7:00 PM",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
   n: "Intro to Python",
   t: "Sat 8:00 PM",
   l: "Twitch",
@@ -62062,6 +62067,7 @@ function (_Component) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
+            float: true,
             style: {
               display: "flex",
               justifyContent: "center",
@@ -62126,8 +62132,10 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [//{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
-].chunk_inefficient(2);
+var sponsors2 = [{
+  i: "/echoar.png",
+  l: "https://www.echoar.xyz/"
+}].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
   l: "https://www.bugsee.com/"
@@ -72149,7 +72157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43819" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37217" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
