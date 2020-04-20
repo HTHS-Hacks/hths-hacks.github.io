@@ -96,6 +96,12 @@ const schedule = [
     la: "https://www.twitch.tv/hthshacks",
   },
   {
+    n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
+    t: "Sat 7:00 PM",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks",
+  },
+  {
     n: "Intro to Python",
     t: "Sat 8:00 PM",
     l: "Twitch",

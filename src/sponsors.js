@@ -67,6 +67,7 @@ export default class Sponsors extends Component {
                   <Col
                     xs
                     key={a.i}
+                    float
                     style={{
                       display: "flex",
                       justifyContent: "center",
@@ -143,7 +144,7 @@ const padArray = (val, arr, len) => {
 
 const sponsors1 = [];
 const sponsors2 = [
-  //{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
+  { i: "/echoar.png", l: "https://www.echoar.xyz/" },
 ].chunk_inefficient(2);
 const sponsors3 = [
   { i: "/bugsee.png", l: "https://www.bugsee.com/" },
