@@ -157,4 +157,5 @@ const sponsors3 = [
   { i: "/1password.png", l: "https://1password.com/" },
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
   { i: "/balsamiq.png", l: "https://balsamiq.com/" },
+  { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
 ].chunk_inefficient(3);
