@@ -145,10 +145,10 @@ const padArray = (val, arr, len) => {
   return arr;
 };
 
-const sponsors1 = [];
+const sponsors1 = [{ i: "/hths.png", l: "http://www.hths.mcvsd.org/" }];
 const sponsors2 = [
   { i: "/echoar.png", l: "https://www.echoar.xyz/" },
-  { i: "/hths.png", l: "http://www.hths.mcvsd.org/" },
+  { i: "/balsamiq.png", l: "https://balsamiq.com/" },
 ].chunk_inefficient(2);
 const sponsors3 = [
   { i: "/bugsee.png", l: "https://www.bugsee.com/" },
@@ -156,6 +156,5 @@ const sponsors3 = [
   { i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
   { i: "/1password.png", l: "https://1password.com/" },
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
-  { i: "/balsamiq.png", l: "https://balsamiq.com/" },
   { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
 ].chunk_inefficient(3);
