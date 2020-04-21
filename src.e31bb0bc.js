@@ -62148,13 +62148,16 @@ var padArray = function padArray(val, arr, len) {
   return arr;
 };
 
-var sponsors1 = [];
+var sponsors1 = [{
+  i: "/hths.png",
+  l: "http://www.hths.mcvsd.org/"
+}];
 var sponsors2 = [{
   i: "/echoar.png",
   l: "https://www.echoar.xyz/"
 }, {
-  i: "/hths.png",
-  l: "http://www.hths.mcvsd.org/"
+  i: "/balsamiq.png",
+  l: "https://balsamiq.com/"
 }].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
@@ -62171,9 +62174,6 @@ var sponsors3 = [{
 }, {
   i: "/cloudsploit.png",
   l: "https://cloudsploit.com/"
-}, {
-  i: "/balsamiq.png",
-  l: "https://balsamiq.com/"
 }, {
   i: "/jdd.png",
   l: "https://www.jdjfoundation.org/"
@@ -72180,7 +72180,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39971" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45859" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
