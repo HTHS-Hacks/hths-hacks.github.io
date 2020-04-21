@@ -58889,11 +58889,6 @@ var schedule = [{
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
-  n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
-  t: "Sat 7:00 PM",
-  l: "Twitch",
-  la: "https://www.twitch.tv/hthshacks"
-}, {
   n: "Intro to Python",
   t: "Sat 8:00 PM",
   l: "Twitch",
@@ -62059,8 +62054,7 @@ function (_Component) {
           src: s.i,
           style: {
             objectFit: "cover",
-            width: "100%",
-            margin: "10px"
+            width: "100%"
           }
         }))));
       }), sponsors2.map(function (s) {
@@ -62068,12 +62062,10 @@ function (_Component) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
-            float: true,
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
-              margin: "10px"
+              alignItems: "center"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62093,8 +62085,7 @@ function (_Component) {
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
-              margin: "10px"
+              alignItems: "center"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62135,13 +62126,8 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [{
-  i: "/echoar.png",
-  l: "https://www.echoar.xyz/"
-}, {
-  i: "/hths.png",
-  l: "http://www.hths.mcvsd.org/"
-}].chunk_inefficient(2);
+var sponsors2 = [//{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
+].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
   l: "https://www.bugsee.com/"
@@ -62157,12 +62143,6 @@ var sponsors3 = [{
 }, {
   i: "/cloudsploit.png",
   l: "https://cloudsploit.com/"
-}, {
-  i: "/balsamiq.png",
-  l: "https://balsamiq.com/"
-}, {
-  i: "/imgix.png",
-  l: "https://www.imgix.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -72166,7 +72146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42649" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4804" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
