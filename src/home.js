@@ -35,7 +35,7 @@ export default class Home extends Component {
             </Row>
             <Row>
               <Col>
-                <h2 style={styles.subtext}>
+                <h2 style={styles.subtextImportant}>
                   <b>Registration is open until May 2nd!</b>
                   <br />
                   hths.hacks() is online!
@@ -43,18 +43,28 @@ export default class Home extends Component {
               </Col>
             </Row>
             <Row>
-              <Col style={styles.buttonStyle}>
-                <Button
-                  style={styles.buttonStyle}
-                  id="apply-button"
-                  variant="outline-light"
-                  onClick={() =>
-                    (window.location.href =
-                      "https://forms.gle/KtQcCakjbTYejx6fA")
-                  }
-                >
-                  Register by May 2nd
-                </Button>
+              <Col
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
+                <div>
+                  <Button
+                    style={styles.buttonStyle}
+                    id="apply-button"
+                    variant="dark"
+                    size="lg"
+                    className="p-3"
+                    block
+                    onClick={() =>
+                      (window.location.href =
+                        "https://forms.gle/KtQcCakjbTYejx6fA")
+                    }
+                  >
+                    Register by May 2nd
+                  </Button>
+                </div>
               </Col>
             </Row>
           </Container>
@@ -88,12 +98,20 @@ const styles = {
     color: "#4a86e8",
     textAlign: "center",
   },
+  subtextImportant: {
+    color: "#4a86e8",
+    textAlign: "center",
+  },
   buttonStyle: {
     marginTop: 10,
     display: "flex",
     justifyContent: "center",
-    color: "#4a86e8",
-    outlineColor: "#4a86e8",
+    color: "black",
+    outlineColor: "#FED866",
+    borderColor: "#FED866",
+    fontWeight: 900,
+    fontSize: "28px",
+    backgroundColor: "#FED866",
   },
   mainImg: {
     width: "100%",
