@@ -58372,17 +58372,23 @@ function (_Component) {
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
-        style: styles.subtext
+        style: styles.subtextImportant
       }, _react.default.createElement("b", null, "Registration is open until May 2nd!"), _react.default.createElement("br", null), "hths.hacks() is online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
-        style: styles.buttonStyle
-      }, _react.default.createElement(_reactBootstrap.Button, {
+        style: {
+          display: "flex",
+          justifyContent: "center"
+        }
+      }, _react.default.createElement("div", null, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
-        variant: "outline-light",
+        variant: "dark",
+        size: "lg",
+        className: "p-3",
+        block: true,
         onClick: function onClick() {
           return window.location.href = "https://forms.gle/KtQcCakjbTYejx6fA";
         }
-      }, "Register by May 2nd"))))));
+      }, "Register by May 2nd")))))));
     }
   }]);
 
@@ -58414,12 +58420,20 @@ var styles = {
     color: "#4a86e8",
     textAlign: "center"
   },
+  subtextImportant: {
+    color: "#4a86e8",
+    textAlign: "center"
+  },
   buttonStyle: {
     marginTop: 10,
     display: "flex",
     justifyContent: "center",
-    color: "#4a86e8",
-    outlineColor: "#4a86e8"
+    color: "black",
+    outlineColor: "#FED866",
+    borderColor: "#FED866",
+    fontWeight: 900,
+    fontSize: "28px",
+    backgroundColor: "#FED866"
   },
   mainImg: {
     width: "100%"
@@ -58886,6 +58900,11 @@ var schedule = [{
 }, {
   n: "Intro to Unity",
   t: "Sat 6:00 PM",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
+  t: "Sat 7:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
@@ -62054,7 +62073,8 @@ function (_Component) {
           src: s.i,
           style: {
             objectFit: "cover",
-            width: "100%"
+            width: "100%",
+            margin: "10px"
           }
         }))));
       }), sponsors2.map(function (s) {
@@ -62062,10 +62082,12 @@ function (_Component) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
+            float: true,
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62085,7 +62107,8 @@ function (_Component) {
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62126,8 +62149,13 @@ var padArray = function padArray(val, arr, len) {
 };
 
 var sponsors1 = [];
-var sponsors2 = [//{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
-].chunk_inefficient(2);
+var sponsors2 = [{
+  i: "/echoar.png",
+  l: "https://www.echoar.xyz/"
+}, {
+  i: "/hths.png",
+  l: "http://www.hths.mcvsd.org/"
+}].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
   l: "https://www.bugsee.com/"
@@ -62143,6 +62171,12 @@ var sponsors3 = [{
 }, {
   i: "/cloudsploit.png",
   l: "https://cloudsploit.com/"
+}, {
+  i: "/balsamiq.png",
+  l: "https://balsamiq.com/"
+}, {
+  i: "/jdd.png",
+  l: "https://www.jdjfoundation.org/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -72146,7 +72180,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4804" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39971" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
