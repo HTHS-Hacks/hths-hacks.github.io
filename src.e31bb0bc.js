@@ -58758,8 +58758,10 @@ var faq = [{
   q: "Who runs hths.hacks()?",
   a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
 }, {
-  q: "How big is hths.hacks()?",
-  a: "We're hoping to invite around 300-400 high school students."
+  q: "Where can I win?",
+  a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
+    href: "https://hthshacks-20.devpost.com/"
+  }, "Devpost"))
 }, {
   q: "Any other questions?",
   a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
@@ -72188,7 +72190,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44817" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
