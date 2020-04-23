@@ -8,7 +8,7 @@ import {
   Col,
   Button,
   Accordion,
-  Card
+  Card,
 } from "react-bootstrap";
 import Page from "./page";
 import "bootstrap/dist/css/bootstrap.css";
@@ -23,9 +23,9 @@ export default class FAQ extends Component {
           style={{ backgroundColor: "#ffd966", color: "black" }}
         >
           <Container style={styles.container}>
-            {faq.map(chunk => (
+            {faq.map((chunk) => (
               <Row key={chunk[0].q}>
-                {chunk.map(f => (
+                {chunk.map((f) => (
                   <Col md="6" key={f.q}>
                     <Card style={styles.cardStyle}>
                       <h2 style={styles.title}>{f.q}</h2>
@@ -44,78 +44,85 @@ export default class FAQ extends Component {
 
 const styles = {
   container: {
-    marginTop: "30px"
+    marginTop: "30px",
   },
   cardStyle: {
     padding: "15px",
     backgroundColor: "#f7f7f5",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   title: {
     fontSize: "25px",
-    fontWeight: 800
+    fontWeight: 800,
   },
   faqContents: {
-    fontSize: "18px"
-  }
+    fontSize: "18px",
+  },
 };
 
 Object.defineProperty(Array.prototype, "chunk_inefficient", {
-  value: function(chunkSize) {
+  value: function (chunkSize) {
     var array = this;
     return [].concat.apply(
       [],
-      array.map(function(elem, i) {
+      array.map(function (elem, i) {
         return i % chunkSize ? [] : [array.slice(i, i + chunkSize)];
       })
     );
-  }
+  },
 });
 
 const faq = [
   {
     q: "What is a hackathon?",
     a:
-      "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
+      "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!",
   },
   {
     q: "How has the recent crisis affected hths.hacks()?",
     a:
-      "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out."
+      "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out.",
   },
   {
     q: "How will it work?",
     a:
-      "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home."
+      "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home.",
   },
   {
     q: "How much will it cost me?",
-    a: "Absolutely nothing!Just participate and have fun."
+    a: "Absolutely nothing!Just participate and have fun.",
   },
   {
     q: "Who can attend?",
-    a: "Any currently enrolled high school student is welcome to attend."
+    a: "Any currently enrolled high school student is welcome to attend.",
   },
   {
     q: "Do I need an idea or a team?",
     a:
-      "No! We will be running a team building event and there will be time for you to brainstorm an idea."
+      "No! We will be running a team building event and there will be time for you to brainstorm an idea.",
   },
   {
     q: "How do I apply?",
     a:
-      "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority."
+      "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority.",
   },
   {
     q: "Who runs hths.hacks()?",
     a:
-      "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+      "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.",
   },
   {
-    q: "How big is hths.hacks()?",
-    a: "We're hoping to invite around 300-400 high school students."
+    q: "Where can I win?",
+    a: (
+      <p>
+        Hackathons aren't about winning. You have the opportunity to build an
+        amazing project, meet other creators like you, and learn through
+        workshops. But if you insist, you can find our prizes on{" "}
+        <a href="https://hthshacks-20.devpost.com/">Devpost</a>
+      </p>
+    ),
   },
   {
     q: "Any other questions?",
@@ -124,6 +131,6 @@ const faq = [
         Email us at{" "}
         <a href="mailto:contact@hthshacks.com">contact@hthshacks.com</a>
       </p>
-    )
-  }
+    ),
+  },
 ].chunk_inefficient(2);
