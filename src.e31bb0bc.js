@@ -62068,13 +62068,18 @@ function (_Component) {
             alignItems: "center"
           }
         }, _react.default.createElement("a", {
-          href: s.l
+          href: s.l,
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          }
         }, _react.default.createElement("img", {
           src: s.i,
           style: {
             objectFit: "cover",
-            width: "100%",
-            margin: "10px"
+            width: "80%",
+            margin: "10px",
+            alignSelf: "center"
           }
         }))));
       }), sponsors2.map(function (s) {
@@ -62151,6 +62156,9 @@ var padArray = function padArray(val, arr, len) {
 var sponsors1 = [{
   i: "/hths.png",
   l: "http://www.hths.mcvsd.org/"
+}, {
+  i: "/1517.png",
+  l: "https://www.1517fund.com/"
 }];
 var sponsors2 = [{
   i: "/echoar.png",
@@ -72180,7 +72188,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45859" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40353" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
