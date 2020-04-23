@@ -49,13 +49,17 @@ export default class Sponsors extends Component {
                     alignItems: "center",
                   }}
                 >
-                  <a href={s.l}>
+                  <a
+                    href={s.l}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
                     <img
                       src={s.i}
                       style={{
                         objectFit: "cover",
-                        width: "100%",
+                        width: "80%",
                         margin: "10px",
+                        alignSelf: "center",
                       }}
                     />
                   </a>
@@ -145,7 +149,10 @@ const padArray = (val, arr, len) => {
   return arr;
 };
 
-const sponsors1 = [{ i: "/hths.png", l: "http://www.hths.mcvsd.org/" }];
+const sponsors1 = [
+  { i: "/hths.png", l: "http://www.hths.mcvsd.org/" },
+  { i: "/1517.png", l: "https://www.1517fund.com/" },
+];
 const sponsors2 = [
   { i: "/echoar.png", l: "https://www.echoar.xyz/" },
   { i: "/balsamiq.png", l: "https://balsamiq.com/" },
