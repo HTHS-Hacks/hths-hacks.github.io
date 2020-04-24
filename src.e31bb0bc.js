@@ -62060,7 +62060,35 @@ function (_Component) {
           backgroundColor: "white",
           color: "black"
         }
-      }, _react.default.createElement(_reactBootstrap.Container, null, sponsors1.map(function (s) {
+      }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
+        style: styles.smallHeader
+      }, "Partners"))), partners.map(function (s) {
+        return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+          xs: true,
+          key: s.i,
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }
+        }, _react.default.createElement("a", {
+          href: s.l,
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          }
+        }, _react.default.createElement("img", {
+          src: s.i,
+          style: {
+            objectFit: "cover",
+            width: "80%",
+            margin: "10px",
+            alignSelf: "center"
+          }
+        }))));
+      }), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
+        style: styles.smallHeader
+      }, "Sponsors"))), sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
           key: s.i,
@@ -62144,6 +62172,12 @@ var styles = {
   sponsorInterest: {
     textAlign: "center",
     fontSize: "20px"
+  },
+  smallHeader: {
+    textAlign: "center",
+    fontSize: "50px",
+    fontWeight: 900,
+    margin: "20px"
   }
 };
 
@@ -62155,10 +62189,14 @@ var padArray = function padArray(val, arr, len) {
   return arr;
 };
 
-var sponsors1 = [{
+var partners = [{
   i: "/hths.png",
   l: "http://www.hths.mcvsd.org/"
 }, {
+  i: "/mlh.png",
+  l: "https://mlh.io/"
+}];
+var sponsors1 = [{
   i: "/1517.png",
   l: "https://www.1517fund.com/"
 }];
@@ -62187,6 +62225,9 @@ var sponsors3 = [{
 }, {
   i: "/jdd.png",
   l: "https://www.jdjfoundation.org/"
+}, {
+  i: "/hyperx.png",
+  l: "https://www.hyperxgaming.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -72190,7 +72231,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44817" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41369" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
