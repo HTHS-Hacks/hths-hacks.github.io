@@ -38,6 +38,44 @@ export default class Sponsors extends Component {
                                 </p>
                             </Col>
                         </Row> */}
+            <Row>
+              <Col>
+                <div style={styles.smallHeader}>Partners</div>
+              </Col>
+            </Row>
+            {partners.map((s) => (
+              <Row>
+                <Col
+                  xs
+                  key={s.i}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <a
+                    href={s.l}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    <img
+                      src={s.i}
+                      style={{
+                        objectFit: "cover",
+                        width: "80%",
+                        margin: "10px",
+                        alignSelf: "center",
+                      }}
+                    />
+                  </a>
+                </Col>
+              </Row>
+            ))}
+            <Row>
+              <Col>
+                <div style={styles.smallHeader}>Sponsors</div>
+              </Col>
+            </Row>
             {sponsors1.map((s) => (
               <Row>
                 <Col
@@ -140,6 +178,12 @@ const styles = {
     textAlign: "center",
     fontSize: "20px",
   },
+  smallHeader: {
+    textAlign: "center",
+    fontSize: "50px",
+    fontWeight: 900,
+    margin: "20px",
+  },
 };
 
 const padArray = (val, arr, len) => {
@@ -149,10 +193,12 @@ const padArray = (val, arr, len) => {
   return arr;
 };
 
-const sponsors1 = [
+const partners = [
   { i: "/hths.png", l: "http://www.hths.mcvsd.org/" },
-  { i: "/1517.png", l: "https://www.1517fund.com/" },
+  { i: "/mlh.png", l: "https://mlh.io/" },
 ];
+
+const sponsors1 = [{ i: "/1517.png", l: "https://www.1517fund.com/" }];
 const sponsors2 = [
   { i: "/echoar.png", l: "https://www.echoar.xyz/" },
   { i: "/balsamiq.png", l: "https://balsamiq.com/" },
@@ -164,4 +210,5 @@ const sponsors3 = [
   { i: "/1password.png", l: "https://1password.com/" },
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
   { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
+  { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
 ].chunk_inefficient(3);
