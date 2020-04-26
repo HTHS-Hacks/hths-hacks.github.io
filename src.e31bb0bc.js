@@ -65223,8 +65223,22 @@ function (_Component) {
           textAlign: "center"
         }
       }, _react.default.createElement("a", {
+        style: {
+          color: "white",
+          textDecoration: "underline"
+        },
         href: "mailto:contact@hthshacks.com"
-      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
+        style: {
+          textAlign: "center"
+        }
+      }, _react.default.createElement("a", {
+        style: {
+          color: "white",
+          textDecoration: "underline"
+        },
+        href: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+      }, "MLH Code of Conduct")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center",
@@ -72231,7 +72245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41369" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44571" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
