@@ -15,7 +15,7 @@ export default class Home extends Component {
             <Col
               style={{
                 display: "flex",
-                justifyContent: "center"
+                justifyContent: "center",
               }}
             >
               <img
@@ -32,7 +32,24 @@ export default class Home extends Component {
           <Row>
             <Col>
               <p style={{ textAlign: "center" }}>
-                <a href="mailto:contact@hthshacks.com">contact@hthshacks.com</a>
+                <a
+                  style={{ color: "white", textDecoration: "underline" }}
+                  href="mailto:contact@hthshacks.com"
+                >
+                  contact@hthshacks.com
+                </a>
+              </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <p style={{ textAlign: "center" }}>
+                <a
+                  style={{ color: "white", textDecoration: "underline" }}
+                  href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                >
+                  MLH Code of Conduct
+                </a>
               </p>
             </Col>
           </Row>
@@ -41,7 +58,7 @@ export default class Home extends Component {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginBottom: 30
+                marginBottom: 30,
               }}
             >
               <FontAwesomeIcon
@@ -75,13 +92,13 @@ const styles = {
     width: "100%",
     backgroundColor: "#090a0f",
     color: "white",
-    fontSize: 20
+    fontSize: 20,
   },
   iconImage: {
-    maxHeight: "150px"
+    maxHeight: "150px",
   },
   socialIcons: {
     marginLeft: 8,
-    marginRight: 8
-  }
+    marginRight: 8,
+  },
 };
