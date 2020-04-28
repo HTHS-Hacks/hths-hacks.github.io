@@ -59,7 +59,7 @@ export default class Home extends Component {
                     block
                     onClick={() =>
                       (window.location.href =
-                        "https://forms.gle/KtQcCakjbTYejx6fA")
+                        "https://forms.gle/uEsE7FYZmuDtTmuP9")
                     }
                   >
                     Register by May 2nd
