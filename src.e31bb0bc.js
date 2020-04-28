@@ -58386,7 +58386,7 @@ function (_Component) {
         className: "p-3",
         block: true,
         onClick: function onClick() {
-          return window.location.href = "https://forms.gle/KtQcCakjbTYejx6fA";
+          return window.location.href = "https://forms.gle/uEsE7FYZmuDtTmuP9";
         }
       }, "Register by May 2nd")))))));
     }
@@ -72245,7 +72245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44571" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35983" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
