@@ -211,4 +211,5 @@ const sponsors3 = [
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
   { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
   { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
+  { i: "/upperline.png", l: "https://www.upperlinecode.com/" },
 ].chunk_inefficient(3);
