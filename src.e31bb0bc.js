@@ -58372,23 +58372,17 @@ function (_Component) {
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
-        style: styles.subtextImportant
+        style: styles.subtext
       }, _react.default.createElement("b", null, "Registration is open until May 2nd!"), _react.default.createElement("br", null), "hths.hacks() is online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
-        style: {
-          display: "flex",
-          justifyContent: "center"
-        }
-      }, _react.default.createElement("div", null, _react.default.createElement(_reactBootstrap.Button, {
+        style: styles.buttonStyle
+      }, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
-        variant: "dark",
-        size: "lg",
-        className: "p-3",
-        block: true,
+        variant: "outline-light",
         onClick: function onClick() {
-          return window.location.href = "https://forms.gle/uEsE7FYZmuDtTmuP9";
+          return window.location.href = "https://forms.gle/KtQcCakjbTYejx6fA";
         }
-      }, "Register by May 2nd")))))));
+      }, "Register by May 2nd"))))));
     }
   }]);
 
@@ -58420,20 +58414,12 @@ var styles = {
     color: "#4a86e8",
     textAlign: "center"
   },
-  subtextImportant: {
-    color: "#4a86e8",
-    textAlign: "center"
-  },
   buttonStyle: {
     marginTop: 10,
     display: "flex",
     justifyContent: "center",
-    color: "black",
-    outlineColor: "#FED866",
-    borderColor: "#FED866",
-    fontWeight: 900,
-    fontSize: "28px",
-    backgroundColor: "#FED866"
+    color: "#4a86e8",
+    outlineColor: "#4a86e8"
   },
   mainImg: {
     width: "100%"
@@ -58758,10 +58744,8 @@ var faq = [{
   q: "Who runs hths.hacks()?",
   a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
 }, {
-  q: "Where can I win?",
-  a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
-    href: "https://hthshacks-20.devpost.com/"
-  }, "Devpost"))
+  q: "How big is hths.hacks()?",
+  a: "We're hoping to invite around 300-400 high school students."
 }, {
   q: "Any other questions?",
   a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
@@ -58902,11 +58886,6 @@ var schedule = [{
 }, {
   n: "Intro to Unity",
   t: "Sat 6:00 PM",
-  l: "Twitch",
-  la: "https://www.twitch.tv/hthshacks"
-}, {
-  n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
-  t: "Sat 7:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
@@ -62060,9 +62039,7 @@ function (_Component) {
           backgroundColor: "white",
           color: "black"
         }
-      }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
-        style: styles.smallHeader
-      }, "Partners"))), partners.map(function (s) {
+      }, _react.default.createElement(_reactBootstrap.Container, null, sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
           key: s.i,
@@ -62072,44 +62049,12 @@ function (_Component) {
             alignItems: "center"
           }
         }, _react.default.createElement("a", {
-          href: s.l,
-          style: {
-            display: "flex",
-            justifyContent: "center"
-          }
+          href: s.l
         }, _react.default.createElement("img", {
           src: s.i,
           style: {
             objectFit: "cover",
-            width: "80%",
-            margin: "10px",
-            alignSelf: "center"
-          }
-        }))));
-      }), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
-        style: styles.smallHeader
-      }, "Sponsors"))), sponsors1.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
-          xs: true,
-          key: s.i,
-          style: {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }
-        }, _react.default.createElement("a", {
-          href: s.l,
-          style: {
-            display: "flex",
-            justifyContent: "center"
-          }
-        }, _react.default.createElement("img", {
-          src: s.i,
-          style: {
-            objectFit: "cover",
-            width: "80%",
-            margin: "10px",
-            alignSelf: "center"
+            width: "100%"
           }
         }))));
       }), sponsors2.map(function (s) {
@@ -62117,12 +62062,10 @@ function (_Component) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
-            float: true,
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
-              margin: "10px"
+              alignItems: "center"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62142,8 +62085,7 @@ function (_Component) {
             style: {
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
-              margin: "10px"
+              alignItems: "center"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
@@ -62172,12 +62114,6 @@ var styles = {
   sponsorInterest: {
     textAlign: "center",
     fontSize: "20px"
-  },
-  smallHeader: {
-    textAlign: "center",
-    fontSize: "50px",
-    fontWeight: 900,
-    margin: "20px"
   }
 };
 
@@ -62189,24 +62125,9 @@ var padArray = function padArray(val, arr, len) {
   return arr;
 };
 
-var partners = [{
-  i: "/hths.png",
-  l: "http://www.hths.mcvsd.org/"
-}, {
-  i: "/mlh.png",
-  l: "https://mlh.io/"
-}];
-var sponsors1 = [{
-  i: "/1517.png",
-  l: "https://www.1517fund.com/"
-}];
-var sponsors2 = [{
-  i: "/echoar.png",
-  l: "https://www.echoar.xyz/"
-}, {
-  i: "/balsamiq.png",
-  l: "https://balsamiq.com/"
-}].chunk_inefficient(2);
+var sponsors1 = [];
+var sponsors2 = [//{ i: '/sashido.svg.png', l: 'https://sashido.io/' },
+].chunk_inefficient(2);
 var sponsors3 = [{
   i: "/bugsee.png",
   l: "https://www.bugsee.com/"
@@ -62222,15 +62143,6 @@ var sponsors3 = [{
 }, {
   i: "/cloudsploit.png",
   l: "https://cloudsploit.com/"
-}, {
-  i: "/jdd.png",
-  l: "https://www.jdjfoundation.org/"
-}, {
-  i: "/hyperx.png",
-  l: "https://www.hyperxgaming.com/"
-}, {
-  i: "/upperline.png",
-  l: "https://www.upperlinecode.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -65226,22 +65138,8 @@ function (_Component) {
           textAlign: "center"
         }
       }, _react.default.createElement("a", {
-        style: {
-          color: "white",
-          textDecoration: "underline"
-        },
         href: "mailto:contact@hthshacks.com"
-      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, _react.default.createElement("a", {
-        style: {
-          color: "white",
-          textDecoration: "underline"
-        },
-        href: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-      }, "MLH Code of Conduct")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center",
@@ -72248,7 +72146,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37557" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "4804" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
