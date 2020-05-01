@@ -10037,29 +10037,25 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    height: 100vh;
-    width: 100vw;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.7) !important;
-}
-
-#apply-button {
-    border-color: #4a86e8 !important;
+  background: rgba(255, 255, 255, 0.7) !important;
 }
 
 .hamburger {
-    line-height: 1 !important;
+  line-height: 1 !important;
 }
 
 .hamburger-box {
-    display: block !important;
+  display: block !important;
 }
 
 /* .hamburger-inner,
@@ -10069,12 +10065,12 @@ html {
 } */
 
 .row {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-[class*='col-'] {
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+[class*="col-"] {
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
 .nav-parent {
