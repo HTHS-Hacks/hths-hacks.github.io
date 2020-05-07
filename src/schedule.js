@@ -107,11 +107,6 @@ const schedule = [
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
-  {
-    n: "Late night movie",
-    t: "Sat 11:00 PM EST",
-    l: "#movies"
-  },
   { n: "Project Deadline", t: "Sun 12:00 PM EST", l: "Devpost" },
   { n: "Public voting closes", t: "Sun 3:30 PM EST", l: "Devpost" },
   { n: "Judging", t: "Sun 12:00 PM - 4:00 PM EST", l: "Online" },
