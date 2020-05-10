@@ -58362,25 +58362,33 @@ function (_Component) {
       }), _react.default.createElement("div", {
         style: styles.centerContent
       }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("img", {
-        src: require('./img/Asset 1.png'),
+        src: require("./img/Asset 1.png"),
         style: styles.iconImage,
         id: "home-image"
       }), _react.default.createElement("img", {
-        src: require('./img/Asset 2.png'),
+        src: require("./img/Asset 2.png"),
         style: styles.mainImg,
         id: "home-image"
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
-      }, "May 16"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
-        style: styles.buttonStyle
-      }, _react.default.createElement(_reactBootstrap.Button, {
+      }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
+        style: styles.subtextImportant
+      }, _react.default.createElement("b", null, "Registration is open until May 14th!"), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+        style: {
+          display: "flex",
+          justifyContent: "center"
+        }
+      }, _react.default.createElement("div", null, _react.default.createElement(_reactBootstrap.Button, {
         style: styles.buttonStyle,
         id: "apply-button",
-        variant: "outline-light",
+        variant: "dark",
+        size: "lg",
+        className: "p-3",
+        block: true,
         onClick: function onClick() {
-          return window.location.href = 'https://forms.gle/UQ2HH8RtdAoyZ9dW7';
+          return window.location.href = "https://forms.gle/uEsE7FYZmuDtTmuP9";
         }
-      }, "Get Notified"))))));
+      }, "Register by May 14th")))))));
     }
   }]);
 
@@ -58391,41 +58399,49 @@ exports.default = Home;
 var styles = {
   container: {
     paddingTop: 56,
-    height: '100vh',
-    width: '100%'
+    height: "100vh",
+    width: "100%"
   },
   centerContent: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translateX(-50%) translateY(-50%)',
-    color: '#4a86e8',
-    width: '75%'
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translateX(-50%) translateY(-50%)",
+    color: "#4a86e8",
+    width: "75%"
   },
   title: {
     fontSize: 60,
     fontWeight: 1000,
     letterSpacing: 8,
-    textAlign: 'center'
+    textAlign: "center"
   },
   subtext: {
-    color: '#4a86e8',
-    textAlign: 'center'
+    color: "#4a86e8",
+    textAlign: "center"
+  },
+  subtextImportant: {
+    color: "#4a86e8",
+    textAlign: "center"
   },
   buttonStyle: {
     marginTop: 10,
-    display: 'flex',
-    justifyContent: 'center',
-    color: '#4a86e8',
-    outlineColor: '#4a86e8'
+    display: "flex",
+    justifyContent: "center",
+    color: "black",
+    outlineColor: "#FED866",
+    borderColor: "#FED866",
+    fontWeight: 900,
+    fontSize: "28px",
+    backgroundColor: "#FED866"
   },
   mainImg: {
-    width: '100%'
+    width: "100%"
   },
   iconImage: {
-    maxHeight: '200px',
-    margin: 'auto',
-    display: 'block'
+    maxHeight: "200px",
+    margin: "auto",
+    display: "block"
   }
 };
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./home.css":"home.css","./img/Asset 1.png":"img/Asset 1.png","./img/Asset 2.png":"img/Asset 2.png"}],"page.js":[function(require,module,exports) {
@@ -58593,7 +58609,7 @@ function (_Component) {
         backgroundColor: "#3c78d8"
       }, _react.default.createElement("p", {
         className: "about-p"
-      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 12 hours. Along the way, you\u2019ll get free food and swag, the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
+      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 24 hours. Due to the recent crisis, hths.hacks() will be taking place entirely online, but don't worry, we didn't forget about the prizes. You'll still get the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
     }
   }]);
 
@@ -58721,29 +58737,31 @@ var faq = [{
   q: "What is a hackathon?",
   a: "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!"
 }, {
-  q: "How much will it cost me?",
-  a: "Absolutely nothing! We just want you to show up and have fun."
+  q: "How has the recent crisis affected hths.hacks()?",
+  a: "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out."
 }, {
-  q: "Will there be travel reimbursements?",
-  a: "Unfortunately, we will not be offering travel reimbursements"
+  q: "How will it work?",
+  a: "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home."
+}, {
+  q: "How much will it cost me?",
+  a: "Absolutely nothing!Just participate and have fun."
 }, {
   q: "Who can attend?",
   a: "Any currently enrolled high school student is welcome to attend."
-}, {
-  q: "What should I bring?",
-  a: "You should bring your laptop, phone, charger, and a student ID."
 }, {
   q: "Do I need an idea or a team?",
   a: "No! We will be running a team building event and there will be time for you to brainstorm an idea."
 }, {
   q: "How do I apply?",
-  a: "Fill out the form linked above and describe any projects that you’ve done before and what you hope to get out of hths.hacks(). HTHS students will be given priority."
-}, {
-  q: "Will food be provided?",
-  a: "Yes, we’ll be serving lunch and dinner. Snacks and drinks will also be available throughout the day."
+  a: "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority."
 }, {
   q: "Who runs hths.hacks()?",
   a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+}, {
+  q: "Where can I win?",
+  a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
+    href: "https://hthshacks-20.devpost.com/"
+  }, "Devpost"))
 }, {
   q: "Any other questions?",
   a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
@@ -58827,7 +58845,9 @@ function (_Component) {
           key: event.n + event.t
         }, _react.default.createElement("td", {
           style: styles.time
-        }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.l));
+        }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.la ? _react.default.createElement("a", {
+          href: event.la
+        }, event.l) : event.l));
       })))));
     }
   }]);
@@ -58844,45 +58864,77 @@ var styles = {
   }
 };
 var schedule = [{
-  n: "Arrival and Check-in",
-  t: "9:00 AM",
-  l: "Lobby"
-}, {
-  n: "Opening remarks",
-  t: "9:30 AM",
-  l: "MPR"
+  n: "Opening ceremony",
+  t: "Sat 11:30 AM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Hacking begins",
-  t: "9:45 AM",
-  l: "MPR"
+  t: "Sat 12:00 PM EST",
+  l: "Online"
 }, {
   n: "Team formation and brainstorming",
-  t: "9:45 AM",
-  l: "Research Lobby"
+  t: "Sat 12:00 PM EST",
+  l: "#team-formation-brainstorming"
 }, {
-  n: "Workshop (TBD)",
-  t: "11:00 AM",
-  l: "Research Lobby"
+  n: "CTF starts",
+  t: "Sat 12:00 PM EST",
+  l: "#announcements"
 }, {
-  n: "Lunch",
-  t: "12:00 PM",
-  l: "MPR"
+  n: "Intro to Web Development",
+  t: "Sat 2:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
 }, {
-  n: "Workshop (TBD)",
-  t: "3:00 PM",
-  l: "Research Lobby"
+  n: "Chess Tournament",
+  t: "Sat 3:00 PM EST",
+  l: "#announcements"
 }, {
-  n: "Dinner",
-  t: "6:30 PM",
-  l: "MPR"
+  n: "Intro to Machine Learning",
+  t: "Sat 4:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Intro to Github",
+  t: "Sat 5:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Intro to Unity",
+  t: "Sat 6:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
+  t: "Sat 7:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Intro to Python",
+  t: "Sat 8:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Project Deadline",
+  t: "Sun 12:00 PM EST",
+  l: "Devpost"
+}, {
+  n: "Public voting closes",
+  t: "Sun 3:30 PM EST",
+  l: "Devpost"
 }, {
   n: "Judging",
-  t: "7:00 PM",
-  l: "MPR"
+  t: "Sun 12:00 PM - 4:00 PM EST",
+  l: "Online"
 }, {
-  n: "Closing remarks",
-  t: "8:00 PM",
-  l: "MPR"
+  n: "CTF ends",
+  t: "Sun 4:00 PM EST",
+  l: "#announcements"
+}, {
+  n: "Closing ceremony + winners",
+  t: "Sun 4:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
 }];
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js":[function(require,module,exports) {
 "use strict";
@@ -62001,70 +62053,101 @@ function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "SPONSORS",
         style: {
-          backgroundColor: 'white',
-          color: 'black'
+          backgroundColor: "white",
+          color: "black"
         }
-      }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
-        style: styles.sponsorInterest
-      }, "Interested in sponsoring? See our", ' ', _react.default.createElement("a", {
-        href: "sponsor_packet.pdf"
-      }, "sponsor packet"), ' ', "and reach out to us at", ' ', _react.default.createElement("a", {
-        href: "mailto:sponsor@hthshacks.com"
-      }, "sponsor@hthshacks.com"), "."))), sponsors1.map(function (s) {
+      }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
+        style: styles.smallHeader
+      }, "Partners"))), partners.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
           key: s.i,
           style: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
           }
         }, _react.default.createElement("a", {
-          href: s.l
+          href: s.l,
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          }
         }, _react.default.createElement("img", {
           src: s.i,
           style: {
-            objectFit: 'cover',
-            width: '100%'
+            objectFit: "cover",
+            width: "80%",
+            margin: "10px",
+            alignSelf: "center"
+          }
+        }))));
+      }), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
+        style: styles.smallHeader
+      }, "Sponsors"))), sponsors1.map(function (s) {
+        return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+          xs: true,
+          key: s.i,
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          }
+        }, _react.default.createElement("a", {
+          href: s.l,
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          }
+        }, _react.default.createElement("img", {
+          src: s.i,
+          style: {
+            objectFit: "cover",
+            width: "80%",
+            margin: "10px",
+            alignSelf: "center"
           }
         }))));
       }), sponsors2.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, padArray('', s, 2).map(function (a) {
+        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 2).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
+            float: true,
             style: {
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
           }, _react.default.createElement("img", {
             src: a.i,
             style: {
-              objectFit: 'cover',
-              width: '100%'
+              objectFit: "cover",
+              width: "100%"
             }
           })));
         }));
       }), sponsors3.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, padArray('', s, 3).map(function (a) {
+        return _react.default.createElement(_reactBootstrap.Row, null, padArray("", s, 3).map(function (a) {
           return _react.default.createElement(_reactBootstrap.Col, {
             xs: true,
             key: a.i,
             style: {
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              margin: "10px"
             }
           }, a && _react.default.createElement("a", {
             href: a.l
           }, _react.default.createElement("img", {
             src: a.i,
             style: {
-              objectFit: 'cover',
-              width: '100%'
+              objectFit: "cover",
+              width: "100%"
             }
           })));
         }));
@@ -62079,12 +62162,18 @@ exports.default = Sponsors;
 var styles = {
   time: {},
   tableStyle: {
-    color: 'white',
-    fontSize: '25px'
+    color: "white",
+    fontSize: "25px"
   },
   sponsorInterest: {
-    textAlign: 'center',
-    fontSize: '20px'
+    textAlign: "center",
+    fontSize: "20px"
+  },
+  smallHeader: {
+    textAlign: "center",
+    fontSize: "50px",
+    fontWeight: 900,
+    margin: "20px"
   }
 };
 
@@ -62096,20 +62185,48 @@ var padArray = function padArray(val, arr, len) {
   return arr;
 };
 
-var sponsors1 = [];
+var partners = [{
+  i: "/hths.png",
+  l: "http://www.hths.mcvsd.org/"
+}, {
+  i: "/mlh.png",
+  l: "https://mlh.io/"
+}];
+var sponsors1 = [{
+  i: "/1517.png",
+  l: "https://www.1517fund.com/"
+}];
 var sponsors2 = [{
-  i: '/sashido.svg.png',
-  l: 'https://sashido.io/'
+  i: "/echoar.png",
+  l: "https://www.echoar.xyz/"
+}, {
+  i: "/balsamiq.png",
+  l: "https://balsamiq.com/"
 }].chunk_inefficient(2);
 var sponsors3 = [{
-  i: '/bugsee.png',
-  l: 'https://www.bugsee.com/'
+  i: "/bugsee.png",
+  l: "https://www.bugsee.com/"
 }, {
-  i: '/wolfram.png',
-  l: 'https://www.wolfram.com/'
+  i: "/wolfram.png",
+  l: "https://www.wolfram.com/"
 }, {
-  i: '/aops.jpg',
-  l: 'https://artofproblemsolving.com/'
+  i: "/aops.jpg",
+  l: "https://artofproblemsolving.com/"
+}, {
+  i: "/1password.png",
+  l: "https://1password.com/"
+}, {
+  i: "/cloudsploit.png",
+  l: "https://cloudsploit.com/"
+}, {
+  i: "/jdd.png",
+  l: "https://www.jdjfoundation.org/"
+}, {
+  i: "/hyperx.png",
+  l: "https://www.hyperxgaming.com/"
+}, {
+  i: "/upperline.png",
+  l: "https://www.upperlinecode.com/"
 }].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/es/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -65105,8 +65222,22 @@ function (_Component) {
           textAlign: "center"
         }
       }, _react.default.createElement("a", {
+        style: {
+          color: "white",
+          textDecoration: "underline"
+        },
         href: "mailto:contact@hthshacks.com"
-      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, "contact@hthshacks.com")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
+        style: {
+          textAlign: "center"
+        }
+      }, _react.default.createElement("a", {
+        style: {
+          color: "white",
+          textDecoration: "underline"
+        },
+        href: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+      }, "MLH Code of Conduct")))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center",
@@ -72113,7 +72244,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "42399" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8375" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
