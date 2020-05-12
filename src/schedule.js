@@ -108,7 +108,7 @@ const schedule = [
     la: "https://www.twitch.tv/hthshacks"
   },
   {
-    n: "Intro to Python",
+    n: "Intro to Firebase",
     t: "Sat 8:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
