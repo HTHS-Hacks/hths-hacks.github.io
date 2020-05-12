@@ -78,6 +78,12 @@ const schedule = [
     l: "#announcements"
   },
   {
+    n: "Intro to Alexa",
+    t: "Sat 3:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
     n: "Intro to Machine Learning",
     t: "Sat 4:00 PM EST",
     l: "Twitch",
