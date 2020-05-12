@@ -58373,7 +58373,7 @@ function (_Component) {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration is open until May 14th!"), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration is open until May 2nd!"), _react.default.createElement("br", null), "hths.hacks() is online!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
@@ -58388,7 +58388,7 @@ function (_Component) {
         onClick: function onClick() {
           return window.location.href = "https://forms.gle/uEsE7FYZmuDtTmuP9";
         }
-      }, "Register by May 14th")))))));
+      }, "Register by May 2nd")))))));
     }
   }]);
 
@@ -58865,74 +58865,78 @@ var styles = {
 };
 var schedule = [{
   n: "Opening ceremony",
-  t: "Sat 11:30 AM EST",
+  t: "Sat 11:30 AM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Hacking begins",
-  t: "Sat 12:00 PM EST",
+  t: "Sat 12:00 PM",
   l: "Online"
 }, {
   n: "Team formation and brainstorming",
-  t: "Sat 12:00 PM EST",
+  t: "Sat 12:00 PM",
   l: "#team-formation-brainstorming"
 }, {
   n: "CTF starts",
-  t: "Sat 12:00 PM EST",
+  t: "Sat 12:00 PM",
   l: "#announcements"
 }, {
   n: "Intro to Web Development",
-  t: "Sat 2:00 PM EST",
+  t: "Sat 2:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Chess Tournament",
-  t: "Sat 3:00 PM EST",
+  t: "Sat 3:00 PM",
   l: "#announcements"
 }, {
   n: "Intro to Machine Learning",
-  t: "Sat 4:00 PM EST",
+  t: "Sat 4:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Intro to Github",
-  t: "Sat 5:00 PM EST",
+  t: "Sat 5:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Intro to Unity",
-  t: "Sat 6:00 PM EST",
+  t: "Sat 6:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
-  t: "Sat 7:00 PM EST",
+  t: "Sat 7:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
   n: "Intro to Python",
-  t: "Sat 8:00 PM EST",
+  t: "Sat 8:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
+  n: "Late night movie",
+  t: "Sat 11:00 PM",
+  l: "#movies"
+}, {
   n: "Project Deadline",
-  t: "Sun 12:00 PM EST",
+  t: "Sun 12:00 PM",
   l: "Devpost"
 }, {
   n: "Public voting closes",
-  t: "Sun 3:30 PM EST",
+  t: "Sun 3:30 PM",
   l: "Devpost"
 }, {
   n: "Judging",
-  t: "Sun 12:00 PM - 4:00 PM EST",
+  t: "Sun 12:00 PM - 4:00 PM",
   l: "Online"
 }, {
   n: "CTF ends",
-  t: "Sun 4:00 PM EST",
+  t: "Sun 4:00 PM",
   l: "#announcements"
 }, {
   n: "Closing ceremony + winners",
-  t: "Sun 4:00 PM EST",
+  t: "Sun 4:00 PM",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }];
@@ -72244,7 +72248,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8375" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37557" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
