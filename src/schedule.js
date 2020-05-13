@@ -102,6 +102,11 @@ const schedule = [
     la: "https://www.twitch.tv/hthshacks"
   },
   {
+    n: "Slideshow Kareoke",
+    t: "Sat 6:00 PM EST",
+    l: "#announcements",
+  },
+  {
     n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
     t: "Sat 7:00 PM EST",
     l: "Twitch",
