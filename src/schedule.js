@@ -96,15 +96,15 @@ const schedule = [
     la: "https://www.twitch.tv/hthshacks"
   },
   {
+    n: "Slideshow Karaoke",
+    t: "Sat 5:00 PM EST",
+    l: "#announcements",
+  },
+  {
     n: "Intro to Unity",
     t: "Sat 6:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
-  },
-  {
-    n: "Slideshow Kareoke",
-    t: "Sat 6:00 PM EST",
-    l: "#announcements",
   },
   {
     n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
