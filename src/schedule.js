@@ -98,7 +98,7 @@ const schedule = [
   {
     n: "Slideshow Karaoke",
     t: "Sat 5:00 PM EST",
-    l: "#announcements",
+    l: "#announcements"
   },
   {
     n: "Intro to Unity",
@@ -121,10 +121,10 @@ const schedule = [
   { n: "Project Deadline", t: "Sun 12:00 PM EST", l: "Devpost" },
   { n: "Public voting closes", t: "Sun 3:30 PM EST", l: "Devpost" },
   { n: "Judging", t: "Sun 12:00 PM - 4:00 PM EST", l: "Online" },
-  { n: "CTF ends", t: "Sun 3:45 PM EST", l: "#announcements" },
+  { n: "CTF ends", t: "Sun 4:30 PM EST", l: "#announcements" },
   {
     n: "Closing ceremony + winners",
-    t: "Sun 4:00 PM EST",
+    t: "Sun 5:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   }
