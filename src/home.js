@@ -36,8 +36,6 @@ export default class Home extends Component {
             <Row>
               <Col>
                 <h2 style={styles.subtextImportant}>
-                  <b>Registration is now closed.</b>
-                  <br />
                   Discord invites have been sent. Please email
                   contact@hthshacks.com if you did not get one.
                 </h2>
@@ -51,7 +49,7 @@ export default class Home extends Component {
                 }}
               >
                 <div>
-                  {/* <Button
+                  <Button
                     style={styles.buttonStyle}
                     id="apply-button"
                     variant="dark"
@@ -63,8 +61,8 @@ export default class Home extends Component {
                         "https://forms.gle/uEsE7FYZmuDtTmuP9")
                     }
                   >
-                    Register by May 14th
-                  </Button> */}
+                    Register
+                  </Button>
                 </div>
               </Col>
             </Row>
