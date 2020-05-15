@@ -58373,7 +58373,7 @@ function (_Component) {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration is now closed."), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration is closed"), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
@@ -72247,7 +72247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "18942" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44911" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
