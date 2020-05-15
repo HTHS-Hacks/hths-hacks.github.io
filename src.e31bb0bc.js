@@ -58373,22 +58373,12 @@ function (_Component) {
         style: styles.subtext
       }, "May 16-17"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration is open until May 14th!"), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration is now closed."), _react.default.createElement("br", null), "Discord invites have been sent. Please email contact@hthshacks.com if you did not get one."))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
         }
-      }, _react.default.createElement("div", null, _react.default.createElement(_reactBootstrap.Button, {
-        style: styles.buttonStyle,
-        id: "apply-button",
-        variant: "dark",
-        size: "lg",
-        className: "p-3",
-        block: true,
-        onClick: function onClick() {
-          return window.location.href = "https://forms.gle/uEsE7FYZmuDtTmuP9";
-        }
-      }, "Register by May 14th")))))));
+      }, _react.default.createElement("div", null))))));
     }
   }]);
 
@@ -58878,7 +58868,7 @@ var schedule = [{
   l: "#team-formation-brainstorming"
 }, {
   n: "CTF starts",
-  t: "Sat 12:00 PM EST",
+  t: "Sat 1:00 PM EST",
   l: "#announcements"
 }, {
   n: "Intro to Web Development",
@@ -58890,6 +58880,11 @@ var schedule = [{
   t: "Sat 3:00 PM EST",
   l: "#announcements"
 }, {
+  n: "Intro to Alexa",
+  t: "Sat 3:00 PM EST",
+  l: "Twitch",
+  la: "https://www.twitch.tv/hthshacks"
+}, {
   n: "Intro to Machine Learning",
   t: "Sat 4:00 PM EST",
   l: "Twitch",
@@ -58899,6 +58894,10 @@ var schedule = [{
   t: "Sat 5:00 PM EST",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
+}, {
+  n: "Slideshow Karaoke",
+  t: "Sat 5:00 PM EST",
+  l: "#announcements"
 }, {
   n: "Intro to Unity",
   t: "Sat 6:00 PM EST",
@@ -58910,7 +58909,7 @@ var schedule = [{
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }, {
-  n: "Intro to Python",
+  n: "Intro to Firebase",
   t: "Sat 8:00 PM EST",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
@@ -58924,15 +58923,19 @@ var schedule = [{
   l: "Devpost"
 }, {
   n: "Judging",
-  t: "Sun 12:00 PM - 4:00 PM EST",
+  t: "Sun 12:00 PM - 5:00 PM EST",
   l: "Online"
 }, {
+  n: "Project Demos",
+  t: "Sun 12:00 PM - 5:00 PM EST",
+  l: "#demo"
+}, {
   n: "CTF ends",
-  t: "Sun 4:00 PM EST",
+  t: "Sun 4:30 PM EST",
   l: "#announcements"
 }, {
   n: "Closing ceremony + winners",
-  t: "Sun 4:00 PM EST",
+  t: "Sun 5:00 PM EST",
   l: "Twitch",
   la: "https://www.twitch.tv/hthshacks"
 }];
@@ -72244,7 +72247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "8375" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "18942" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
