@@ -58869,7 +58869,7 @@ var schedule = [{
 }, {
   n: "CTF starts",
   t: "Sat 1:00 PM EST",
-  l: "#announcements"
+  l: "#ctf"
 }, {
   n: "Intro to Web Development",
   t: "Sat 2:00 PM EST",
@@ -58878,7 +58878,7 @@ var schedule = [{
 }, {
   n: "Chess Tournament",
   t: "Sat 3:00 PM EST",
-  l: "#announcements"
+  l: "#chess-tourney"
 }, {
   n: "Intro to Alexa",
   t: "Sat 3:00 PM EST",
@@ -58897,7 +58897,7 @@ var schedule = [{
 }, {
   n: "Slideshow Karaoke",
   t: "Sat 5:00 PM EST",
-  l: "#announcements"
+  l: "#slideshow-karaoke"
 }, {
   n: "Intro to Unity",
   t: "Sat 6:00 PM EST",
@@ -58916,11 +58916,13 @@ var schedule = [{
 }, {
   n: "Project Deadline",
   t: "Sun 12:00 PM EST",
-  l: "Devpost"
+  l: "Devpost",
+  la: "https://hthshacks-20.devpost.com/"
 }, {
   n: "Public voting closes",
   t: "Sun 3:30 PM EST",
-  l: "Devpost"
+  l: "Devpost",
+  la: "https://hthshacks-20.devpost.com/"
 }, {
   n: "Judging",
   t: "Sun 12:00 PM - 5:00 PM EST",
@@ -58932,7 +58934,7 @@ var schedule = [{
 }, {
   n: "CTF ends",
   t: "Sun 4:30 PM EST",
-  l: "#announcements"
+  l: "#ctf"
 }, {
   n: "Closing ceremony + winners",
   t: "Sun 5:00 PM EST",
@@ -72247,7 +72249,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44911" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39717" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
