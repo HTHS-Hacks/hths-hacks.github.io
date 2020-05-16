@@ -65,7 +65,7 @@ const schedule = [
     t: "Sat 12:00 PM EST",
     l: "#team-formation-brainstorming"
   },
-  { n: "CTF starts", t: "Sat 1:00 PM EST", l: "#announcements" },
+  { n: "CTF starts", t: "Sat 1:00 PM EST", l: "#ctf" },
   {
     n: "Intro to Web Development",
     t: "Sat 2:00 PM EST",
@@ -75,7 +75,7 @@ const schedule = [
   {
     n: "Chess Tournament",
     t: "Sat 3:00 PM EST",
-    l: "#announcements"
+    l: "#chess-tourney"
   },
   {
     n: "Intro to Alexa",
@@ -98,7 +98,7 @@ const schedule = [
   {
     n: "Slideshow Karaoke",
     t: "Sat 5:00 PM EST",
-    l: "#announcements"
+    l: "#slideshow-karaoke"
   },
   {
     n: "Intro to Unity",
@@ -118,11 +118,11 @@ const schedule = [
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
-  { n: "Project Deadline", t: "Sun 12:00 PM EST", l: "Devpost" },
-  { n: "Public voting closes", t: "Sun 3:30 PM EST", l: "Devpost" },
+  { n: "Project Deadline", t: "Sun 12:00 PM EST", l: "Devpost", la:"https://hthshacks-20.devpost.com/" },
+  { n: "Public voting closes", t: "Sun 3:30 PM EST", l: "Devpost", la:"https://hthshacks-20.devpost.com/" },
   { n: "Judging", t: "Sun 12:00 PM - 5:00 PM EST", l: "Online" },
   { n: "Project Demos", t: "Sun 12:00 PM - 5:00 PM EST", l: "#demo" },
-  { n: "CTF ends", t: "Sun 4:30 PM EST", l: "#announcements" },
+  { n: "CTF ends", t: "Sun 4:30 PM EST", l: "#ctf" },
   {
     n: "Closing ceremony + winners",
     t: "Sun 5:00 PM EST",
