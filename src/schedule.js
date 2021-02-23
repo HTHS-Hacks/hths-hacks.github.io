@@ -17,7 +17,7 @@ export default class Schedule extends Component {
   render() {
     return (
       <section id="schedule">
-        <Page title="SCHEDULE" style={{ backgroundColor: "#595959" }}>
+        <Page title="SCHEDULE" style={{ backgroundColor: "#595959", color: "white" }}>
           <Table
             responsive
             style={{

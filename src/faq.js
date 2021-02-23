@@ -81,9 +81,9 @@ const faq = [
       "A hackathon is an event where a team of students can develop anything: a website, an app, or anything else. Let your creativity run wild!",
   },
   {
-    q: "How has the recent crisis affected hths.hacks()?",
+    q: "How has the pandemic affected hths.hacks()?",
     a:
-      "Because of COVID-19, we've been forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out.",
+      "COVID-19 has forced to move hths.hacks() online. But don't worry, we've still got a lot of interested workshops planned, and amazing prizes to give out.",
   },
   {
     q: "How will it work?",
@@ -91,8 +91,15 @@ const faq = [
       "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home.",
   },
   {
-    q: "How much will it cost me?",
-    a: "Absolutely nothing! Just participate and have fun.",
+    q: "Where can I win?",
+    a: (
+      <p>
+        Hackathons aren't about winning. You have the opportunity to build an
+        amazing project, meet other creators like you, and learn through
+        workshops. But if you insist, you can find our prizes on{" "}
+        <a href="https://hthshacks-20.devpost.com/">Devpost</a>
+      </p>
+    ),
   },
   {
     q: "Who can attend?",
@@ -114,15 +121,8 @@ const faq = [
       "hths.hacks() is run by the HTHS Robotics and Coding Club. All of the funding comes from sponsors.",
   },
   {
-    q: "Where can I win?",
-    a: (
-      <p>
-        Hackathons aren't about winning. You have the opportunity to build an
-        amazing project, meet other creators like you, and learn through
-        workshops. But if you insist, you can find our prizes on{" "}
-        <a href="https://hthshacks-20.devpost.com/">Devpost</a>
-      </p>
-    ),
+    q: "How much will it cost me?",
+    a: "Absolutely nothing! Just participate and have fun.",
   },
   {
     q: "Any other questions?",
