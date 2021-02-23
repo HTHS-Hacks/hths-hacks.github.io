@@ -57893,7 +57893,7 @@ var Home = /*#__PURE__*/function (_Component) {
         style: styles.subtext
       }, "May 15-16"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration is currently closed"), _react.default.createElement("br", null), "Check back soon for new information!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration is not yet open"), _react.default.createElement("br", null), "Check back soon for new information!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
@@ -57927,11 +57927,11 @@ var styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#4a86e8",
+    color: "#5FE040",
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#4a86e8",
+    color: "#40F55E",
     textAlign: "center"
   },
   buttonStyle: {
@@ -57954,7 +57954,12 @@ var styles = {
     display: "block"
   }
 };
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./home.css":"home.css","./img/Asset 1.png":"img/Asset 1.png","./img/Asset 2.png":"img/Asset 2.png"}],"page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","./home.css":"home.css","./img/Asset 1.png":"img/Asset 1.png","./img/Asset 2.png":"img/Asset 2.png"}],"background.sass":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel/src/builtins/css-loader.js"}],"page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -57968,7 +57973,7 @@ var _reactBootstrap = require("react-bootstrap");
 
 require("bootstrap/dist/css/bootstrap.css");
 
-require("./background.css");
+require("./background.sass");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -58036,7 +58041,7 @@ var styles = {
   container: {
     paddingTop: 56,
     width: "100%",
-    backgroundColor: "#3c78d8",
+    backgroundColor: "#2FE0A0",
     color: "white"
   },
   title: {
@@ -58053,7 +58058,7 @@ var styles = {
     marginBottom: "30px"
   }
 };
-},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css"}],"about.css":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.sass":"background.sass"}],"about.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -58124,10 +58129,10 @@ var About = /*#__PURE__*/function (_Component) {
         id: "about"
       }, _react.default.createElement(_page.default, {
         title: "ABOUT",
-        backgroundColor: "#3c78d8"
+        backgroundColor: "#2FE0A0"
       }, _react.default.createElement("p", {
         className: "about-p"
-      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 24 hours. Due to the recent crisis, hths.hacks() will be taking place entirely online, but don't worry, we didn't forget about the prizes. You'll still get the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
+      }, "There\u2019s something about being under a deadline that generates the best ideas. That\u2019s why high school students strategically plan to do assignments right at the last minute. At hths.hacks(), we believe that tech can change the world, so we\u2019re challenging you to solve a problem in 24 hours. COVID-19 might have taken hths.hacks() online, but don't worry--we didn't forget about the prizes! You'll get the opportunity to meet some fellow hackers and great sponsors, the chance to win some prizes and learn something new. Let\u2019s see what you can create!")));
     }
   }]);
 
@@ -58200,8 +58205,8 @@ var FAQ = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "FAQ",
         style: {
-          backgroundColor: "#ffd966",
-          color: "black"
+          backgroundColor: "#48FADB",
+          color: "#353535"
         }
       }, _react.default.createElement(_reactBootstrap.Container, {
         style: styles.container
@@ -58234,7 +58239,7 @@ var styles = {
   },
   cardStyle: {
     padding: "15px",
-    backgroundColor: "#f7f7f5",
+    backgroundColor: "#2FE0A0",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
     marginBottom: "15px"
@@ -58266,7 +58271,7 @@ var faq = [{
   a: "We will have an opening ceremony streamed at twitch.tv/hthshacks, after which we'll start hacking. You can check in to get help or attend one of our workshops. Finally, you'll submit a short video of your product, and we'll judge remotely. Prizes will be sent home."
 }, {
   q: "How much will it cost me?",
-  a: "Absolutely nothing!Just participate and have fun."
+  a: "Absolutely nothing! Just participate and have fun."
 }, {
   q: "Who can attend?",
   a: "Any currently enrolled high school student is welcome to attend."
@@ -58278,7 +58283,7 @@ var faq = [{
   a: "Fill out the form linked above and describe what you hope to get out of hths.hacks(). HTHS students will be given priority."
 }, {
   q: "Who runs hths.hacks()?",
-  a: "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors."
+  a: "hths.hacks() is run by the HTHS Robotics and Coding Club. All of the funding comes from sponsors."
 }, {
   q: "Where can I win?",
   a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
@@ -71795,7 +71800,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49940" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62323" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
