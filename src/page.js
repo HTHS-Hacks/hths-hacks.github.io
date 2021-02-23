@@ -33,7 +33,7 @@ const styles = {
     paddingTop: 56,
     width: "100%",
     backgroundColor: "#2FE0A0",
-    color: "white"
+    color: "#353535"
   },
   title: {
     borderStyle: "solid",
