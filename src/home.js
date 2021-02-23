@@ -30,16 +30,15 @@ export default class Home extends Component {
             </Row>
             <Row>
               <Col>
-                <h2 style={styles.subtext}>May 16-17</h2>
+                <h2 style={styles.subtext}>May 15-16</h2>
               </Col>
             </Row>
             <Row>
               <Col>
                 <h2 style={styles.subtextImportant}>
-                  <b>Registration is closed</b>
+                  <b>Registration is currently closed</b>
                   <br />
-                  Discord invites have been sent. Please email
-                  contact@hthshacks.com if you did not get one.
+                  Check back soon for new information!
                 </h2>
               </Col>
             </Row>
