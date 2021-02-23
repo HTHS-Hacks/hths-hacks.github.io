@@ -36,7 +36,7 @@ export default class Home extends Component {
             <Row>
               <Col>
                 <h2 style={styles.subtextImportant}>
-                  <b>Registration is currently closed</b>
+                  <b>Registration is not yet open</b>
                   <br />
                   Check back soon for new information!
                 </h2>
@@ -95,11 +95,11 @@ const styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#4a86e8",
+    color: "#5FE040",
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#4a86e8",
+    color: "#40F55E",
     textAlign: "center"
   },
   buttonStyle: {

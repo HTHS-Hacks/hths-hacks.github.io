@@ -28,6 +28,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bindings": "^1.2.1",
     "bootstrap": "^4.3.1",
+    "compass": "^0.1.1",
     "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "parcel": "^1.12.4",

@@ -10,7 +10,7 @@ export default class About extends Component {
   render() {
     return (
       <section id="about">
-        <Page title="ABOUT" backgroundColor="#3c78d8">
+        <Page title="ABOUT" backgroundColor="#2FE0A0">
           <p className="about-p">
             There’s something about being under a deadline that generates the
             best ideas. That’s why high school students strategically plan to do

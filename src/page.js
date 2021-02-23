@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // Add the following two lines
 import { Navbar, Nav, Container, Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import "./background.css";
+import "./background.sass";
 
 export default class Home extends Component {
   render() {
@@ -32,7 +32,7 @@ const styles = {
   container: {
     paddingTop: 56,
     width: "100%",
-    backgroundColor: "#3c78d8",
+    backgroundColor: "#2FE0A0",
     color: "white"
   },
   title: {

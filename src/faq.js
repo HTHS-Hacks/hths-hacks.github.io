@@ -20,7 +20,7 @@ export default class FAQ extends Component {
       <section id="faq">
         <Page
           title="FAQ"
-          style={{ backgroundColor: "#ffd966", color: "black" }}
+          style={{ backgroundColor: "#48FADB", color: "#353535" }}
         >
           <Container style={styles.container}>
             {faq.map((chunk) => (
@@ -48,7 +48,7 @@ const styles = {
   },
   cardStyle: {
     padding: "15px",
-    backgroundColor: "#f7f7f5",
+    backgroundColor: "#2FE0A0",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
     marginBottom: "15px",
@@ -92,7 +92,7 @@ const faq = [
   },
   {
     q: "How much will it cost me?",
-    a: "Absolutely nothing!Just participate and have fun.",
+    a: "Absolutely nothing! Just participate and have fun.",
   },
   {
     q: "Who can attend?",
@@ -111,7 +111,7 @@ const faq = [
   {
     q: "Who runs hths.hacks()?",
     a:
-      "hths.hacks() is entirely run by HTHS students. All of the funding comes from sponsors.",
+      "hths.hacks() is run by the HTHS Robotics and Coding Club. All of the funding comes from sponsors.",
   },
   {
     q: "Where can I win?",
