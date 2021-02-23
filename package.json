@@ -1,41 +1,46 @@
 {
-    "name": "hths-hacks",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "parcel src/index.html --open",
-        "build": "parcel build src/index.html",
-        "deploy": "gh-pages -d dist -b master",
-        "predeploy": "npm run build",
-        "clean": "rm -rf dist/*"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/kusti8/hths-hacks.git"
-    },
-    "author": "Gustav Hansen",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/kusti8/hths-hacks/issues"
-    },
-    "homepage": "https://github.com/kusti8/hths-hacks#readme",
-    "dependencies": {
-        "@fortawesome/fontawesome-svg-core": "^1.2.25",
-        "@fortawesome/free-brands-svg-icons": "^5.11.2",
-        "@fortawesome/free-regular-svg-icons": "^5.11.2",
-        "@fortawesome/free-solid-svg-icons": "^5.11.2",
-        "@fortawesome/react-fontawesome": "^0.1.4",
-        "bootstrap": "^4.3.1",
-        "gh-pages": "^2.1.1",
-        "jquery": "^3.4.1",
-        "react": "^16.9.0",
-        "react-bootstrap": "^1.0.0-beta.12",
-        "react-dom": "^16.9.0",
-        "src": "^1.1.2"
-    },
-    "devDependencies": {
-        "parcel-bundler": "^1.12.3",
-        "parcel-plugin-static-files-copy": "^2.2.1"
-    }
+  "name": "hths-hacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "deploy": "gh-pages -d dist -b master",
+    "predeploy": "npm run build",
+    "clean": "rm -rf dist/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kusti8/hths-hacks.git"
+  },
+  "author": "Gustav Hansen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kusti8/hths-hacks/issues"
+  },
+  "homepage": "https://github.com/kusti8/hths-hacks#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bindings": "^1.2.1",
+    "bootstrap": "^4.3.1",
+    "gh-pages": "^2.1.1",
+    "jquery": "^3.4.1",
+    "parcel": "^1.12.4",
+    "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
+    "react-dom": "^16.9.0",
+    "src": "^1.1.2"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.2.0",
+    "node-sass": "^5.0.0",
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "sass": "^1.32.8"
+  }
 }

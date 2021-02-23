@@ -16,11 +16,11 @@ export default class About extends Component {
             best ideas. That’s why high school students strategically plan to do
             assignments right at the last minute. At hths.hacks(), we believe
             that tech can change the world, so we’re challenging you to solve a
-            problem in 24 hours. Due to the recent crisis, hths.hacks() will be
-            taking place entirely online, but don't worry, we didn't forget
-            about the prizes. You'll still get the opportunity to meet some
-            fellow hackers and great sponsors, the chance to win some prizes and
-            learn something new. Let’s see what you can create!
+            problem in 24 hours. COVID-19 might have taken hths.hacks() online,
+            but don't worry--we didn't forget about the prizes! You'll get 
+            the opportunity to meet some fellow hackers and great sponsors,
+            the chance to win some prizes and learn something new. Let’s see what 
+            you can create!
           </p>
         </Page>
       </section>
