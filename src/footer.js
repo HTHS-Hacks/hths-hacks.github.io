@@ -26,7 +26,7 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <p style={{ textAlign: "center" }}>May 16, 2020</p>
+              <p style={{ textAlign: "center" }}>May 15-16, 2021</p>
             </Col>
           </Row>
           <Row>
