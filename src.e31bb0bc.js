@@ -64770,7 +64770,7 @@ var Home = /*#__PURE__*/function (_Component) {
         style: {
           textAlign: "center"
         }
-      }, "May 16, 2020"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
+      }, "May 15-16, 2021"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
         style: {
           textAlign: "center"
         }
@@ -71738,13 +71738,6 @@ var App = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeSolidSvgIcons.faClock,
         size: "2x"
-      }))), _react.default.createElement("a", {
-        href: "#sponsors"
-      }, _react.default.createElement("div", {
-        className: "nav-item4"
-      }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
-        icon: _freeSolidSvgIcons.faGift,
-        size: "2x"
       }))), _react.default.createElement("div", {
         className: "nav-main-item"
       }, _react.default.createElement("div", {
@@ -71753,7 +71746,7 @@ var App = /*#__PURE__*/function (_Component) {
         className: "hamburger-box"
       }, _react.default.createElement("span", {
         className: "hamburger-inner"
-      }))))), _react.default.createElement(_home.default, null), _react.default.createElement(_about.default, null), _react.default.createElement(_faq.default, null), _react.default.createElement(_schedule.default, null), _react.default.createElement(_sponsors.default, null), _react.default.createElement(_footer.default, null));
+      }))))), _react.default.createElement(_home.default, null), _react.default.createElement(_about.default, null), _react.default.createElement(_faq.default, null), _react.default.createElement(_schedule.default, null), _react.default.createElement(_footer.default, null));
     }
   }]);
 
@@ -71801,7 +71794,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53717" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56064" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
