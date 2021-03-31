@@ -95,7 +95,7 @@ const styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#595959",
+    color: "#40F55E",
     textAlign: "center"
   },
   subtextImportant: {

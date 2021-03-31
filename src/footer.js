@@ -26,7 +26,7 @@ export default class Home extends Component {
           </Row>
           <Row>
             <Col>
-              <p style={{ textAlign: "center" }}>May 15-16, 2021</p>
+              <p style={{ color: "white", textAlign: "center" }}>May 15-16, 2021</p>
             </Col>
           </Row>
           <Row>
@@ -90,7 +90,7 @@ const styles = {
   container: {
     paddingTop: 20,
     width: "100%",
-    backgroundColor: "#08A5D2",
+    backgroundColor: "#022C38",
     color: "white",
     fontSize: 20,
   },
