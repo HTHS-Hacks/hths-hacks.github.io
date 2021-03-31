@@ -57927,11 +57927,11 @@ var styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#5FE040",
+    color: "#595959",
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#40F55E",
+    color: "#595959",
     textAlign: "center"
   },
   buttonStyle: {
@@ -58041,8 +58041,8 @@ var styles = {
   container: {
     paddingTop: 56,
     width: "100%",
-    backgroundColor: "#2FE0A0",
-    color: "#353535"
+    backgroundColor: "#08A5D2",
+    color: "#ffffff"
   },
   title: {
     borderStyle: "solid",
@@ -58205,8 +58205,8 @@ var FAQ = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "FAQ",
         style: {
-          backgroundColor: "#48FADB",
-          color: "#353535"
+          backgroundColor: "#08D29A",
+          color: "#ffffff"
         }
       }, _react.default.createElement(_reactBootstrap.Container, {
         style: styles.container
@@ -58239,7 +58239,7 @@ var styles = {
   },
   cardStyle: {
     padding: "15px",
-    backgroundColor: "#2FE0A0",
+    backgroundColor: "#08A5D2",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
     marginBottom: "15px"
@@ -64822,7 +64822,7 @@ var styles = {
   container: {
     paddingTop: 20,
     width: "100%",
-    backgroundColor: "#090a0f",
+    backgroundColor: "#08A5D2",
     color: "white",
     fontSize: 20
   },
@@ -71794,7 +71794,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56064" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54768" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
