@@ -57927,7 +57927,7 @@ var styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#595959",
+    color: "#40F55E",
     textAlign: "center"
   },
   subtextImportant: {
@@ -58041,7 +58041,7 @@ var styles = {
   container: {
     paddingTop: 56,
     width: "100%",
-    backgroundColor: "#08A5D2",
+    backgroundColor: "#2FE0A0",
     color: "#ffffff"
   },
   title: {
@@ -58205,7 +58205,7 @@ var FAQ = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "FAQ",
         style: {
-          backgroundColor: "#08D29A",
+          backgroundColor: "#08A5D2",
           color: "#ffffff"
         }
       }, _react.default.createElement(_reactBootstrap.Container, {
@@ -58239,7 +58239,7 @@ var styles = {
   },
   cardStyle: {
     padding: "15px",
-    backgroundColor: "#08A5D2",
+    backgroundColor: "#034A5E",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
     marginBottom: "15px"
@@ -64768,6 +64768,7 @@ var Home = /*#__PURE__*/function (_Component) {
         style: styles.iconImage
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
         style: {
+          color: "white",
           textAlign: "center"
         }
       }, "May 15-16, 2021"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("p", {
@@ -64822,7 +64823,7 @@ var styles = {
   container: {
     paddingTop: 20,
     width: "100%",
-    backgroundColor: "#08A5D2",
+    backgroundColor: "#022C38",
     color: "white",
     fontSize: 20
   },
@@ -71794,7 +71795,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54768" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63267" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
