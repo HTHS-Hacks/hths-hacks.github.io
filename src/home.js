@@ -30,7 +30,7 @@ export default class Home extends Component {
             </Row>
             <Row>
               <Col>
-                <h2 style={styles.subtext}>May 15-16</h2>
+                <h2 style={styles.subtext}>May 15-16, 2021</h2>
               </Col>
             </Row>
             <Row>
