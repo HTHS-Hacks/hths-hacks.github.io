@@ -90,7 +90,7 @@ const styles = {
   container: {
     paddingTop: 20,
     width: "100%",
-    backgroundColor: "#090a0f",
+    backgroundColor: "#08A5D2",
     color: "white",
     fontSize: 20,
   },

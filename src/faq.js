@@ -20,7 +20,7 @@ export default class FAQ extends Component {
       <section id="faq">
         <Page
           title="FAQ"
-          style={{ backgroundColor: "#48FADB", color: "#353535" }}
+          style={{ backgroundColor: "#08D29A", color: "#ffffff" }}
         >
           <Container style={styles.container}>
             {faq.map((chunk) => (
@@ -48,7 +48,7 @@ const styles = {
   },
   cardStyle: {
     padding: "15px",
-    backgroundColor: "#2FE0A0",
+    backgroundColor: "#08A5D2",
     boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
     height: "calc(100% - 15px)",
     marginBottom: "15px",

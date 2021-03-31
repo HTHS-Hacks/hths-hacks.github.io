@@ -32,8 +32,8 @@ const styles = {
   container: {
     paddingTop: 56,
     width: "100%",
-    backgroundColor: "#2FE0A0",
-    color: "#353535"
+    backgroundColor: "#08A5D2",
+    color: "#ffffff"
   },
   title: {
     borderStyle: "solid",

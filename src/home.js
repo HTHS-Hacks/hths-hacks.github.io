@@ -95,11 +95,11 @@ const styles = {
     textAlign: "center"
   },
   subtext: {
-    color: "#5FE040",
+    color: "#595959",
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#40F55E",
+    color: "#595959",
     textAlign: "center"
   },
   buttonStyle: {
