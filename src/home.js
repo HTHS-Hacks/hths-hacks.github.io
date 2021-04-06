@@ -35,11 +35,11 @@ export default class Home extends Component {
             </Row>
             <Row>
               <Col>
-                <h2 style={styles.subtextImportant}>
-                  <b>Registration is not yet open</b>
-                  <br />
-                  Check back soon for new information!
-                </h2>
+                <a href="https://forms.gle/oJTi3L7zUuHgU3Ab8">
+                  <h2 style={styles.subtextImportant}>
+                    <b>Registration now open!</b>
+                  </h2>
+                </a>
               </Col>
             </Row>
             <Row>
