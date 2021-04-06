@@ -57895,7 +57895,7 @@ var Home = /*#__PURE__*/function (_Component) {
         href: "https://forms.gle/oJTi3L7zUuHgU3Ab8"
       }, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration now open!"))))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, _react.default.createElement("u", null, "Registration now open!")))))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
@@ -71789,7 +71789,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56350" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56637" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
