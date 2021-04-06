@@ -55,77 +55,97 @@ const styles = {
 const schedule = [
   {
     n: "Opening ceremony",
-    t: "Sat 11:30 AM EDT",
+    t: "Sat 11:30 AM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
-  { n: "Hacking begins", t: "Sat 12:00 PM EDT", l: "Online" },
+  { 
+    n: "Hacking begins", 
+    t: "Sat 12:00 PM EST", 
+    l: "Online" 
+  },
   {
     n: "Team formation and brainstorming",
-    t: "Sat 12:00 PM EDT",
+    t: "Sat 12:00 PM EST",
     l: "#team-formation-brainstorming"
   },
-  { n: "CTF starts", t: "Sat 1:00 PM EST", l: "#ctf" },
   {
-    n: "Intro to Web Development",
-    t: "Sat 2:00 PM EDT",
+    n: "Workshop 1",
+    t: "Sat 2:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
     n: "Chess Tournament",
-    t: "Sat 3:00 PM EDT",
+    t: "Sat 3:00 PM EST",
     l: "#chess-tourney"
   },
   {
-    n: "Intro to Alexa",
-    t: "Sat 3:00 PM EDT",
+    n: "Workshop 2",
+    t: "Sat 3:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
-    n: "Intro to Machine Learning",
-    t: "Sat 4:00 PM EDT",
-    l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
-  },
-  {
-    n: "Intro to Github",
-    t: "Sat 5:00 PM EDT",
+    n: "Workshop 3",
+    t: "Sat 5:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
     n: "Slideshow Karaoke",
-    t: "Sat 5:00 PM EDT",
+    t: "Sat 5:00 PM EST",
     l: "#slideshow-karaoke"
   },
   {
-    n: "Intro to Unity",
-    t: "Sat 6:00 PM EDT",
+    n: "Workshop 4",
+    t: "Sat 6:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
-    n: "Build a Cloud-Connected AR/VR App in 15 Minutes or Less",
-    t: "Sat 7:00 PM EDT",
+    n: "AR Workshop ft. EchoAR",
+    t: "Sat 7:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
-    n: "Intro to Firebase",
-    t: "Sat 8:00 PM EDT",
+    n: "Workshop 5",
+    t: "Sat 8:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
-  { n: "Project Deadline", t: "Sun 12:00 PM EDT", l: "Devpost", la:"https://hthshacks-20.devpost.com/" },
-  { n: "Public voting closes", t: "Sun 3:30 PM EDT", l: "Devpost", la:"https://hthshacks-20.devpost.com/" },
-  { n: "Judging", t: "Sun 12:00 PM - 5:00 PM EDT", l: "Online" },
-  { n: "Project Demos", t: "Sun 12:00 PM - 5:00 PM EDT", l: "#demo" },
-  { n: "CTF ends", t: "Sun 4:30 PM EDT", l: "#ctf" },
+  { 
+    n: "Project Deadline", 
+    t: "Sun 12:00 PM EST", 
+    l: "Devpost", 
+    la:"https://hthshacks-20.devpost.com/" 
+  },
+  { 
+    n: "Public voting closes", 
+    t: "Sun 3:30 PM EST", 
+    l: "Devpost", 
+    la:"https://hthshacks-20.devpost.com/" 
+  },
+  {
+    n: "Q&A With Software Developer",
+    t: "Sun 3:30 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks",
+  },
+  { 
+    n: "Judging", 
+    t: "Sun 12:00 PM - 5:00 PM EST", 
+    l: "Online" 
+  },
+  { 
+    n: "Project Demos", 
+    t: "Sun 12:00 PM - 5:00 PM EST", 
+    l: "#demo" 
+  },
   {
     n: "Closing ceremony + winners",
-    t: "Sun 5:00 PM EDT",
+    t: "Sun 5:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   }
