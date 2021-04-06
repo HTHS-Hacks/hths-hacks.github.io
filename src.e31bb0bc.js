@@ -57931,7 +57931,7 @@ var styles = {
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#595959",
+    color: "white",
     textAlign: "center"
   },
   buttonStyle: {
@@ -58360,8 +58360,8 @@ var Schedule = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "SCHEDULE",
         style: {
-          backgroundColor: "#595959",
-          color: "white"
+          backgroundColor: "white",
+          color: "#595959"
         }
       }, _react.default.createElement(_reactBootstrap.Table, {
         responsive: true,
@@ -58391,7 +58391,7 @@ exports.default = Schedule;
 var styles = {
   time: {},
   tableStyle: {
-    color: "white",
+    color: "#595959",
     fontSize: "20px"
   }
 };
@@ -71787,7 +71787,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64280" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65019" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

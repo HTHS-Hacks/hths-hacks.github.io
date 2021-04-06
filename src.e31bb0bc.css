@@ -10090,7 +10090,7 @@ html {
 .nav-item1 {
     width: 60%;
     height: 60%;
-    background-color: dimGray;
+    background-color: #08A5D2;
     border-radius: 50%;
     position: absolute;
     color: white;
@@ -10109,7 +10109,7 @@ html {
 .nav-item2 {
     width: 60%;
     height: 60%;
-    background-color: dimGray;
+    background-color: #08A5D2;
     border-radius: 50%;
     position: absolute;
     color: white;
@@ -10127,7 +10127,7 @@ html {
 .nav-item3 {
     width: 60%;
     height: 60%;
-    background-color: dimGray;
+    background-color: #08A5D2;
     border-radius: 50%;
     position: absolute;
     color: white;
@@ -10144,7 +10144,7 @@ html {
 .nav-item4 {
     width: 60%;
     height: 60%;
-    background-color: dimGray;
+    background-color: #08A5D2;
     border-radius: 50%;
     position: absolute;
     color: white;
@@ -10205,7 +10205,7 @@ html {
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-      background-color: #000; }
+      background-color: #08A5D2; }
   
   .hamburger-box {
     width: 40px;
@@ -10220,7 +10220,7 @@ html {
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
       width: 40px;
       height: 4px;
-      background-color: #000;
+      background-color: #08A5D2;
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
