@@ -99,7 +99,7 @@ const styles = {
     textAlign: "center"
   },
   subtextImportant: {
-    color: "#595959",
+    color: "white",
     textAlign: "center"
   },
   buttonStyle: {
