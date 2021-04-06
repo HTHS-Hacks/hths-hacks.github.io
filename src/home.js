@@ -37,7 +37,7 @@ export default class Home extends Component {
               <Col>
                 <a href="https://forms.gle/oJTi3L7zUuHgU3Ab8">
                   <h2 style={styles.subtextImportant}>
-                    <b>Registration now open!</b>
+                    <b><u>Registration now open!</u></b>
                   </h2>
                 </a>
               </Col>
