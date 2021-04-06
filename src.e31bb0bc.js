@@ -57891,9 +57891,11 @@ var Home = /*#__PURE__*/function (_Component) {
         id: "home-image"
       }))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
         style: styles.subtext
-      }, "May 15-16, 2021"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("h2", {
+      }, "May 15-16, 2021"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("a", {
+        href: "https://forms.gle/oJTi3L7zUuHgU3Ab8"
+      }, _react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, _react.default.createElement("b", null, "Registration is not yet open"), _react.default.createElement("br", null), "Check back soon for new information!"))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
+      }, _react.default.createElement("b", null, "Registration now open!"))))), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
@@ -71787,7 +71789,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65019" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56350" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
