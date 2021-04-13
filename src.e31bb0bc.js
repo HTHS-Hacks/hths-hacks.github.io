@@ -58252,6 +58252,9 @@ var styles = {
   },
   faqContents: {
     fontSize: "18px"
+  },
+  linkStyle: {
+    color: "#F6FF36"
   }
 };
 Object.defineProperty(Array.prototype, "chunk_inefficient", {
@@ -58274,6 +58277,7 @@ var faq = [{
 }, {
   q: "Where can I win?",
   a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
+    style: styles.linkStyle,
     href: "https://hthshacks-20.devpost.com/"
   }, "Devpost"))
 }, {
@@ -58294,6 +58298,7 @@ var faq = [{
 }, {
   q: "Any other questions?",
   a: _react.default.createElement("p", null, "Email us at", " ", _react.default.createElement("a", {
+    style: styles.linkStyle,
     href: "mailto:contact@hthshacks.com"
   }, "contact@hthshacks.com"))
 }].chunk_inefficient(2);
@@ -58362,8 +58367,8 @@ var Schedule = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_page.default, {
         title: "SCHEDULE",
         style: {
-          backgroundColor: "white",
-          color: "#595959"
+          backgroundColor: "#595959",
+          color: "white"
         }
       }, _react.default.createElement(_reactBootstrap.Table, {
         responsive: true,
@@ -58380,6 +58385,7 @@ var Schedule = /*#__PURE__*/function (_Component) {
         }, _react.default.createElement("td", {
           style: styles.time
         }, event.t), _react.default.createElement("td", null, event.n), _react.default.createElement("td", null, event.la ? _react.default.createElement("a", {
+          style: styles.linkStyle,
           href: event.la
         }, event.l) : event.l));
       })))));
@@ -58393,8 +58399,11 @@ exports.default = Schedule;
 var styles = {
   time: {},
   tableStyle: {
-    color: "#595959",
+    color: "white",
     fontSize: "20px"
+  },
+  linkStyle: {
+    color: "#F6FF36"
   }
 };
 var schedule = [{
@@ -61601,35 +61610,7 @@ var Sponsors = /*#__PURE__*/function (_Component) {
           backgroundColor: "white",
           color: "black"
         }
-      }, _react.default.createElement(_reactBootstrap.Container, null, _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
-        style: styles.smallHeader
-      }, "Partners"))), partners.map(function (s) {
-        return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
-          xs: true,
-          key: s.i,
-          style: {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }
-        }, _react.default.createElement("a", {
-          href: s.l,
-          style: {
-            display: "flex",
-            justifyContent: "center"
-          }
-        }, _react.default.createElement("img", {
-          src: s.i,
-          style: {
-            objectFit: "cover",
-            width: "80%",
-            margin: "10px",
-            alignSelf: "center"
-          }
-        }))));
-      }), _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, null, _react.default.createElement("div", {
-        style: styles.smallHeader
-      }, "Sponsors"))), sponsors1.map(function (s) {
+      }, _react.default.createElement(_reactBootstrap.Container, null, sponsors1.map(function (s) {
         return _react.default.createElement(_reactBootstrap.Row, null, _react.default.createElement(_reactBootstrap.Col, {
           xs: true,
           key: s.i,
@@ -61707,7 +61688,7 @@ exports.default = Sponsors;
 var styles = {
   time: {},
   tableStyle: {
-    color: "white",
+    color: "#034A5E",
     fontSize: "25px"
   },
   sponsorInterest: {
@@ -61737,42 +61718,29 @@ var partners = [{
   i: "/mlh.png",
   l: "https://mlh.io/"
 }];
-var sponsors1 = [{
-  i: "/1517.png",
-  l: "https://www.1517fund.com/"
-}];
-var sponsors2 = [{
-  i: "/echoar.png",
-  l: "https://www.echoar.xyz/"
-}, {
-  i: "/balsamiq.png",
-  l: "https://balsamiq.com/"
-}].chunk_inefficient(2);
-var sponsors3 = [{
-  i: "/bugsee.png",
-  l: "https://www.bugsee.com/"
-}, {
+var sponsors1 = [
+  /*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/
+];
+var sponsors2 = [
+/*{ i: "/echoar.png", l: "https://www.echoar.xyz/" },
+{ i: "/balsamiq.png", l: "https://balsamiq.com/" },*/
+{
   i: "/wolfram.png",
   l: "https://www.wolfram.com/"
 }, {
-  i: "/aops.jpg",
-  l: "https://artofproblemsolving.com/"
-}, {
-  i: "/1password.png",
-  l: "https://1password.com/"
-}, {
-  i: "/cloudsploit.png",
-  l: "https://cloudsploit.com/"
-}, {
-  i: "/jdd.png",
-  l: "https://www.jdjfoundation.org/"
-}, {
-  i: "/hyperx.png",
-  l: "https://www.hyperxgaming.com/"
-}, {
-  i: "/upperline.png",
-  l: "https://www.upperlinecode.com/"
-}].chunk_inefficient(3);
+  i: "/sashido.png",
+  l: "https://www.sashido.io/en/"
+}].chunk_inefficient(2);
+var sponsors3 = [
+  /*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
+
+  /*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
+  { i: "/1password.png", l: "https://1password.com/" },
+  { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
+  { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
+  { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
+  { i: "/upperline.png", l: "https://www.upperlinecode.com/" },*/
+].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -71733,6 +71701,13 @@ var App = /*#__PURE__*/function (_Component) {
       }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeSolidSvgIcons.faClock,
         size: "2x"
+      }))), _react.default.createElement("a", {
+        href: "#sponsors"
+      }, _react.default.createElement("div", {
+        className: "nav-item4"
+      }, _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+        icon: _freeSolidSvgIcons.faGift,
+        size: "2x"
       }))), _react.default.createElement("div", {
         className: "nav-main-item"
       }, _react.default.createElement("div", {
@@ -71741,7 +71716,7 @@ var App = /*#__PURE__*/function (_Component) {
         className: "hamburger-box"
       }, _react.default.createElement("span", {
         className: "hamburger-inner"
-      }))))), _react.default.createElement(_home.default, null), _react.default.createElement(_about.default, null), _react.default.createElement(_faq.default, null), _react.default.createElement(_schedule.default, null), _react.default.createElement(_footer.default, null));
+      }))))), _react.default.createElement(_home.default, null), _react.default.createElement(_about.default, null), _react.default.createElement(_faq.default, null), _react.default.createElement(_schedule.default, null), _react.default.createElement(_sponsors.default, null), _react.default.createElement(_footer.default, null));
     }
   }]);
 
@@ -71789,7 +71764,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56637" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57806" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
