@@ -17,7 +17,7 @@ export default class Schedule extends Component {
   render() {
     return (
       <section id="schedule">
-        <Page title="SCHEDULE" style={{ backgroundColor: "white", color: "#595959" }}>
+        <Page title="SCHEDULE" style={{ backgroundColor: "#595959", color: "white" }}>
           <Table
             responsive
             style={{
@@ -32,7 +32,7 @@ export default class Schedule extends Component {
                   <td style={styles.time}>{event.t}</td>
                   <td>{event.n}</td>
                   <td>
-                    {event.la ? <a href={event.la}>{event.l}</a> : event.l}
+                    {event.la ? <a style={styles.linkStyle} href={event.la}>{event.l}</a> : event.l}
                   </td>
                 </tr>
               ))}
@@ -47,8 +47,11 @@ export default class Schedule extends Component {
 const styles = {
   time: {},
   tableStyle: {
-    color: "#595959",
+    color: "white",
     fontSize: "20px"
+  },
+  linkStyle: {
+    color: "#F6FF36"
   }
 };
 

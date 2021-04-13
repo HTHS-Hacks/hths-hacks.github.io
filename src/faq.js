@@ -60,6 +60,9 @@ const styles = {
   faqContents: {
     fontSize: "18px",
   },
+  linkStyle: {
+    color: "#F6FF36"
+  }
 };
 
 Object.defineProperty(Array.prototype, "chunk_inefficient", {
@@ -97,7 +100,7 @@ const faq = [
         Hackathons aren't about winning. You have the opportunity to build an
         amazing project, meet other creators like you, and learn through
         workshops. But if you insist, you can find our prizes on{" "}
-        <a href="https://hthshacks-20.devpost.com/">Devpost</a>
+        <a style={styles.linkStyle} href="https://hthshacks-20.devpost.com/">Devpost</a>
       </p>
     ),
   },
@@ -129,7 +132,7 @@ const faq = [
     a: (
       <p>
         Email us at{" "}
-        <a href="mailto:contact@hthshacks.com">contact@hthshacks.com</a>
+        <a style={styles.linkStyle} href="mailto:contact@hthshacks.com">contact@hthshacks.com</a>
       </p>
     ),
   },

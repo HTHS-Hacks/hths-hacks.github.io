@@ -120,11 +120,11 @@ class App extends Component {
                             <FontAwesomeIcon icon={faClock} size="2x" />
                         </div>
                     </a>
-                    {/*<a href="#sponsors">
+                    <a href="#sponsors">
                         <div className="nav-item4">
                             <FontAwesomeIcon icon={faGift} size="2x" />
                         </div>
-        </a>*/}
+                    </a>
                     <div className="nav-main-item">
                         <div
                             className={`hamburger hamburger--elastic ${
@@ -141,7 +141,7 @@ class App extends Component {
                 <About />
                 <FAQ />
                 <Schedule />
-                {/*<Sponsors />*/}
+                <Sponsors />
                 <Footer />
             </div>
         );

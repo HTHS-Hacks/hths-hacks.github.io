@@ -37,7 +37,7 @@ export default class Sponsors extends Component {
                                     .
                                 </p>
                             </Col>
-                        </Row> */}
+                        </Row> 
             <Row>
               <Col>
                 <div style={styles.smallHeader}>Partners</div>
@@ -75,7 +75,7 @@ export default class Sponsors extends Component {
               <Col>
                 <div style={styles.smallHeader}>Sponsors</div>
               </Col>
-            </Row>
+            </Row>*/}
             {sponsors1.map((s) => (
               <Row>
                 <Col
@@ -171,7 +171,7 @@ export default class Sponsors extends Component {
 const styles = {
   time: {},
   tableStyle: {
-    color: "white",
+    color: "#034A5E",
     fontSize: "25px",
   },
   sponsorInterest: {
@@ -198,18 +198,19 @@ const partners = [
   { i: "/mlh.png", l: "https://mlh.io/" },
 ];
 
-const sponsors1 = [{ i: "/1517.png", l: "https://www.1517fund.com/" }];
+const sponsors1 = [/*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/];
 const sponsors2 = [
-  { i: "/echoar.png", l: "https://www.echoar.xyz/" },
-  { i: "/balsamiq.png", l: "https://balsamiq.com/" },
+  /*{ i: "/echoar.png", l: "https://www.echoar.xyz/" },
+  { i: "/balsamiq.png", l: "https://balsamiq.com/" },*/
+  { i: "/wolfram.png", l: "https://www.wolfram.com/" },
+  { i: "/sashido.png", l: "https://www.sashido.io/en/" },
 ].chunk_inefficient(2);
 const sponsors3 = [
-  { i: "/bugsee.png", l: "https://www.bugsee.com/" },
-  { i: "/wolfram.png", l: "https://www.wolfram.com/" },
-  { i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
+  /*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
+  /*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
   { i: "/1password.png", l: "https://1password.com/" },
   { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
   { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
   { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
-  { i: "/upperline.png", l: "https://www.upperlinecode.com/" },
+  { i: "/upperline.png", l: "https://www.upperlinecode.com/" },*/
 ].chunk_inefficient(3);
