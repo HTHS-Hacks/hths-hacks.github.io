@@ -122,13 +122,13 @@ const schedule = [
     n: "Project Deadline", 
     t: "Sun 12:00 PM EST", 
     l: "Devpost", 
-    la:"https://hthshacks-20.devpost.com/" 
+    la:"https://hthshacks-21.devpost.com/" 
   },
   { 
     n: "Public voting closes", 
     t: "Sun 3:30 PM EST", 
     l: "Devpost", 
-    la:"https://hthshacks-20.devpost.com/" 
+    la:"https://hthshacks-21.devpost.com/" 
   },
   {
     n: "Q&A With Software Developer",

@@ -100,7 +100,7 @@ const faq = [
         Hackathons aren't about winning. You have the opportunity to build an
         amazing project, meet other creators like you, and learn through
         workshops. But if you insist, you can find our prizes on{" "}
-        <a style={styles.linkStyle} href="https://hthshacks-20.devpost.com/">Devpost</a>
+        <a style={styles.linkStyle} href="https://hthshacks-21.devpost.com/">Devpost</a>
       </p>
     ),
   },
