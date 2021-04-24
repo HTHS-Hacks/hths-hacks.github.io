@@ -58278,7 +58278,7 @@ var faq = [{
   q: "Where can I win?",
   a: _react.default.createElement("p", null, "Hackathons aren't about winning. You have the opportunity to build an amazing project, meet other creators like you, and learn through workshops. But if you insist, you can find our prizes on", " ", _react.default.createElement("a", {
     style: styles.linkStyle,
-    href: "https://hthshacks-20.devpost.com/"
+    href: "https://hthshacks-21.devpost.com/"
   }, "Devpost"))
 }, {
   q: "Who can attend?",
@@ -58461,12 +58461,12 @@ var schedule = [{
   n: "Project Deadline",
   t: "Sun 12:00 PM EST",
   l: "Devpost",
-  la: "https://hthshacks-20.devpost.com/"
+  la: "https://hthshacks-21.devpost.com/"
 }, {
   n: "Public voting closes",
   t: "Sun 3:30 PM EST",
   l: "Devpost",
-  la: "https://hthshacks-20.devpost.com/"
+  la: "https://hthshacks-21.devpost.com/"
 }, {
   n: "Q&A With Software Developer",
   t: "Sun 3:30 PM EST",
@@ -61718,28 +61718,34 @@ var partners = [{
   i: "/mlh.png",
   l: "https://mlh.io/"
 }];
-var sponsors1 = [
-  /*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/
+var sponsors1 = [{
+  i: "/hths.png",
+  l: "http://www.hths.mcvsd.org/"
+}
+/*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/
 ];
 var sponsors2 = [
-/*{ i: "/echoar.png", l: "https://www.echoar.xyz/" },
-{ i: "/balsamiq.png", l: "https://balsamiq.com/" },*/
-{
+  /*{ i: "/echoar.png", l: "https://www.echoar.xyz/" },
+  { i: "/balsamiq.png", l: "https://balsamiq.com/" },*/
+].chunk_inefficient(2);
+var sponsors3 = [{
   i: "/wolfram.png",
   l: "https://www.wolfram.com/"
 }, {
   i: "/sashido.png",
   l: "https://www.sashido.io/en/"
-}].chunk_inefficient(2);
-var sponsors3 = [
-  /*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
+}, {
+  i: "/echoar.png",
+  l: "https://www.echoar.xyz/"
+}
+/*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
 
-  /*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
-  { i: "/1password.png", l: "https://1password.com/" },
-  { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
-  { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
-  { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
-  { i: "/upperline.png", l: "https://www.upperlinecode.com/" },*/
+/*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
+{ i: "/1password.png", l: "https://1password.com/" },
+{ i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
+{ i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
+{ i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
+{ i: "/upperline.png", l: "https://www.upperlinecode.com/" },*/
 ].chunk_inefficient(3);
 },{"react":"../node_modules/react/index.js","react-bootstrap":"../node_modules/react-bootstrap/esm/index.js","./page":"page.js","bootstrap/dist/css/bootstrap.css":"../node_modules/bootstrap/dist/css/bootstrap.css","./background.css":"background.css","@fortawesome/free-brands-svg-icons":"../node_modules/@fortawesome/free-brands-svg-icons/index.es.js"}],"../node_modules/@fortawesome/fontawesome-svg-core/index.es.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -71764,7 +71770,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57806" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57347" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
