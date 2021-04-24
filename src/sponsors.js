@@ -198,14 +198,18 @@ const partners = [
   { i: "/mlh.png", l: "https://mlh.io/" },
 ];
 
-const sponsors1 = [/*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/];
+const sponsors1 = [
+  { i: "/hths.png", l: "http://www.hths.mcvsd.org/" }
+  /*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/
+];
 const sponsors2 = [
   /*{ i: "/echoar.png", l: "https://www.echoar.xyz/" },
   { i: "/balsamiq.png", l: "https://balsamiq.com/" },*/
-  { i: "/wolfram.png", l: "https://www.wolfram.com/" },
-  { i: "/sashido.png", l: "https://www.sashido.io/en/" },
 ].chunk_inefficient(2);
 const sponsors3 = [
+  { i: "/wolfram.png", l: "https://www.wolfram.com/" },
+  { i: "/sashido.png", l: "https://www.sashido.io/en/" },
+  { i: "/echoar.png", l: "https://www.echoar.xyz/" },
   /*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
   /*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
   { i: "/1password.png", l: "https://1password.com/" },
