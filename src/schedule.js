@@ -74,47 +74,42 @@ const schedule = [
   },
   {
     n: "Workshop 1",
+    t: "Sat 1:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Workshop 2",
     t: "Sat 2:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
-    n: "Chess Tournament",
+    n: "Workshop 3",
     t: "Sat 3:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Chess Tournament",
+    t: "Sat 4:00 PM EST",
     l: "#chess-tourney"
   },
   {
-    n: "Workshop 2",
-    t: "Sat 3:00 PM EST",
-    l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
-  },
-  {
-    n: "Workshop 3",
-    t: "Sat 5:00 PM EST",
-    l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
-  },
-  {
-    n: "Slideshow Karaoke",
-    t: "Sat 5:00 PM EST",
-    l: "#slideshow-karaoke"
-  },
-  {
     n: "Workshop 4",
-    t: "Sat 6:00 PM EST",
-    l: "Twitch",
-    la: "https://www.twitch.tv/hthshacks"
-  },
-  {
-    n: "AR Workshop ft. EchoAR",
-    t: "Sat 7:00 PM EST",
+    t: "Sat 5:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
   {
     n: "Workshop 5",
-    t: "Sat 8:00 PM EST",
+    t: "Sat 6:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  },
+  {
+    n: "Workshop 6",
+    t: "Sat 7:00 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks"
   },
@@ -122,7 +117,13 @@ const schedule = [
     n: "Project Deadline", 
     t: "Sun 12:00 PM EST", 
     l: "Devpost", 
-    la:"https://hthshacks-21.devpost.com/" 
+    la: "https://hthshacks-21.devpost.com/" 
+  },
+  { 
+    n: "Project Demos", 
+    t: "Sun 12:10 PM", 
+    l: "Twitch",
+    la: "https://hthshacks-21.devpost.com/" 
   },
   { 
     n: "Public voting closes", 
@@ -131,20 +132,10 @@ const schedule = [
     la:"https://hthshacks-21.devpost.com/" 
   },
   {
-    n: "Q&A With Software Developer",
+    n: "Q&A With Students in STEM",
     t: "Sun 3:30 PM EST",
     l: "Twitch",
     la: "https://www.twitch.tv/hthshacks",
-  },
-  { 
-    n: "Judging", 
-    t: "Sun 12:00 PM - 5:00 PM EST", 
-    l: "Online" 
-  },
-  { 
-    n: "Project Demos", 
-    t: "Sun 12:00 PM - 5:00 PM EST", 
-    l: "#demo" 
   },
   {
     n: "Closing ceremony + winners",
