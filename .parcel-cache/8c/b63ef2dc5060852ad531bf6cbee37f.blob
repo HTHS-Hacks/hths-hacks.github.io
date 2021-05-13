@@ -1,0 +1,191 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactBootstrap = require("react-bootstrap");
+  var _page = require("./page");
+  var _pageDefault = _parcelHelpers.interopDefault(_page);
+  require("bootstrap/dist/css/bootstrap.css");
+  require("./background.css");
+  var _jsxFileName = "/home/tmakin/hths-hacks.github.io/src/schedule.js";
+  class Schedule extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("section", {
+          id: "schedule",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 7
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_pageDefault.default, {
+          title: "SCHEDULE",
+          style: {
+            backgroundColor: "#595959",
+            color: "white"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Table, {
+          responsive: true,
+          style: {
+            marginTop: "25px",
+            width: "100%",
+            tableLayout: "fixed"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("tbody", {
+          style: styles.tableStyle,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 13
+          }
+        }, schedule.map(event => /*#__PURE__*/_reactDefault.default.createElement("tr", {
+          key: event.n + event.t,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("td", {
+          style: styles.time,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 19
+          }
+        }, event.t), /*#__PURE__*/_reactDefault.default.createElement("td", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 19
+          }
+        }, event.n), /*#__PURE__*/_reactDefault.default.createElement("td", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 19
+          }
+        }, event.la ? /*#__PURE__*/_reactDefault.default.createElement("a", {
+          style: styles.linkStyle,
+          href: event.la,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 33
+          }
+        }, event.l) : event.l)))))))
+      );
+    }
+  }
+  exports.default = Schedule;
+  const styles = {
+    time: {},
+    tableStyle: {
+      color: "white",
+      fontSize: "20px"
+    },
+    linkStyle: {
+      color: "#F6FF36"
+    }
+  };
+  const schedule = [{
+    n: "Opening ceremony",
+    t: "Sat 11:30 AM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Hacking begins",
+    t: "Sat 12:00 PM EST",
+    l: "Online"
+  }, {
+    n: "Team formation and brainstorming",
+    t: "Sat 12:00 PM EST",
+    l: "#team-formation-brainstorming"
+  }, {
+    n: "Workshop 1",
+    t: "Sat 1:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Workshop 2",
+    t: "Sat 2:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Workshop 3",
+    t: "Sat 3:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Chess Tournament",
+    t: "Sat 4:00 PM EST",
+    l: "#chess-tourney"
+  }, {
+    n: "Workshop 4",
+    t: "Sat 5:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Workshop 5",
+    t: "Sat 6:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Workshop 6",
+    t: "Sat 7:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Project Deadline",
+    t: "Sun 12:00 PM EST",
+    l: "Devpost",
+    la: "https://hthshacks-21.devpost.com/"
+  }, {
+    n: "Project Demos",
+    t: "Sun 12:10 PM",
+    l: "Twitch",
+    la: "https://hthshacks-21.devpost.com/"
+  }, {
+    n: "Public voting closes",
+    t: "Sun 3:30 PM EST",
+    l: "Devpost",
+    la: "https://hthshacks-21.devpost.com/"
+  }, {
+    n: "Q&A With Students in STEM",
+    t: "Sun 3:30 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }, {
+    n: "Closing ceremony + winners",
+    t: "Sun 5:00 PM EST",
+    l: "Twitch",
+    la: "https://www.twitch.tv/hthshacks"
+  }];
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,233 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactBootstrap = require("react-bootstrap");
+  require("bootstrap/dist/css/bootstrap.css");
+  require("./background.css");
+  require("./home.css");
+  var _jsxFileName = "/home/tmakin/hths-hacks.github.io/src/home.js";
+  class Home extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: styles.container,
+          id: "home-background",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11,
+            columnNumber: 7
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          id: "stars",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12,
+            columnNumber: 9
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          id: "stars2",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 9
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          id: "stars3",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 9
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: styles.centerContent,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Container, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: require("./img/Asset 1.png"),
+          style: styles.iconImage,
+          id: "home-image",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 19,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: require("./img/Asset 2.png"),
+          style: styles.mainImg,
+          id: "home-image",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 17
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+          style: styles.subtext,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 17
+          }
+        }, "May 15-16, 2021"))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 36,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("h2", {
+          style: styles.subtextImportant,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("b", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39,
+            columnNumber: 19
+          }
+        }, "Registration is now closed!")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 50,
+            columnNumber: 17
+          }
+        }))))))
+      );
+    }
+  }
+  exports.default = Home;
+  const styles = {
+    container: {
+      paddingTop: 56,
+      height: "100vh",
+      width: "100%"
+    },
+    centerContent: {
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translateX(-50%) translateY(-50%)",
+      color: "#4a86e8",
+      width: "75%"
+    },
+    title: {
+      fontSize: 60,
+      fontWeight: 1000,
+      letterSpacing: 8,
+      textAlign: "center"
+    },
+    subtext: {
+      color: "#40F55E",
+      textAlign: "center"
+    },
+    subtextImportant: {
+      color: "white",
+      textAlign: "center"
+    },
+    buttonStyle: {
+      marginTop: 10,
+      display: "flex",
+      justifyContent: "center",
+      color: "black",
+      outlineColor: "#FED866",
+      borderColor: "#FED866",
+      fontWeight: 900,
+      fontSize: "28px",
+      backgroundColor: "#FED866"
+    },
+    mainImg: {
+      width: "100%"
+    },
+    iconImage: {
+      maxHeight: "200px",
+      margin: "auto",
+      display: "block"
+    }
+  };
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,303 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _react = require('react');
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactDom = require('react-dom');
+  var _reactDomDefault = _parcelHelpers.interopDefault(_reactDom);
+  require('react-bootstrap');
+  require('bootstrap/dist/css/bootstrap.css');
+  require('./index.css');
+  require('./nav.css');
+  require('./hamburgers.css');
+  var _jquery = require('jquery');
+  var _jqueryDefault = _parcelHelpers.interopDefault(_jquery);
+  var _home = require('./home');
+  var _homeDefault = _parcelHelpers.interopDefault(_home);
+  var _about = require('./about');
+  var _aboutDefault = _parcelHelpers.interopDefault(_about);
+  var _faq = require('./faq');
+  var _faqDefault = _parcelHelpers.interopDefault(_faq);
+  var _schedule = require('./schedule');
+  var _scheduleDefault = _parcelHelpers.interopDefault(_schedule);
+  var _sponsors = require('./sponsors');
+  var _sponsorsDefault = _parcelHelpers.interopDefault(_sponsors);
+  var _footer = require('./footer');
+  var _footerDefault = _parcelHelpers.interopDefault(_footer);
+  var _fortawesomeReactFontawesome = require('@fortawesome/react-fontawesome');
+  var _fortawesomeFreeSolidSvgIcons = require('@fortawesome/free-solid-svg-icons');
+  var _jsxFileName = "/home/tmakin/hths-hacks.github.io/src/index.js";
+  class App extends _react.Component {
+    constructor() {
+      super();
+      this.state = {
+        active: false
+      };
+    }
+    componentDidMount() {
+      _jqueryDefault.default(document).ready(() => {
+        var active1 = false;
+        var active2 = false;
+        var active3 = false;
+        var active4 = false;
+        _jqueryDefault.default('.nav-parent').on('mousedown', () => {
+          if (!active1) _jqueryDefault.default('.nav-parent').find('.nav-item1').css({
+            'background-color': 'gray',
+            transform: 'translate(0px,125px)'
+          }); else _jqueryDefault.default('.nav-parent').find('.nav-item1').css({
+            'background-color': 'dimGray',
+            transform: 'none'
+          });
+          if (!active2) _jqueryDefault.default('.nav-parent').find('.nav-item2').css({
+            'background-color': 'gray',
+            transform: 'translate(60px,105px)'
+          }); else _jqueryDefault.default('.nav-parent').find('.nav-item2').css({
+            'background-color': 'darkGray',
+            transform: 'none'
+          });
+          if (!active3) _jqueryDefault.default('.nav-parent').find('.nav-item3').css({
+            'background-color': 'gray',
+            transform: 'translate(105px,60px)'
+          }); else _jqueryDefault.default('.nav-parent').find('.nav-item3').css({
+            'background-color': 'silver',
+            transform: 'none'
+          });
+          if (!active4) _jqueryDefault.default('.nav-parent').find('.nav-item4').css({
+            'background-color': 'gray',
+            transform: 'translate(125px,0px)'
+          }); else _jqueryDefault.default('.nav-parent').find('.nav-item4').css({
+            'background-color': 'silver',
+            transform: 'none'
+          });
+          active1 = !active1;
+          active2 = !active2;
+          active3 = !active3;
+          active4 = !active4;
+          this.setState({
+            active: active1
+          });
+        });
+      });
+    }
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 106,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-parent",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 107,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: "#about",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 108,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-item1",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 109,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          icon: _fortawesomeFreeSolidSvgIcons.faInfoCircle,
+          size: "2x",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 110,
+            columnNumber: 29
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: "#faq",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 113,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-item2",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 114,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          icon: _fortawesomeFreeSolidSvgIcons.faQuestion,
+          size: "2x",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 115,
+            columnNumber: 29
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: "#schedule",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 118,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-item3",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 119,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          icon: _fortawesomeFreeSolidSvgIcons.faClock,
+          size: "2x",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 120,
+            columnNumber: 29
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: "#sponsors",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-item4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 124,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          icon: _fortawesomeFreeSolidSvgIcons.faGift,
+          size: "2x",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 125,
+            columnNumber: 29
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "nav-main-item",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 128,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: `hamburger hamburger--elastic ${this.state.active ? 'is-active' : ''}`,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 129,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "hamburger-box",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 134,
+            columnNumber: 29
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("span", {
+          className: "hamburger-inner",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 135,
+            columnNumber: 33
+          }
+        }))))), /*#__PURE__*/_reactDefault.default.createElement(_homeDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 140,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_aboutDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 141,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_faqDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 142,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_scheduleDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 143,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_sponsorsDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 144,
+            columnNumber: 17
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_footerDefault.default, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 145,
+            columnNumber: 17
+          }
+        }))
+      );
+    }
+  }
+  const styles = {
+    navbarWrapper: {
+      display: 'flex',
+      justifyContent: 'space-around',
+      width: '33.33%',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      maxWidth: '960px'
+    }
+  };
+  const mountApp = document.getElementById('app');
+  _reactDomDefault.default.render(/*#__PURE__*/_reactDefault.default.createElement(App, {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163,
+      columnNumber: 17
+    }
+  }), mountApp);
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

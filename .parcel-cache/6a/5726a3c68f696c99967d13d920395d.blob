@@ -1,0 +1,241 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactBootstrap = require("react-bootstrap");
+  var _page = require("./page");
+  var _pageDefault = _parcelHelpers.interopDefault(_page);
+  require("bootstrap/dist/css/bootstrap.css");
+  require("./background.css");
+  require("@fortawesome/free-brands-svg-icons");
+  var _jsxFileName = "/home/tmakin/hths-hacks.github.io/src/sponsors.js";
+  class Sponsors extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("section", {
+          id: "sponsors",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 7
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_pageDefault.default, {
+          title: "SPONSORS",
+          style: {
+            backgroundColor: "white",
+            color: "black"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Container, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 11
+          }
+        }, sponsors1.map(s => /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          xs: true,
+          key: s.i,
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 81,
+            columnNumber: 17
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: s.l,
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 90,
+            columnNumber: 19
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: s.i,
+          style: {
+            objectFit: "cover",
+            width: "80%",
+            margin: "10px",
+            alignSelf: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 94,
+            columnNumber: 21
+          }
+        }))))), sponsors2.map(s => /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 108,
+            columnNumber: 15
+          }
+        }, padArray("", s, 2).map(a => /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          xs: true,
+          key: a.i,
+          float: true,
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "10px"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 110,
+            columnNumber: 19
+          }
+        }, a && /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: a.l,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 122,
+            columnNumber: 23
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: a.i,
+          style: {
+            objectFit: "cover",
+            width: "100%"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123,
+            columnNumber: 25
+          }
+        })))))), sponsors3.map(s => /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 15
+          }
+        }, padArray("", s, 3).map(a => /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          xs: true,
+          key: a.i,
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            margin: "10px"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 139,
+            columnNumber: 19
+          }
+        }, a && /*#__PURE__*/_reactDefault.default.createElement("a", {
+          href: a.l,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 150,
+            columnNumber: 23
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: a.i,
+          style: {
+            objectFit: "cover",
+            width: "100%"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 151,
+            columnNumber: 25
+          }
+        })))))))))
+      );
+    }
+  }
+  exports.default = Sponsors;
+  const styles = {
+    time: {},
+    tableStyle: {
+      color: "#034A5E",
+      fontSize: "25px"
+    },
+    sponsorInterest: {
+      textAlign: "center",
+      fontSize: "20px"
+    },
+    smallHeader: {
+      textAlign: "center",
+      fontSize: "50px",
+      fontWeight: 900,
+      margin: "20px"
+    }
+  };
+  const padArray = (val, arr, len) => {
+    while (arr.length < len) {
+      arr.push(val);
+    }
+    return arr;
+  };
+  const partners = [{
+    i: "/hths.png",
+    l: "http://www.hths.mcvsd.org/"
+  }, {
+    i: "/mlh.png",
+    l: "https://mlh.io/"
+  }];
+  const sponsors1 = [{
+    i: "/hths.png",
+    l: "http://www.hths.mcvsd.org/"
+    /*{ i: "/1517.png", l: "https://www.1517fund.com/" }*/
+  }];
+  const sponsors2 = [].chunk_inefficient(2);
+  const sponsors3 = [{
+    i: "/wolfram.png",
+    l: "https://www.wolfram.com/"
+  }, {
+    i: "/sashido.png",
+    l: "https://www.sashido.io/en/"
+  }, {
+    i: "/echoar.png",
+    l: "https://www.echoar.xyz/"
+    /*{ i: "/bugsee.png", l: "https://www.bugsee.com/" },*/
+    /*{ i: "/aops.jpg", l: "https://artofproblemsolving.com/" },
+    { i: "/1password.png", l: "https://1password.com/" },
+    { i: "/cloudsploit.png", l: "https://cloudsploit.com/" },
+    { i: "/jdd.png", l: "https://www.jdjfoundation.org/" },
+    { i: "/hyperx.png", l: "https://www.hyperxgaming.com/" },
+    { i: "/upperline.png", l: "https://www.upperlinecode.com/" },*/
+  }].chunk_inefficient(3);
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

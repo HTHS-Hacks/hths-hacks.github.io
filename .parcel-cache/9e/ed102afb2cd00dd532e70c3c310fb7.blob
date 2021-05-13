@@ -1,0 +1,224 @@
+var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require("react");
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _reactBootstrap = require("react-bootstrap");
+  var _fortawesomeReactFontawesome = require("@fortawesome/react-fontawesome");
+  var _fortawesomeFreeBrandsSvgIcons = require("@fortawesome/free-brands-svg-icons");
+  require("bootstrap/dist/css/bootstrap.css");
+  require("./background.css");
+  var _jsxFileName = "/home/tmakin/hths-hacks.github.io/src/footer.js";
+  class Home extends _react.Component {
+    render() {
+      return (
+        /*#__PURE__*/_reactDefault.default.createElement("div", {
+          style: styles.container,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12,
+            columnNumber: 7
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Container, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 9
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          style: {
+            display: "flex",
+            justifyContent: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("img", {
+          src: require("./img/Asset 1.png"),
+          style: styles.iconImage,
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 15
+          }
+        }))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+          style: {
+            color: "white",
+            textAlign: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 15
+          }
+        }, "May 15-16, 2021"))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+          style: {
+            color: "white",
+            textDecoration: "underline"
+          },
+          href: "mailto:contact@hthshacks.com",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35,
+            columnNumber: 17
+          }
+        }, "contact@hthshacks.com")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 46,
+            columnNumber: 15
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+          style: {
+            color: "white",
+            textDecoration: "underline"
+          },
+          href: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47,
+            columnNumber: 17
+          }
+        }, "MLH Code of Conduct")))), /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Row, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 56,
+            columnNumber: 11
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_reactBootstrap.Col, {
+          style: {
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: 30
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57,
+            columnNumber: 13
+          }
+        }, /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          style: styles.socialIcons,
+          icon: _fortawesomeFreeBrandsSvgIcons.faTwitter,
+          size: "2x",
+          onClick: () => window.location.href = "https://twitter.com/hths_hacks",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 64,
+            columnNumber: 15
+          }
+        }), /*#__PURE__*/_reactDefault.default.createElement(_fortawesomeReactFontawesome.FontAwesomeIcon, {
+          style: styles.socialIcons,
+          icon: _fortawesomeFreeBrandsSvgIcons.faInstagram,
+          size: "2x",
+          onClick: () => window.location.href = "https://www.instagram.com/hthshacks/",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 72,
+            columnNumber: 15
+          }
+        })))))
+      );
+    }
+  }
+  exports.default = Home;
+  const styles = {
+    container: {
+      paddingTop: 20,
+      width: "100%",
+      backgroundColor: "#022C38",
+      color: "white",
+      fontSize: 20
+    },
+    iconImage: {
+      maxHeight: "150px"
+    },
+    socialIcons: {
+      marginLeft: 8,
+      marginRight: 8
+    }
+  };
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
