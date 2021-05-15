@@ -55905,16 +55905,14 @@ var Home = /*#__PURE__*/function (_Component) {
         id: "home-image"
       }))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement("h2", {
         style: styles.subtext
-      }, "May 15-16, 2021"))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null, /*#__PURE__*/_react.default.createElement("a", {
-        href: "https://forms.gle/oJTi3L7zUuHgU3Ab8"
-      }, /*#__PURE__*/_react.default.createElement("h2", {
+      }, "May 15-16, 2021"))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null,  /*#__PURE__*/_react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, /*#__PURE__*/_react.default.createElement("b", null, /*#__PURE__*/_react.default.createElement("u", null, "Registration now open!")))))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
+      }, /*#__PURE__*/_react.default.createElement("b", null, "Registration now open!"))))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
         }
-      }, /*#__PURE__*/_react.default.createElement("div", null))))));
+      }, /*#__PURE__*/_react.default.createElement("div", null)))));
     }
   }]);
 
