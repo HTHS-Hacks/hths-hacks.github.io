@@ -55907,7 +55907,7 @@ var Home = /*#__PURE__*/function (_Component) {
         style: styles.subtext
       }, "May 15-16, 2021"))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, null,  /*#__PURE__*/_react.default.createElement("h2", {
         style: styles.subtextImportant
-      }, /*#__PURE__*/_react.default.createElement("b", null, "Registration now open!"))))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
+      }, /*#__PURE__*/_react.default.createElement("b", null, "Registration is now closed."))))), /*#__PURE__*/_react.default.createElement(_reactBootstrap.Row, null, /*#__PURE__*/_react.default.createElement(_reactBootstrap.Col, {
         style: {
           display: "flex",
           justifyContent: "center"
