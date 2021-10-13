@@ -296,3 +296,7 @@ menu > .trigger > i {
 menu.open > .trigger > i {
   transform: rotate(-135deg);
 }
+
+.zi{
+  z-index: 999;
+}
