@@ -29,7 +29,7 @@ h1 {
   border: 6px solid white;
   padding: 15px;
   font-family: 'Varela Round', sans-serif;
-  font-size: 4vw !important;
+  font-size: 5vw !important;
   text-transform: uppercase;
   text-align: center;
   text-overflow: hidden;
@@ -38,6 +38,7 @@ h1 {
 h1.text{
   color: black !important;
   border: 6px solid black !important;
+  font-size: 5vw !important;
 }
 
 h2 {
@@ -52,7 +53,7 @@ h3 {
   color: #F8D754;
   font-family: 'Varela Round', sans-serif;
   box-sizing: content-box;
-  font-size: 26px;
+  font-size: 2.75vw !important;
   text-align: center;
   text-transform: uppercase;
 }
@@ -74,6 +75,10 @@ p {
 
 th{
   width: 22%;
+}
+
+.th-text{
+  color: white !important;
 }
 
 tr{
@@ -130,7 +135,7 @@ tr{
   color: white;
   font-family: 'Varela Round', sans-serif;
   /*font-size: 20px;*/
-  font-size: 2.5vw !important;
+  font-size: 2.25vw !important;
 }
 
 .sponsor-text{
