@@ -215,8 +215,8 @@ footer{
 
 menu {
   --size: 2.5rem;
-  --radius: 8rem;
-  --padding: 7rem;
+  --radius: 6rem;
+  --padding: 6rem;
   --bg-color: rgba(255, 255, 255, 0.9);
   --fg-color: rgba(0, 0, 0, 0.7);
   --hi-color: #E76F51;
