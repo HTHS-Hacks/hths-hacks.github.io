@@ -6,10 +6,10 @@ if (!(decodeURIComponent(document.cookie).split('; ').includes('notified=true') 
 }
 
 // Notif-Modal close logic
-document.getElementsByClassName('close')[1].onclick = function() { notifModal.style.display = 'none'; }
+document.querySelector('#notif-modal .close').onclick = function() { notifModal.style.display = 'none'; }
 window.onclick = function(event) { if (event.target == notifModal) { notifModal.style.display = 'none'; } }
 
 // Notif-Form submit logic
 function giveNotifCookie() {
-  document.cookie = `notified=true; expires=${new Date(Date.now() + 365*24*60*60*1000).toUTCString()}`;
+  document.cookie = `notified=true; expires=${new Date('Jan 1, 2023').toUTCString()}`;
 }
