@@ -2,7 +2,7 @@
 const notifModal = document.getElementById('notif-modal');
 if (!(decodeURIComponent(document.cookie).split('; ').includes('notified=true') ||decodeURIComponent(document.cookie).split('; ').includes('visited=true'))) {
   notifModal.style.display = 'block';
-  //document.cookie = `visited=true; expires=${new Date(Date.now() + 14*24*60*60*1000).toUTCString()}`;
+  document.cookie = `visited=true; expires=${new Date(Date.now() + 14*24*60*60*1000).toUTCString()}`;
 }
 
 // Notif-Modal close logic
