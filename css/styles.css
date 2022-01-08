@@ -304,6 +304,93 @@ menu.open > .trigger > i {
   transform: rotate(-135deg);
 }
 
-.zi{
-  z-index: 999;
+.nav{
+  z-index: 1;
+}
+
+.notif-form {
+  margin: auto;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+  background-color: #264653;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  width: calc(120 / 705 * calc(100vw - 375px) + 240px); /* Scale from 240px to 360px when screen width is 375px to 1080px */
+  padding: 1.5% 0%;
+  text-align: center;
+}
+
+button {
+  padding: 2%;
+}
+
+input {
+  background-color: #aeb6b5;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000; /* Fallback */
+  background-color: #000000c0; /* Transparency */
+}
+
+.modal-header {
+  padding: 0px 16px;
+  color: white;
+  border: 0 !important;
+}
+
+.modal-footer {
+  padding: 10px 16px;
+  color: white;
+  border: 0 !important;
+}
+
+.modal-body {
+  left: 5%;
+  width: 90%;
+  background-color: #546e7a;
+  color: white;
+  text-align: center;
+  border-radius: 1% / 5%;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #264653;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  top: 100px;
+  box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@keyframes animatetop {
+  from { top: -300px; opacity: 0; }
+  to { top: 100px; opacity: 1; }
+}
+
+#notif-modal .close {
+  color: white;
+  float: right;
+  font-size: 52px;
+  font-weight: bold;
+}
+
+#notif-modal .close:hover, #notif-modal .close:focus {
+  color: #e76f51;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtext {
+  font-size: 14px;
 }

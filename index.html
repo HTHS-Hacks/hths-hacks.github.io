@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <title>hths.hacks() 2022</title>
+    <link rel="icon" type="image/x-icon" href="/img/Asset1_2022.png">
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
@@ -17,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
 
     <!-- Custom styles -->
-    <link href="/css/hacks.css" rel="stylesheet">
+    <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/starfield.css" rel="stylesheet">
   </head>
 
@@ -32,9 +33,7 @@
       <div class="row">
         <div class="col">
           <img class="ship" src="/img/Asset1_Light_2022.png" alt="spaceship">
-          <img class="hacks" src="img/Asset2_Light_2022.png" alt="hths.hacks()">
-
-          <h1 class="bold">UNDER CONSTRUCTION</h1><br>
+          <img class="hacks" src="/img/Asset2_Light_2022.png" alt="hths.hacks()">
 
           <h3 class="bold">Date:  May 21 - 22, 2022</h3>
           
@@ -44,7 +43,7 @@
     </div> 
 
     <!-- Nav Button -->
-    <menu class="close zi">
+    <menu class="close nav">
       <a href="#about" class="action"><i class="fas fa-info fa-2x"></i></i></a>
       <a href="#faq" class="action"><i class="fas fa-question fa-2x"></i></a>
       <a href="#schedule" class="action"><i class="far fa-clock fa-2x"></i></a>
@@ -53,6 +52,27 @@
     </menu>
     
   </header>
+
+  <!-- Notif Signup Modal -->
+  <div id="notif-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <h4>Get email updates about hths.hacks() 2022!</h4>
+        <p>We'll be rolling out new information about hths.hacks() 2022 when it's available.<br><br><b>Be the first to know!</b></p>
+        <form action="https://getform.io/f/6dcdb13c-56dd-4f58-b242-588b9206f9bf" method="POST" onsubmit="return giveNotifCookie()" class="notif-form">
+          <label for="email"><b>Email:</b></label>
+          <input type="email" id="email" name="email" required><br><br>
+          <button type="submit">Get notified!</button>
+        </form><br>
+        <p class="subtext">...or continue to the site to find out more.<br>You can always get notified later at the <u>bottom of the page.</u></p>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
 
   <main>
     <!-- ABOUT -->
@@ -68,12 +88,12 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-md-1 mb-3 text-justify">
         <div class="col">
-          <p class="about-p">There’s something about being under a deadline that generates the best ideas. That’s why 
+          <p class="about-p">There's something about being under a deadline that generates the best ideas. That's why 
             high school students strategically plan to do assignments right at the last minute. 
-            At hths.hacks(), we believe that tech can change the world, so we’re challenging you to 
+            At hths.hacks(), we believe that tech can change the world, so we're challenging you to 
             solve a problem in 24 hours. COVID-19 might have taken hths.hacks() online, but don't 
             worry--we didn't forget about the prizes! You'll get the opportunity to meet some fellow 
-            hackers and great sponsors, the chance to win some prizes and learn something new. Let’s 
+            hackers and great sponsors, the chance to win some prizes and learn something new. Let's 
             see what you can create!</p>
         </div>
       </div>
@@ -357,6 +377,17 @@
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div class="container">
       <div class="row">
+        <div class="column">
+          <h4>Get email updates about hths.hacks() 2022!</h4>
+        <p>We'll be rolling out new information about hths.hacks() 2022 when it's available.<br><br><b>Be the first to know!</b></p>
+        <form action="https://getform.io/f/6dcdb13c-56dd-4f58-b242-588b9206f9bf" method="POST" onsubmit="return giveNotifCookie()" class="notif-form">
+          <label for="email"><b>Email:</b></label>
+          <input type="email" id="email" name="email" required><br><br>
+          <button type="submit">Get notified!</button>
+        </form>
+        </div>
+      </div><br><br><br>
+      <div class="row">
         <div class="col">
           <img class="ship-small" src="/img/Asset1_Light_2022.png" alt="spaceship">
           <h3 class="bold">Date:  May 21 - 22, 2022</h3>
@@ -364,10 +395,11 @@
           <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank"><h3>MLH Code of Conduct</h3></a>
           <a href="https://www.instagram.com/hthshacks/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
         </div>
-      </div> 
+      </div>
     </div>
   </footer>
   
   <script src="/js/fab.js"></script>
+  <script src="js/notifLogic.js"></script>
   </body>
 </html>
