@@ -321,6 +321,8 @@ menu.open > .trigger > i {
 
 button {
   padding: 2%;
+  background-color: #f4a261 !important;
+  font-family: 'Varela Round', sans-serif;
 }
 
 input {
